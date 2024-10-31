@@ -9,6 +9,7 @@ export default function ProjectListElement() {
                 A responsive product page built with React.js and Context API for state management.
             </p>
             <ProjectListTechElements />
+            <button>view project</button>
         </>
     )
 }

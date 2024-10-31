@@ -11,6 +11,8 @@ export default function Projects() {
                 while documenting my ongoing journey into full-stack development.
             </p>
             <ProjectListElement />
+            <button>{`<-`}</button>
+            <button>{`->`}</button>
         </>
     )
 }
