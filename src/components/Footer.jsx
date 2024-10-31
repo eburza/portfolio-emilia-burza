@@ -1,13 +1,11 @@
 import Heart from '../assets/heart.svg'
 import SocialLinks from './SocialLinks'
+import NavigationLinks from './NavigationLinks'
+
 export default function Footer() {
     return(
         <>
-            <ul>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Work</a></li>
-                <li><a href='#'>Contact</a></li>
-            </ul>
+            <NavigationLinks />
             <p>Designed and Developed with </p>
             <img src={Heart} className='footer-heart-img'/>
             <p> by Emilia</p>
