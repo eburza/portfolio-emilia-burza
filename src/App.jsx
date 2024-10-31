@@ -3,6 +3,7 @@ import BannerMain from './components/BannerMain'
 import About from './components/About'
 import SkillsAndTools from './components/SkillsAndTools'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <SkillsAndTools />
       <Projects />
+      <Footer />
     </>
   )
 }
