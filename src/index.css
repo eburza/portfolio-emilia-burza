@@ -24,3 +24,11 @@ body {
 .previous-project {
   transform: scaleX(-1)
 }
+
+.project-preview-img {
+  width: 150px;
+}
+
+.project-preview-button img{
+  width: 30px;
+}
