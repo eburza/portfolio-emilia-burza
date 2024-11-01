@@ -19,52 +19,52 @@ const skillsList = [
     {
         name: 'React',
         tag: 'react',
-        img: {React}
+        img: React
     },
     {
         name: 'JavaScript',
         tag: 'javascript',
-        img: {Javascript}
+        img: Javascript
     },
     {
         name: 'jQuery',
         tag: 'jquery',
-        img: {Jquery}
+        img: Jquery
     },
     {
         name: 'Firebase',
         tag: 'firebase',
-        img: {Firebase}
+        img: Firebase
     },
     {
         name: 'Git',
         tag: 'git',
-        img: {Git}
+        img: Git
     },
     {
         name: 'SASS',
         tag: 'sass',
-        img: {Sass}
+        img: Sass
     },
     {
         name: 'CSS3',
         tag: 'css',
-        img: {Css}
+        img: Css
     },
     {
         name: 'HTML5',
         tag: 'html',
-        img: {Html}
+        img: Html
     },
     {
         name: 'Responsive Websites',
         tag: 'responsiveness',
-        img: {Responsiveness}
+        img: Responsiveness
     },
     {
         name: 'Web Accessibility',
         tag: 'accessibility',
-        img: {Accessibility}
+        img: Accessibility
     }
 ]
 
@@ -72,27 +72,27 @@ const toolsList = [
     {
         name: 'VS Code',
         tag: 'vscode',
-        img: {Vscode}
+        img: Vscode
     },
     {
         name: 'GitHub',
         tag: 'github',
-        img: {Github}
+        img: Github
     },
     {
         name: 'Terminal',
         tag: 'terminal',
-        img: {Terminal}
+        img: Terminal
     },
     {
         name: 'Adobe Suite',
         tag: 'adobe',
-        img: {Adobe}
+        img: Adobe
     },
     {
         name: 'Figma',
         tag: 'figma',
-        img: {Figma}
+        img: Figma
     }
 ]
 
