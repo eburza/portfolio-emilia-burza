@@ -1,4 +1,5 @@
 import ProjectListElement from './ProjectListElement'
+import { projectList } from '../data/projectsList'
 import ArrowButton from '../assets/arrow-button.svg'
 
 export default function Projects() {
@@ -11,7 +12,16 @@ export default function Projects() {
                 on creating responsive user interfaces and interactive web applications, 
                 while documenting my ongoing journey into full-stack development.
             </p>
-            <ProjectListElement />
+            { projectList.map( (project) => 
+                <ProjectListElement 
+                    key={project.id}
+                    name={project.name}
+                    image={project.img}
+                    imageAlt={project.imgAlt}
+                    summary={project.summary}
+                    tags={project.tags}
+                />
+            )}
             <button className='previous-project project-list-button'><img src={ArrowButton}/></button>
             <button className='next-project project-list-button'><img src={ArrowButton}/></button>
         </div>

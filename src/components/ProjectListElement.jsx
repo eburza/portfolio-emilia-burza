@@ -1,15 +1,15 @@
-import ProjectListTechElements from './ProjectListTechElements'
-export default function ProjectListElement() {
+// import ProjectListTechElements from './ProjectListTechElements'
+import ArrowButton from '../assets/arrow-button.svg'
+
+export default function ProjectListElement({name, image, imageAlt, summary, tags}) {
     return(
-        <>
-            <img src='#' />
-            <h2>Project name</h2>
-            <p>
-                Short summary of the project eg: 
-                A responsive product page built with React.js and Context API for state management.
-            </p>
-            <ProjectListTechElements />
-            <button>view project</button>
-        </>
+        <div className='project-preview'>
+            <img src={image} alt={imageAlt} />
+            <h2>{name}</h2>
+            <p>{summary}</p>
+            <p>{tags}</p>
+            {/* <ProjectListTechElements /> */}
+            <button><img src={ArrowButton}/></button>
+        </div>
     )
 }
