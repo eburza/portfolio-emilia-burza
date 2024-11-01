@@ -1,6 +1,6 @@
-import Linkedin from '../assets/linkedin.svg'
-import Behance from '../assets/behance.svg'
-import Github from '../assets/github.svg'
+import Linkedin from '../assets/social-media-icons/linkedin.svg'
+import Behance from '../assets/social-media-icons/behance.svg'
+import Github from '../assets/social-media-icons/github.svg'
 
 export default function SocialLinks() {
     return(
