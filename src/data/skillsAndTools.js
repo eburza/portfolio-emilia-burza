@@ -2,6 +2,7 @@ import Adobe from '../assets/skills-and-tools/adobe.svg'
 import Css from '../assets/skills-and-tools/css.svg'
 import Figma from '../assets/skills-and-tools/figma.svg'
 import Firebase from '../assets/skills-and-tools/firebase.svg'
+import Mongodb from '../assets/skills-and-tools/mongodb.svg'
 import Git from '../assets/skills-and-tools/git.svg'
 import Github from '../assets/skills-and-tools/github.svg'
 import Html from '../assets/skills-and-tools/html.svg'
@@ -35,6 +36,11 @@ const skillsList = [
         name: 'Firebase',
         tag: 'firebase',
         img: Firebase
+    },
+    {
+        name: 'MongoDB',
+        tag: 'mongodb',
+        img: Mongodb
     },
     {
         name: 'Git',
