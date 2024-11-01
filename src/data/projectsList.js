@@ -7,7 +7,7 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['technology', 'used', 'tags']
+        tags: ['react', 'javascript', 'sass']
     },
     {
         name: 'Project 2',
@@ -15,7 +15,7 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['technology', 'used', 'tags']
+        tags: ['react', 'javascript', 'sass']
     },
     {
         name: 'Project 3',
@@ -23,7 +23,7 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['technology', 'used', 'tags']
+        tags: ['react', 'javascript', 'sass']
     },
 ]
 
