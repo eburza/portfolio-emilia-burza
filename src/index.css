@@ -21,3 +21,6 @@ body {
   width: 50px;
 }
 
+.previous-project {
+  transform: scaleX(-1)
+}
