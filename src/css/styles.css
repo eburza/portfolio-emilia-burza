@@ -206,6 +206,89 @@
   border: solid 4px #FEDED2;
 }
 
+/* FONTS */
+/* COLORS */
+/* DISPLAY */
+.projects-content {
+  background-color: #F8F3EB;
+  padding: 4rem;
+}
+
+.projects-content button {
+  background-color: transparent;
+  border: none;
+}
+
+.projects-intro-text {
+  margin-top: 2rem;
+}
+
+.projects-list {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.project-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: 0.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 12px 24px 0px rgba(75, 68, 57, 0.1), 0px 48px 48px 0px rgba(75, 68, 57, 0.1);
+}
+
+.project-preview-img {
+  width: 100%;
+}
+
+.project-preview-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.project-preview-summary {
+  color: #444;
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.project-tags-img {
+  display: flex;
+  flex-direction: initial;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.project-preview-tag-img {
+  height: 1.5rem;
+}
+
+.projects-buttons {
+  display: flex;
+  justify-self: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.previous-project {
+  transform: scaleX(-1);
+}
+
+.project-preview-button img {
+  display: block;
+  width: 2rem;
+}
+
 * {
   box-sizing: border-box;
   color: #000;
