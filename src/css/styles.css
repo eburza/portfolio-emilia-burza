@@ -16,6 +16,12 @@
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 96px 48px 0px rgba(99, 91, 79, 0.01), 0px 60px 40px 0px rgba(99, 91, 79, 0.02), 0px 32px 32px 0px rgba(99, 91, 79, 0.04), 0px 8px 16px 0px rgba(99, 91, 79, 0.08);
   backdrop-filter: blur(20px);
+  width: 90%;
+  max-width: 75rem;
+  margin: 1rem auto 0 auto;
+  z-index: 999;
+  position: fixed;
+  inset: 0% 0% auto;
 }
 
 .logo {
@@ -70,6 +76,15 @@ body {
   align-items: center;
   gap: initial;
   margin: 0;
+  width: 100vw;
+}
+
+.portfolio-website {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+  gap: initial;
 }
 
 button {
