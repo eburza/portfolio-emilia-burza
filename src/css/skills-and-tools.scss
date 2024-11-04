@@ -1,0 +1,56 @@
+@import 'functions.scss';
+
+.skills-and-tools {
+    padding: 0 4rem;
+}
+
+.skills-section {
+    display: grid;
+    grid-template-columns: 10rem auto;
+    gap: 1.5rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.skill-subhead {
+    @include heading-s;
+}
+
+.technologies {
+    background-color: $elusive;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.tools {
+    background-color: $pastel-pink;
+    border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.skill-item {
+    @include display-flex(column, center, center, 1rem);
+    width: 7.1rem;
+}
+
+.skill-item p {
+    @include text-skills;
+}
+
+.skill-item img {
+    height: 4rem;
+    align-items: start;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+    gap:  2rem 1rem;
+}
+
+.skill-section-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    border: solid 4px $elusive;
+}

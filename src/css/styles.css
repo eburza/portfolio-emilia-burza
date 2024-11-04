@@ -138,6 +138,74 @@
   font-weight: 400;
 }
 
+/* FONTS */
+/* COLORS */
+/* DISPLAY */
+.skills-and-tools {
+  padding: 0 4rem;
+}
+
+.skills-section {
+  display: grid;
+  grid-template-columns: 10rem auto;
+  gap: 1.5rem;
+  position: relative;
+  padding: 2rem;
+}
+
+.skill-subhead {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.technologies {
+  background-color: #FEDED2;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.tools {
+  background-color: #FFC1DE;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 7.1rem;
+}
+
+.skill-item p {
+  color: #444;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.936rem;
+}
+
+.skill-item img {
+  height: 4rem;
+  align-items: start;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-self: flex-start;
+  gap: 2rem 1rem;
+}
+
+.skill-section-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  border: solid 4px #FEDED2;
+}
+
 * {
   box-sizing: border-box;
   color: #000;
