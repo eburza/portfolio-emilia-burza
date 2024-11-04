@@ -3,7 +3,7 @@ import NavigationLinks from './NavigationLinks'
 
 export default function Navbar() {
     return (
-        <nav>
+        <nav className='navigation-bar'>
             <img src={Logo} className='logo'/>
             <NavigationLinks />
             <button>Resume</button>
