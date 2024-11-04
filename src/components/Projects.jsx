@@ -4,7 +4,7 @@ import ArrowButton from '../assets/arrow-button.svg'
 
 export default function Projects() {
     return(
-        <div className='projects-content'>
+        <div className='projects-content' id='projects'>
             <h1 className='head-title'>Projects</h1>
             <p className='projects-intro-text'>
                 Explore my frontend development projects built with React.js 

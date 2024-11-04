@@ -1,7 +1,7 @@
 import ImgAbout from '../assets/img-about.png'
 export default function About() {
     return(
-        <article className='about-content'>
+        <article className='about-content' id='about'>
             <h1 className='head-title'>About me</h1>
             <div className='about-wrapper'>
                 <img src={ImgAbout} className='about-img' alt='Emilia Burza smiling'/>

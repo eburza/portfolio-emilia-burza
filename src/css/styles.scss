@@ -18,6 +18,10 @@ body {
     @include display-flex(column, center, initial, initial);
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
 }

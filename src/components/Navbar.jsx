@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav className='navigation-bar'>
             <img src={Logo} className='logo'/>
             <NavigationLinks />
-            <button className='resume-button'>Resume</button>
+            <button className='resume-button'><a href='resume.pdf'>Resume</a></button>
         </nav>
     )
 }
