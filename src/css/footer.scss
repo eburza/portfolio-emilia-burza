@@ -1,0 +1,32 @@
+@import 'functions.scss';
+
+.footer {
+    @include display-flex(initial, space-between, center, initial);
+    background-color: $floral-white;
+    padding: 0 4rem 2rem;
+}
+
+.footer-info {
+    @include display-flex(column, space-between, flex-start, initial);
+}
+
+.personal-card {
+    background-color: #FFC1DE;
+    padding: 2rem 3rem 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.footer-dev-info {
+    @include display-flex(initial, center, center, 0.1rem);
+}
+
+.footer-heart-img {
+    height: 1.5rem;
+}
+
+.navigation-footer-links {
+    @include text-navigation;
+    list-style: none;
+    padding: 0;
+    @include display-flex(column, initial, initial, 0.5rem);
+}

@@ -289,6 +289,58 @@
   width: 2rem;
 }
 
+/* FONTS */
+/* COLORS */
+/* DISPLAY */
+.footer {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: center;
+  gap: initial;
+  background-color: #FCFAF7;
+  padding: 0 4rem 2rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: initial;
+}
+
+.personal-card {
+  background-color: #FFC1DE;
+  padding: 2rem 3rem 2rem 2rem;
+  border-radius: 1rem;
+}
+
+.footer-dev-info {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.footer-heart-img {
+  height: 1.5rem;
+}
+
+.navigation-footer-links {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: 0.5rem;
+}
+
 * {
   box-sizing: border-box;
   color: #000;
