@@ -5,12 +5,12 @@ export default function About() {
             <h1 className='head-title'>About me</h1>
             <div className='about-wrapper'>
                 <img src={ImgAbout} className='about-img' alt='Emilia Burza smiling'/>
-                <p className='about-text'>
+                <p className='about-text text-1'>
                     As a frontend developer with a focus on React.js, I bring a powerful combination of technical expertise 
                     and design sensibility to web development. My transition from graphic design to code has equipped me with the skills 
                     to create web applications that are not only highly functional but also intuitively user-friendly and visually compelling.
                 </p>
-                <p className='about-text'>
+                <p className='about-text text-2'>
                     Currently, I'm dedicated to expanding my full-stack development skills, focusing on building scalable React 
                     applications on the front-end and robust backend systems. I'm deepening my knowledge of server-side technologies 
                     like Node.js and databases, while improving web accessibility and performance. I'm eager to join a team where 

@@ -1,6 +1,7 @@
 @import 'functions.scss';
 @import 'navigation.scss';
 @import 'hero.scss';
+@import 'about.scss';
 
 // base
 * {
@@ -16,7 +17,7 @@ body {
 }
 
 .portfolio-website {
-    @include display-flex(column, center, initial, 2.5rem);
+    @include display-flex(column, center, initial, 4rem);
 }
 
 a {
@@ -25,4 +26,8 @@ a {
 
 button {
     cursor: pointer;
+}
+
+.head-title {
+    @include heading-m;
 }

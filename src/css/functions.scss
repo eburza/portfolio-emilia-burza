@@ -19,7 +19,7 @@
 }
 
 @mixin heading-m {
-    font-size: 3.875rem;
+    font-size: 3.75rem;
     font-weight: 600;
     line-height: 4rem;
 }
@@ -53,9 +53,7 @@ $floral-white: #FCFAF7;
 $elusive: #FEDED2;
 $pastel-pink: #FFC1DE;
 $water: #DAF6FF;
-@mixin linear {
-    background: linear-gradient(180deg, #F8F3EB 0%, #FCFAF7 15.78%, #FCFAF7 100%);
-}
+$linear: linear-gradient(180deg, #F8F3EB 0%, #FCFAF7 15.78%, #FCFAF7 100%);
 
 /* DISPLAY */
 @mixin display-flex($direction, $justyfy, $align, $gap){
