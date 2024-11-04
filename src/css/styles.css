@@ -57,6 +57,53 @@
   border-radius: 100rem;
 }
 
+/* FONTS */
+/* COLORS */
+/* DISPLAY */
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  margin-top: 6rem;
+  padding: auto;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-text {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  padding: 2rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 65%;
+  object-fit: contain;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero-text-sub {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.hero-text-main {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.75rem;
+}
+
 * {
   box-sizing: border-box;
   color: #000;
@@ -80,7 +127,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: initial;
-  gap: initial;
+  gap: 2.5rem;
 }
 
 a {

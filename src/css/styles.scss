@@ -1,5 +1,6 @@
 @import 'functions.scss';
 @import 'navigation.scss';
+@import 'hero.scss';
 
 // base
 * {
@@ -10,12 +11,12 @@
 body {
     @include display-flex(initial, center, center, initial);
     margin: 0;
-    // height: 100vh;
+    // height: 100svh;
     width: 100vw;
 }
 
 .portfolio-website {
-    @include display-flex(column, center, initial, initial);
+    @include display-flex(column, center, initial, 2.5rem);
 }
 
 a {
