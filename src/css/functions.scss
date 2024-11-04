@@ -56,3 +56,12 @@ $water: #DAF6FF;
 @mixin linear {
     background: linear-gradient(180deg, #F8F3EB 0%, #FCFAF7 15.78%, #FCFAF7 100%);
 }
+
+/* DISPLAY */
+@mixin display-flex($direction, $justyfy, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justyfy;
+    align-items: $align;
+    gap: $gap;
+}

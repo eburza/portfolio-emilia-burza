@@ -1,0 +1,37 @@
+@import 'functions.scss';
+
+// navigation bar
+.navigation-bar {
+    @include display-flex(initial, space-between, center, initial);
+    padding: 0.75rem 1.25rem;
+    border-radius: 100rem;
+    border-top: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 96px 48px 0px rgba(99, 91, 79, 0.01), 0px 60px 40px 0px rgba(99, 91, 79, 0.02), 0px 32px 32px 0px rgba(99, 91, 79, 0.04), 0px 8px 16px 0px rgba(99, 91, 79, 0.08);
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    height: 2.25rem;
+}
+
+.navigation-bar-links {
+    @include text-navigation;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include display-flex(row, center, center, 2rem);
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.resume-button {
+    @include text-navigation;
+    @include display-flex(initial, center, center, initial);
+    background-color: $elusive;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
+}

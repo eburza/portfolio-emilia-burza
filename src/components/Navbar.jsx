@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav className='navigation-bar'>
             <img src={Logo} className='logo'/>
             <NavigationLinks />
-            <button>Resume</button>
+            <button className='resume-button'>Resume</button>
         </nav>
     )
 }

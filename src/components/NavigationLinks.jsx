@@ -1,11 +1,9 @@
 export default function NavigationLinks() {
     return(
-        <>
-            <ul>
-                <li><a href='#'>About</a></li>
-                <li><a href='#'>Work</a></li>
-                <li><a href='#'>Contact</a></li>
-            </ul>
-        </>
+        <ul className="navigation-bar-links">
+            <li><a href='#' className="nav-link">About</a></li>
+            <li><a href='#' className="nav-link">Work</a></li>
+            <li><a href='#' className="nav-link">Contact</a></li>
+        </ul>
     )
 }

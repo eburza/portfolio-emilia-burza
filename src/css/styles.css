@@ -1,3 +1,79 @@
+/* FONTS */
+/* COLORS */
+/* DISPLAY */
+/* FONTS */
+/* COLORS */
+/* DISPLAY */
+.navigation-bar {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: center;
+  gap: initial;
+  padding: 0.75rem 1.25rem;
+  border-radius: 100rem;
+  border-top: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 96px 48px 0px rgba(99, 91, 79, 0.01), 0px 60px 40px 0px rgba(99, 91, 79, 0.02), 0px 32px 32px 0px rgba(99, 91, 79, 0.04), 0px 8px 16px 0px rgba(99, 91, 79, 0.08);
+  backdrop-filter: blur(20px);
+}
 
+.logo {
+  height: 2.25rem;
+}
+
+.navigation-bar-links {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.resume-button {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  background-color: #FEDED2;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+}
+
+* {
+  box-sizing: border-box;
+  color: #000;
+  font-family: Inter;
+  font-style: normal;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=styles.css.map */
