@@ -26,7 +26,7 @@ export default function Projects() {
     return(
         <div className='projects-content' id='projects'>
             <div className='project-text-container'>
-                <h1 className='head-title'>Projects</h1>
+                <h1 className='head-title underscore-water'>Projects</h1>
                 <p className='projects-intro-text'>
                     Explore my frontend development projects built with React.js 
                     and modern web technologies. These works demonstrate my focus 
