@@ -6,13 +6,15 @@ export default function Projects() {
 
     return(
         <div className='projects-content' id='projects'>
-            <h1 className='head-title'>Projects</h1>
-            <p className='projects-intro-text'>
-                Explore my frontend development projects built with React.js 
-                and modern web technologies. These works demonstrate my focus 
-                on creating responsive user interfaces and interactive web applications, 
-                while documenting my ongoing journey into full-stack development.
-            </p>
+            <div className='project-text-container'>
+                <h1 className='head-title'>Projects</h1>
+                <p className='projects-intro-text'>
+                    Explore my frontend development projects built with React.js 
+                    and modern web technologies. These works demonstrate my focus 
+                    on creating responsive user interfaces and interactive web applications, 
+                    while documenting my ongoing journey into full-stack development.
+                </p>
+            </div>
             <section className='projects-list'>
                 { projectList.map( (project) => 
                     <ProjectListElement 

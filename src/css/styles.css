@@ -223,7 +223,11 @@
 /* DISPLAY */
 .projects-content {
   background-color: #F8F3EB;
-  padding: 4rem;
+  padding: 4rem 0;
+}
+
+.project-text-container {
+  padding: 0 4rem;
 }
 
 .projects-content button {
@@ -296,8 +300,11 @@
   transform: scaleX(-1);
 }
 
+.project-preview-button {
+  align-self: flex-end;
+}
+
 .project-preview-button img {
-  display: block;
   width: 2rem;
 }
 

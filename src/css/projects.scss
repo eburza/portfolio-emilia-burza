@@ -2,7 +2,11 @@
 
 .projects-content {
     background-color: $old-lace;
-    padding: 4rem;
+    padding: 4rem 0;
+}
+
+.project-text-container {
+    padding: 0 4rem;
 }
 
 .projects-content button {
@@ -62,8 +66,11 @@
 .previous-project {
     transform: scaleX(-1)
 }
-  
-.project-preview-button img{
-    display: block;
+
+.project-preview-button {
+    align-self: flex-end;
+}
+
+.project-preview-button img {
     width: 2rem;
 }
