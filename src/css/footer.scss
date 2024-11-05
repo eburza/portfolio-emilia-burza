@@ -1,23 +1,57 @@
 @import 'functions.scss';
 
-.footer {
-    @include display-flex(initial, space-between, center, initial);
+footer {
     background-color: $floral-white;
-    padding: 0 4rem 2rem;
+    padding: 4rem 4rem 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 75rem;
 }
 
 .footer-info {
     @include display-flex(column, space-between, flex-start, initial);
+    height: 100%;
+    grid-column: 1/ span 2;
 }
 
 .personal-card {
+    @include display-flex(column, initial, initial, 0.25rem);
     background-color: #FFC1DE;
-    padding: 2rem 3rem 2rem 2rem;
+    padding: 2rem;
     border-radius: 1rem;
 }
 
+.card-title {
+    @include heading-s;
+    color: $grey-dark;
+    border-bottom: 2px solid $grey-dark;
+    padding-bottom: 0.2rem;
+}
+
+.card-phone,
+.card-email {
+    @include text-skills;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.card-phone {
+    padding-top: 0.5rem;
+}
+
+.card-social {
+    padding-top: 0.5rem;
+    @include display-flex(initial, flex-start, center, 1rem);
+}
+
 .footer-dev-info {
-    @include display-flex(initial, center, center, 0.1rem);
+    @include display-flex(initial, center, center, 0.2rem);
 }
 
 .footer-heart-img {

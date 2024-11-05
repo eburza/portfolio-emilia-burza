@@ -20,7 +20,7 @@ body {
 }
 
 .portfolio-website {
-    @include display-flex(column, center, initial, 4rem);
+    @include display-flex(column, center, initial, initial);
 }
 
 a {
