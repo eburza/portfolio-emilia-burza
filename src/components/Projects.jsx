@@ -39,7 +39,7 @@ export default function Projects() {
                     ref={swiperRef}
                     modules={[Navigation, Mousewheel]}
                     slidesPerView={3}
-                    spaceBetween={50}
+                    spaceBetween={0}
                     mousewheel={true}
                 >
                     {projectList.map(project => (
