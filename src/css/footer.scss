@@ -54,6 +54,10 @@ footer {
     @include display-flex(initial, center, center, 0.2rem);
 }
 
+.footer-dev-info p{
+    @include text-navigation;
+}
+
 .footer-heart-img {
     height: 1.5rem;
 }
