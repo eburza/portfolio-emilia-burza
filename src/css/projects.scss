@@ -2,11 +2,7 @@
 
 .projects-content {
     background-color: $old-lace;
-    padding: 4rem 0;
-}
-
-.project-text-container {
-    padding: 0 4rem;
+    padding: 4rem 10rem;
 }
 
 .projects-content button {
@@ -15,6 +11,7 @@
 }
 
 .projects-intro-text {
+    @include text-paragraph;
     margin-top: 2rem;
 }
 
