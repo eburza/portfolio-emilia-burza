@@ -142,13 +142,22 @@
 /* COLORS */
 /* DISPLAY */
 .skills-and-tools {
-  padding: 0 4rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+}
+
+.skills-head-title {
+  align-self: flex-start;
 }
 
 .skills-section {
   display: grid;
   grid-template-columns: 10rem auto;
-  gap: 1.5rem;
+  gap: 2.5rem;
   position: relative;
   padding: 2rem;
 }
@@ -175,7 +184,8 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 7.1rem;
+  align-self: flex-start;
+  width: 7.25rem;
 }
 
 .skill-item p {
@@ -196,7 +206,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-self: flex-start;
-  gap: 2rem 1rem;
+  gap: 2rem 1.25rem;
 }
 
 .skill-section-container {
@@ -204,6 +214,8 @@
   padding: 2rem;
   border-radius: 2.5rem;
   border: solid 4px #FEDED2;
+  width: 90%;
+  max-width: 75rem;
 }
 
 /* FONTS */

@@ -22,7 +22,7 @@ export default function SkillsAndTools() {
 
     return(
         <div className='skills-and-tools'>
-            <h1 className='head-title'>Skills and Tools</h1>
+            <h1 className='head-title skills-head-title'>Skills and Tools</h1>
             <div className='skill-section-container'>
                 <section className='skills-section technologies'>
                     <h2 className='skill-subhead'>Technologies and Skills</h2>
