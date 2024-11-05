@@ -25,6 +25,30 @@ const projectList = [
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
         tags: ['react', 'javascript', 'sass']
     },
+    {
+        name: 'Project 4',
+        id: 'project-4',
+        img: ImagePlaceholder,
+        imgAlt: 'img alt text example',
+        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
+        tags: ['react', 'javascript', 'sass']
+    },
+    {
+        name: 'Project 5',
+        id: 'project-5',
+        img: ImagePlaceholder,
+        imgAlt: 'img alt text example',
+        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
+        tags: ['react', 'javascript', 'sass']
+    },
+    {
+        name: 'Project 6',
+        id: 'project-6',
+        img: ImagePlaceholder,
+        imgAlt: 'img alt text example',
+        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
+        tags: ['react', 'javascript', 'sass']
+    },
 ]
 
 export { projectList }

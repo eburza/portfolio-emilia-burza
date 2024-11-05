@@ -1,8 +1,27 @@
 import ProjectListElement from './ProjectListElement'
 import { projectList } from '../data/projectsList'
 import ArrowButton from '../assets/arrow-button.svg'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Mousewheel } from 'swiper/modules'
+import 'swiper/css/navigation'
+import 'swiper/css'
+import { useRef } from 'react'
 
 export default function Projects() {
+
+    const swiperRef = useRef(null)
+
+    const handlePrevClick = () => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slidePrev();
+        }
+    }
+
+    const handleNextClick = () => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slideNext();
+        }
+    }
 
     return(
         <div className='projects-content' id='projects'>
@@ -16,20 +35,39 @@ export default function Projects() {
                 </p>
             </div>
             <section className='projects-list'>
-                { projectList.map( (project) => 
-                    <ProjectListElement 
-                        key={project.id}
-                        name={project.name}
-                        image={project.img}
-                        imageAlt={project.imgAlt}
-                        summary={project.summary}
-                        tags={project.tags}
-                    />
-                )}
+                <Swiper
+                    ref={swiperRef}
+                    modules={[Navigation, Mousewheel]}
+                    slidesPerView={3}
+                    spaceBetween={50}
+                    mousewheel={true}
+                >
+                    {projectList.map(project => (
+                        <SwiperSlide key={project.id}>
+                            <ProjectListElement 
+                                name={project.name}
+                                image={project.img}
+                                imageAlt={project.imgAlt}
+                                summary={project.summary}
+                                tags={project.tags}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </section>
             <div className='projects-buttons'>
-                <button className='previous-project project-list-button'><img src={ArrowButton}/></button>
-                <button className='next-project project-list-button'><img src={ArrowButton}/></button>
+                <button 
+                    className='previous-project project-list-button'
+                    onClick={handlePrevClick}
+                >
+                    <img src={ArrowButton} alt="Previous"/>
+                </button>
+                <button 
+                    className='next-project project-list-button'
+                    onClick={handleNextClick}
+                >
+                    <img src={ArrowButton} alt="Next"/>
+                </button>
             </div>
         </div>
     )
