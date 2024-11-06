@@ -1,5 +1,3 @@
-@import '../abstract/functions.scss';
-
 .skills-and-tools {
     padding: 4rem 10rem;
     @include display-flex(column, center, center, initial);
@@ -17,10 +15,6 @@
     padding: 2rem;
 }
 
-.skill-subhead {
-    @include heading-s;
-}
-
 .technologies {
     background-color: $elusive;
     border-radius: 1.25rem 1.25rem 0 0;
@@ -35,10 +29,6 @@
     @include display-flex(column, center, center, 1rem);
     align-self: flex-start;
     width: 7.25rem;
-}
-
-.skill-item p {
-    @include text-skills;
 }
 
 .skill-item img {

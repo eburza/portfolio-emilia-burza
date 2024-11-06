@@ -6,7 +6,7 @@ export default function SkillsAndTools() {
         return(
             <div key={skill.tag} className="skill-item">
                 <img src={skill.img} alt={skill.name} />
-                <p>{skill.name}</p>
+                <p className='text-skills'>{skill.name}</p>
             </div>
         )
     })
@@ -15,23 +15,23 @@ export default function SkillsAndTools() {
         return(
             <div key={tool.tag} className="skill-item">
                 <img src={tool.img} alt={tool.name} className='skill-item-img'/>
-                <p className='skill-item-text'>{tool.name}</p>
+                <p className='text-skills'>{tool.name}</p>
             </div>
         )
     })
 
     return(
         <div className='skills-and-tools'>
-            <h1 className='head-title skills-head-title underscore'>Skills and Tools</h1>
+            <h1 className='heading-l skills-head-title underscore'>Skills and Tools</h1>
             <div className='skill-section-container'>
                 <section className='skills-section technologies'>
-                    <h2 className='skill-subhead'>Technologies and Skills</h2>
+                    <h2 className='heading-s'>Technologies and Skills</h2>
                     <div className='skills-grid'>
                         {techAndSkillsItem}
                     </div>
                 </section>
                 <section className='skills-section tools'>
-                    <h2 className='skill-subhead'>Tools</h2>
+                    <h2 className='heading-s'>Tools</h2>
                     <div className='skills-grid'>
                         {toolsItem}
                     </div>
