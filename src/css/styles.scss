@@ -1,4 +1,9 @@
+@import 'abstract/variables.scss';
 @import 'abstract/functions.scss';
+@import 'abstract/mixins.scss';
+@import 'base/responsive.scss';
+@import 'base/reset.scss';
+@import 'base/typography.scss';
 @import 'design-elements/underscore.scss';
 @import 'components/navigation.scss';
 @import 'components/hero.scss';
@@ -6,32 +11,3 @@
 @import 'components/skills-and-tools.scss';
 @import 'components/projects.scss';
 @import 'components/footer.scss';
-
-// base
-* {
-    box-sizing: border-box;
-    @include font;
-}
-
-body {
-    @include display-flex(initial, center, center, initial);
-    margin: 0;
-    // height: 100svh;
-    width: 100vw;
-}
-
-.portfolio-website {
-    @include display-flex(column, center, initial, initial);
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-.head-title {
-    @include heading-m;
-}
