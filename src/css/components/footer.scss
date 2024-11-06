@@ -1,5 +1,3 @@
-@import '../abstract/functions.scss';
-
 footer {
     background-color: $floral-white;
     padding: 4rem 10rem;
@@ -28,17 +26,17 @@ footer {
 }
 
 .card-title {
-    @include heading-s;
     color: $grey-dark;
     border-bottom: 2px solid $grey-dark;
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.25rem;
 }
 
 .card-phone,
 .card-email {
-    @include text-skills;
+    color: $grey-dark;
     text-align: left;
     padding-right: 2rem;
+    font-weight: 600;
 }
 
 .card-phone {
@@ -48,23 +46,20 @@ footer {
 .card-social {
     padding-top: 0.5rem;
     @include display-flex(initial, flex-start, center, 1rem);
+    img {
+        @include social-img;
+    }
 }
 
 .footer-dev-info {
     @include display-flex(initial, center, center, 0.2rem);
-}
-
-.footer-dev-info p{
-    @include text-navigation;
-}
-
-.footer-heart-img {
-    height: 1.5rem;
+    padding-top: 0.5rem;
+    img {
+        @include footer-heart-img;
+    }
 }
 
 .navigation-footer-links {
-    @include text-navigation;
-    list-style: none;
     padding: 0;
-    @include display-flex(column, initial, initial, 0.5rem);
+    @include display-flex(column, initial, initial, 0.25rem);
 }

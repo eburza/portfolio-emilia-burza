@@ -10,15 +10,15 @@ export default function Footer() {
                     <NavigationLinks 
                         NavClassName="navigation-footer-links"/>
                     <div className='footer-dev-info'>
-                        <p>Designed and Developed with </p>
+                        <p className='text-paragraph-s'>Designed and Developed with </p>
                         <img src={Heart} className='footer-heart-img'/>
-                        <p> by Emilia</p>
+                        <p className='text-paragraph-s'> by Emilia</p>
                     </div>
                 </div>
                 <div className='personal-card'>
-                    <h2 className='card-title'>Say hey!</h2>
-                    <p className='card-phone'>+48 782 640 208</p>
-                    <p className='card-email'>emila.burza@gmail.com</p>
+                    <h2 className='heading-s card-title'>Say hey!</h2>
+                    <p className='text-paragraph-s card-phone'>+48 782 640 208</p>
+                    <p className='text-paragraph-s card-email'>emila.burza@gmail.com</p>
                     <SocialLinks />
                 </div>
             </div>
