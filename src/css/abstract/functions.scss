@@ -1,65 +1,13 @@
-/* FONTS */
-@mixin font {
-    color: #000;
-    font-family: Inter;
-    font-style: normal;
-    margin: 0;
+// Media query mixins
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
 }
-
-@mixin text-navigation {
-    line-height: 1.6rem;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-@mixin heading-l {
-    font-size: 3.75rem;
-    font-weight: 600;
-    line-height: 4rem;
-}
-
-@mixin heading-m {
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 3.5rem;
-}
-
-@mixin heading-s {
-    font-size: 1.75rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-}
-
-@mixin text-paragraph {
-    color: #444;
-    font-size: 1.75rem;
-    font-weight: 400;
-}
-
-@mixin text-skills {
-    color: #444;
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.936rem;
-}
-
-/* COLORS */
-$white: #fff;
-$black: #000;
-$grey-dark: #444444;
-$old-lace: #F8F3EB;
-$floral-white: #FCFAF7;
-$elusive: #FEDED2;
-$pastel-pink: #FFC1DE;
-$water: #DAF6FF;
-$linear: linear-gradient(180deg, #F8F3EB 0%, #FCFAF7 15.78%, #FCFAF7 100%);
-
-/* DISPLAY */
-@mixin display-flex($direction, $justyfy, $align, $gap){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justyfy;
-    align-items: $align;
-    gap: $gap;
+  
+// Font size calculation function
+@function calc-responsive-size($size, $scale) {
+    @return $size * $scale;
 }
