@@ -26,8 +26,8 @@ export default function Projects() {
     return(
         <div className='projects-content' id='projects'>
             <div className='project-text-container'>
-                <h1 className='head-title underscore-water'>Projects</h1>
-                <p className='projects-intro-text'>
+                <h1 className='heading-l underscore-water'>Projects</h1>
+                <p className='text-paragraph projects-intro-text'>
                     Explore my frontend development projects built with React.js 
                     and modern web technologies. These works demonstrate my focus 
                     on creating responsive user interfaces and interactive web applications, 
@@ -35,13 +35,27 @@ export default function Projects() {
                 </p>
             </div>
             <section className='projects-list'>
-                <Swiper
-                    ref={swiperRef}
-                    modules={[Navigation, Mousewheel]}
-                    slidesPerView={3}
-                    spaceBetween={0}
-                    mousewheel={true}
-                >
+            <Swiper
+        ref={swiperRef}
+        modules={[Navigation, Mousewheel]}
+        slidesPerView={3}          // Try fixed value first
+        spaceBetween={30}
+        mousewheel={true}
+        breakpoints={{
+            0: {                   // Start from 0 to catch all cases
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1440: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }}
+    >
                     {projectList.map(project => (
                         <SwiperSlide key={project.id}>
                             <ProjectListElement 
@@ -60,13 +74,13 @@ export default function Projects() {
                     className='previous-project project-list-button'
                     onClick={handlePrevClick}
                 >
-                    <img src={ArrowButton} alt="Previous"/>
+                    <img src={ArrowButton} alt="Previous" className='project-list-button-img'/>
                 </button>
                 <button 
                     className='next-project project-list-button'
                     onClick={handleNextClick}
                 >
-                    <img src={ArrowButton} alt="Next"/>
+                    <img src={ArrowButton} alt="Next" className='project-list-button-img'/>
                 </button>
             </div>
         </div>
