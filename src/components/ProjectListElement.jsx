@@ -5,7 +5,7 @@ export default function ProjectListElement({name, image, imageAlt, summary, tags
     return(
         <div className='project-preview'>
             <img src={image} alt={imageAlt} className='project-preview-img'/>
-            <h2 className='heading-m'>{name}</h2>
+            <h2 className='heading-s'>{name}</h2>
             <p className='text-paragraph-s project-preview-summary'>{summary}</p>
             <ProjectListTechElements 
                 projectTgas={tags}

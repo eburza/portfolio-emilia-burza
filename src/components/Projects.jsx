@@ -2,7 +2,7 @@ import ProjectListElement from './ProjectListElement'
 import { projectList } from '../data/projectsList'
 import ArrowButton from '../assets/arrow-button.svg'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Mousewheel } from 'swiper/modules'
+import { Mousewheel } from 'swiper/modules'
 import 'swiper/css/navigation'
 import 'swiper/css'
 import { useRef } from 'react'
@@ -35,27 +35,24 @@ export default function Projects() {
                 </p>
             </div>
             <section className='projects-list'>
-            <Swiper
-        ref={swiperRef}
-        modules={[Navigation, Mousewheel]}
-        slidesPerView={3}          // Try fixed value first
-        spaceBetween={30}
-        mousewheel={true}
-        breakpoints={{
-            0: {                   // Start from 0 to catch all cases
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            1440: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            }
-        }}
-    >
+                <Swiper
+                    ref={swiperRef}
+                    modules={[Mousewheel]}
+                    slidesPerView={3}       
+                    spaceBetween={0}
+                    mousewheel={true}
+                    breakpoints={{
+                        0: {                  
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1440: {
+                            slidesPerView: 3,
+                        }
+                    }}
+                >
                     {projectList.map(project => (
                         <SwiperSlide key={project.id}>
                             <ProjectListElement 
