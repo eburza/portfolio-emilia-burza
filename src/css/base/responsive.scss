@@ -90,42 +90,63 @@
 .about-content {
     @extend %section-padding;
 
+    .about-wrapper {
+        display: grid;
+        grid-template-columns: 18rem auto;
+        gap: 2rem;
+        grid-template-areas: 
+            "image text1"
+            "text2 text2";
+        
+        .about-img {
+            grid-area: image;
+            align-self: start;
+        }
+        
+        .text-1 {
+            grid-area: text1;
+        }
+        
+        .text-2 {
+            grid-area: text2;
+        }
+    }    
+
     @include respond-to(desktop) {
-        padding: 3rem 5rem;
+        .about-wrapper {
+            gap: 1.5rem;
+        }
     }
 
     @include respond-to(tablet) {
-        padding: 2rem;
       
         .about-wrapper {
-            flex-direction: column;
-            text-align: center;
-            gap: 1.5rem;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "image"
+            "text1"
+            "text2";
         }
-      
+        
         .about-img {
+            justify-self: center;
             width: 12rem;
-            align-self: center;
         }
-
-        .about-text-container {
-            @include display-flex(column, center, center, 1.5rem);
+        
+        .text-1,
+        .text-2 {
+            text-align: center;
         }
     }
 
     @include respond-to(mobile) {
-        padding: 1.5rem;
 
         .about-img {
             display: none;
         }
-      
-        .text-paragraph {
-            @include text-paragraph;
-        }
 
-        .about-text-container {
-            @include display-flex(column, center, start, 1rem);
+        .about-wrapper {
+            margin-top: 0;
         }
     }
 }

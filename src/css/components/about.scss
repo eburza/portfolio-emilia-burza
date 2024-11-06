@@ -4,14 +4,9 @@
 
 .about-wrapper {
     margin-top: 2rem;
-    @include display-flex(initial, center, center, 2rem);
-}
-
-.about-text-container {
-    @include display-flex(column, center, center, 2rem);
 }
 
 .about-img {
-    align-self: flex-start;
-    width: 16rem;
+    width: 100%;
+    max-width: 16rem;
 }

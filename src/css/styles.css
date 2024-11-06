@@ -156,72 +156,47 @@
   }
 }
 
+.about-content .about-wrapper {
+  display: grid;
+  grid-template-columns: 18rem auto;
+  gap: 2rem;
+  grid-template-areas: "image text1" "text2 text2";
+}
+.about-content .about-wrapper .about-img {
+  grid-area: image;
+  align-self: start;
+}
+.about-content .about-wrapper .text-1 {
+  grid-area: text1;
+}
+.about-content .about-wrapper .text-2 {
+  grid-area: text2;
+}
 @media screen and (max-width: 1440px) {
-  .about-content {
-    padding: 3rem 5rem;
+  .about-content .about-wrapper {
+    gap: 1.5rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-content {
-    padding: 2rem;
-  }
   .about-content .about-wrapper {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text1" "text2";
   }
   .about-content .about-img {
+    justify-self: center;
     width: 12rem;
-    align-self: center;
   }
-  .about-content .about-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+  .about-content .text-1,
+  .about-content .text-2 {
+    text-align: center;
   }
 }
 @media screen and (max-width: 390px) {
-  .about-content {
-    padding: 1.5rem;
-  }
   .about-content .about-img {
     display: none;
   }
-  .about-content .text-paragraph {
-    color: #444;
-    font-size: 1.75rem;
-    font-weight: 400;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 1920px) {
-  .about-content .text-paragraph {
-    font-size: 1.925rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 1440px) {
-  .about-content .text-paragraph {
-    font-size: 1.75rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 768px) {
-  .about-content .text-paragraph {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 390px) {
-  .about-content .text-paragraph {
-    font-size: 1.1375rem;
-  }
-}
-@media screen and (max-width: 390px) {
-  .about-content .about-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 1rem;
+  .about-content .about-wrapper {
+    margin-top: 0;
   }
 }
 
@@ -787,24 +762,11 @@ body {
 
 .about-wrapper {
   margin-top: 2rem;
-  display: flex;
-  flex-direction: initial;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.about-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
 }
 
 .about-img {
-  align-self: flex-start;
-  width: 16rem;
+  width: 100%;
+  max-width: 16rem;
 }
 
 .skills-and-tools {
