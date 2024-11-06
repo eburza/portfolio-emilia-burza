@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @include font;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+.portfolio-website {
+    @include display-flex(column, center, initial, initial);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+button {
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
