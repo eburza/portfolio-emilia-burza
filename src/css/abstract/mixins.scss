@@ -198,6 +198,8 @@
     }
 }
 
+/* BUTTONS ARROW */
+
 @mixin project-preview-button-img {
     width: 2.5rem;
     
@@ -239,6 +241,7 @@
     }
 }
 
+/* IMAGES */
 @mixin project-preview-tag-img {
     height: 2rem;
     
@@ -306,4 +309,21 @@
     justify-content: $justyfy;
     align-items: $align;
     gap: $gap;
+}
+
+/* PADDING */
+@mixin section-padding($vertical: 6rem, $horizontal: 12rem) {
+    padding: $vertical $horizontal;
+
+    @include respond-to(desktop) {
+        padding: calc($vertical * 0.84) calc($horizontal * 0.84);
+    }
+    
+    @include respond-to(tablet) {
+        padding: calc($vertical * 0.67) calc($horizontal * 0.3);
+    }
+    
+    @include respond-to(mobile) {
+        padding: calc($vertical * 0.5) calc($horizontal * 0.17);
+    }
 }

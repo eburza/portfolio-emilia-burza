@@ -47,6 +47,8 @@
 
 // Hero section
 .hero {
+    @extend %section-padding;
+
     @include respond-to(desktop) {
         height: 60vh;
         margin-top: 5rem;
@@ -86,6 +88,8 @@
 
 // About section
 .about-content {
+    @extend %section-padding;
+
     @include respond-to(desktop) {
         padding: 3rem 5rem;
     }
@@ -96,31 +100,41 @@
         .about-wrapper {
             flex-direction: column;
             text-align: center;
+            gap: 1.5rem;
         }
       
         .about-img {
             width: 12rem;
             align-self: center;
         }
+
+        .about-text-container {
+            @include display-flex(column, center, center, 1.5rem);
+        }
     }
 
     @include respond-to(mobile) {
         padding: 1.5rem;
+
+        .about-img {
+            display: none;
+        }
       
         .text-paragraph {
             @include text-paragraph;
+        }
+
+        .about-text-container {
+            @include display-flex(column, center, start, 1rem);
         }
     }
 }
 
 // Skills and Tools
 .skills-and-tools {
-    @include respond-to(desktop) {
-        padding: 3rem 5rem;
-    }
+    @extend %section-padding;
 
     @include respond-to(tablet) {
-        padding: 2rem;
       
         .skills-section {
             grid-template-columns: 1fr;
@@ -138,7 +152,6 @@
     } 
 
     @include respond-to(mobile) {
-        padding: 1.5rem;
       
         .skill-item {
             width: 5.5rem;
@@ -146,23 +159,25 @@
             img {
                 height: 3rem;
             }
-          
-            p {
-                @include text-skills;
-            }
         }
     }
 }
 
 // Projects section
 .projects-content {
+    @extend %section-padding;
+    
     .projects-list {
         width: 90%;
         max-width: 75rem;
-
+        
         @include respond-to(tablet) {
             width: 95%;
             overflow: visible;
+
+            .swiper {
+                padding: 0.5rem;
+            }
         }
 
         @include respond-to(mobile) {
@@ -204,12 +219,14 @@
 
 // Footer
 footer {
+    @extend %section-padding;
+
     @include respond-to(desktop) {
-        padding: 3rem 5rem;
+        // padding: 3rem 5rem;
     }
 
     @include respond-to(tablet) {
-        padding: 2rem;
+        // padding: 2rem;
       
         .footer-content {
             grid-template-columns: 1fr;
@@ -221,10 +238,27 @@ footer {
     }
 
     @include respond-to(mobile) {
-        padding: 1.5rem;
+        // padding: 1.5rem;
       
         .personal-card {
             padding: 1.5rem;
         }
+    }
+}
+
+// Padding
+%section-padding {
+    padding: 6rem 12rem;
+
+    @include respond-to(desktop) {
+        padding: 5.04rem 10.08rem;
+    }
+    
+    @include respond-to(tablet) {
+        padding: 4.02rem 3.6rem;
+    }
+    
+    @include respond-to(mobile) {
+        padding: 3rem 2.04rem;
     }
 }
