@@ -1,11 +1,11 @@
-@import 'functions.scss';
-@import 'underscore.scss';
-@import 'navigation.scss';
-@import 'hero.scss';
-@import 'about.scss';
-@import 'skills-and-tools';
-@import 'projects';
-@import 'footer';
+@import 'abstract/functions.scss';
+@import 'design-elements/underscore.scss';
+@import 'components/navigation.scss';
+@import 'components/hero.scss';
+@import 'components/about.scss';
+@import 'components/skills-and-tools.scss';
+@import 'components/projects.scss';
+@import 'components/footer.scss';
 
 // base
 * {

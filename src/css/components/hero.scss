@@ -1,4 +1,4 @@
-@import 'functions.scss';
+@import '../abstract/functions.scss';
 
 .hero {
     @include display-flex(row, center, center, initial);
