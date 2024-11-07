@@ -43,93 +43,58 @@
   }
 }
 
+.hero {
+  height: 70vh;
+}
+.hero .hero-text {
+  padding-left: 10rem;
+  margin-top: -4rem;
+}
+.hero .hero-img {
+  padding-right: 10rem;
+}
 @media screen and (max-width: 1440px) {
   .hero {
-    height: 60vh;
-    margin-top: 5rem;
+    height: 68vh;
+  }
+  .hero .hero-container {
+    margin-top: 2rem;
+  }
+  .hero .hero-text {
+    padding-left: 8rem;
+    margin-top: -8rem;
+  }
+  .hero .hero-img {
+    padding-right: 8rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .hero {
-    height: auto;
+  .hero .hero-container {
+    display: flex;
     flex-direction: column;
-    padding: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
   }
   .hero .hero-text {
+    margin-top: -4rem;
     position: relative;
-    padding: 2rem;
+    padding-left: 0;
     text-align: center;
   }
   .hero .hero-img {
     position: relative;
-    width: 100%;
+    width: 75%;
     height: auto;
-    padding: 2rem;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 390px) {
   .hero {
-    padding: 2rem 1rem;
+    height: 50vh;
   }
-  .hero .heading-xl {
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 4.75rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 1920px) {
-  .hero .heading-xl {
-    font-size: 4.4rem;
-    line-height: 5.225rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 1440px) {
-  .hero .heading-xl {
-    font-size: 4rem;
-    line-height: 4.75rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 768px) {
-  .hero .heading-xl {
-    font-size: 3.2rem;
-    line-height: 3.8rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 390px) {
-  .hero .heading-xl {
-    font-size: 2.6rem;
-    line-height: 3.0875rem;
-  }
-}
-@media screen and (max-width: 390px) {
-  .hero .heading-s {
-    font-size: 1.75rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 1920px) {
-  .hero .heading-s {
-    font-size: 1.925rem;
-    line-height: 2.75rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 1440px) {
-  .hero .heading-s {
-    font-size: 1.75rem;
-    line-height: 2.5rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 768px) {
-  .hero .heading-s {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (max-width: 390px) and (max-width: 390px) {
-  .hero .heading-s {
-    font-size: 1.1375rem;
-    line-height: 1.625rem;
+  .hero .hero-img {
+    width: 90%;
   }
 }
 
@@ -223,8 +188,8 @@
 }
 @media screen and (max-width: 768px) and (max-width: 390px) {
   .skills-and-tools .heading-s {
-    font-size: 1.1375rem;
-    line-height: 1.625rem;
+    font-size: 0.975rem;
+    line-height: 1.3rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -439,26 +404,26 @@ body {
 }
 @media screen and (max-width: 1920px) {
   .heading-xl {
-    font-size: 4.4rem;
-    line-height: 5.225rem;
+    font-size: 4.95rem;
+    line-height: 5.5rem;
   }
 }
 @media screen and (max-width: 1440px) {
   .heading-xl {
     font-size: 4rem;
-    line-height: 4.75rem;
+    line-height: 4.5rem;
   }
 }
 @media screen and (max-width: 768px) {
   .heading-xl {
-    font-size: 3.2rem;
-    line-height: 3.8rem;
+    font-size: 3rem;
+    line-height: 3.2rem;
   }
 }
 @media screen and (max-width: 390px) {
   .heading-xl {
-    font-size: 2.6rem;
-    line-height: 3.0875rem;
+    font-size: 1.3rem;
+    line-height: 1.95rem;
   }
 }
 
@@ -487,8 +452,8 @@ body {
 }
 @media screen and (max-width: 390px) {
   .heading-l {
-    font-size: 2.4375rem;
-    line-height: 2.6rem;
+    font-size: 2.1125rem;
+    line-height: 2.275rem;
   }
 }
 
@@ -547,8 +512,8 @@ body {
 }
 @media screen and (max-width: 390px) {
   .heading-s {
-    font-size: 1.1375rem;
-    line-height: 1.625rem;
+    font-size: 0.975rem;
+    line-height: 1.3rem;
   }
 }
 
@@ -763,23 +728,23 @@ body {
 }
 
 .hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: initial;
-  margin-top: 6rem;
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
+  height: 100%;
 }
 
 .hero-text {
   z-index: 2;
   position: absolute;
   left: 0;
-  padding: 2rem 2rem 2rem 10rem;
 }
 
 .hero-img {
@@ -790,7 +755,6 @@ body {
   width: 50%;
   object-fit: contain;
   z-index: 1;
-  padding: 2rem 10rem 2rem 2rem;
 }
 
 .about-content {
