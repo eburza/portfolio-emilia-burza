@@ -212,6 +212,12 @@
     @extend %section-padding;
 
     @include respond-to(tablet) {
+        .project-preview {
+            padding: 0.75rem;
+            box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.10), 
+                        0px 38px 36px 0px rgba(75, 68, 57, 0.10);
+        }
+
         .project-text-container {
             @include display-flex(column, center, center, initial);
 
@@ -227,8 +233,8 @@
         }
 
         .swiper {
-            padding: 0rem;
-            overflow: visible;
+            padding: 0.5rem;
+            // overflow: visible;
         }
 
         .swiper-slide {
@@ -237,6 +243,10 @@
     }    
 
     @include respond-to(mobile) {
+        .project-preview {
+            box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.10), 
+                        0px 30px 30px 0px rgba(75, 68, 57, 0.10);
+        }
 
         .swiper-slide {
             padding-bottom: 3rem;

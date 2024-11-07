@@ -276,6 +276,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .projects-content .project-preview {
+    padding: 0.75rem;
+    box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.1), 0px 38px 36px 0px rgba(75, 68, 57, 0.1);
+  }
   .projects-content .project-text-container {
     display: flex;
     flex-direction: column;
@@ -292,14 +296,16 @@
     overflow: visible;
   }
   .projects-content .swiper {
-    padding: 0rem;
-    overflow: visible;
+    padding: 0.5rem;
   }
   .projects-content .swiper-slide {
     padding-bottom: 4rem;
   }
 }
 @media screen and (max-width: 390px) {
+  .projects-content .project-preview {
+    box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.1), 0px 30px 30px 0px rgba(75, 68, 57, 0.1);
+  }
   .projects-content .swiper-slide {
     padding-bottom: 3rem;
   }
@@ -919,6 +925,14 @@ body {
   max-width: 75rem;
   margin: 2rem auto;
   position: relative;
+  overflow: visible;
+}
+
+.projects-swiper {
+  width: 100%;
+  overflow: visible;
+  padding: 1rem;
+  margin: -1rem;
 }
 
 .swiper {
