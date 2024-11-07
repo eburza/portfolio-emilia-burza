@@ -1,20 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
-import BannerMain from './components/BannerMain'
-import About from './components/About'
-import SkillsAndTools from './components/SkillsAndTools'
-import Projects from './components/Projects'
+import Home from './Home';
+import ProjectPage from './components/ProjectPage';
 import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className='portfolio-website'>
-      <Navbar />
-      <BannerMain />
-      <About />
-      <SkillsAndTools />
-      <Projects />
-      <Footer />
-    </div>
+    <Router>
+      <div className='portfolio-website'>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
