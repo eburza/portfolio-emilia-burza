@@ -3,18 +3,8 @@ footer {
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-self: center;
-    gap: 2rem;
     width: 90%;
     max-width: 75rem;
-}
-
-.footer-info {
-    @include display-flex(column, space-between, flex-start, initial);
-    height: 100%;
-    grid-column: 1/ span 2;
 }
 
 .personal-card {
@@ -56,9 +46,4 @@ footer {
     img {
         @include footer-heart-img;
     }
-}
-
-.navigation-footer-links {
-    padding: 0;
-    @include display-flex(column, initial, initial, 0.25rem);
 }

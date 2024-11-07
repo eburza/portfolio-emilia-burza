@@ -305,17 +305,62 @@
   }
 }
 
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  grid-template-areas: "navigation card" "info card";
+}
+footer .footer-content .personal-card {
+  grid-area: card;
+}
+footer .footer-content .footer-navigation {
+  grid-area: navigation;
+}
+footer .footer-content .footer-dev-info {
+  grid-area: info;
+}
+footer .personal-card {
+  justify-self: center;
+  align-self: start;
+}
+footer .footer-navigation {
+  justify-self: start;
+  align-self: start;
+}
+footer .footer-dev-info {
+  justify-self: start;
+  align-self: end;
+}
+footer .navigation-footer-links {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: 1rem;
+}
 @media screen and (max-width: 768px) {
   footer .footer-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    grid-template-areas: "navigation" "card" "info";
   }
-  footer .footer-info {
-    grid-column: auto;
-  }
-}
-@media screen and (max-width: 390px) {
   footer .personal-card {
-    padding: 1.5rem;
+    justify-self: center;
+  }
+  footer .footer-navigation {
+    justify-self: center;
+  }
+  footer .footer-dev-info {
+    justify-self: center;
+  }
+  footer .navigation-footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: initial;
+    gap: 3.5rem;
   }
 }
 
@@ -1023,22 +1068,8 @@ footer {
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-self: center;
-  gap: 2rem;
   width: 90%;
   max-width: 75rem;
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: initial;
-  height: 100%;
-  grid-column: 1/span 2;
 }
 
 .personal-card {
@@ -1132,15 +1163,6 @@ footer {
   .footer-dev-info img {
     height: 1.1375rem;
   }
-}
-
-.navigation-footer-links {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: initial;
-  align-items: initial;
-  gap: 0.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,14 +6,14 @@ export default function Footer() {
     return(
         <footer>
             <div className='footer-content'>
-                <div className='footer-info'>
+                <div className='footer-navigation'>
                     <NavigationLinks 
                         NavClassName="navigation-footer-links"/>
-                    <div className='footer-dev-info'>
-                        <p className='text-paragraph-s'>Designed and Developed with </p>
-                        <img src={Heart} className='footer-heart-img'/>
-                        <p className='text-paragraph-s'> by Emilia</p>
-                    </div>
+                </div>
+                <div className='footer-dev-info'>
+                    <p className='text-paragraph-s'>Designed and Developed with </p>
+                    <img src={Heart} className='footer-heart-img'/>
+                    <p className='text-paragraph-s'> by Emilia</p>
                 </div>
                 <div className='personal-card'>
                     <h2 className='heading-s card-title'>Say hey!</h2>

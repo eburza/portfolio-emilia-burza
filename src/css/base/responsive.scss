@@ -248,28 +248,75 @@
 footer {
     @extend %section-padding;
 
-    @include respond-to(desktop) {
-        // padding: 3rem 5rem;
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        grid-template-areas: 
+            "navigation card"
+            "info card";
+
+        .personal-card {
+            grid-area: card;
+        }
+
+        .footer-navigation {
+            grid-area: navigation;
+        }
+
+        .footer-dev-info {
+            grid-area: info;
+
+        }
+    }
+
+    .personal-card {
+        justify-self: center;
+        align-self: start;
+    }
+
+    .footer-navigation {
+        justify-self: start;
+        align-self: start;
+    }
+
+    .footer-dev-info {
+        justify-self: start;
+        align-self: end;
+    }
+
+    .navigation-footer-links {
+        padding: 0;
+        @include display-flex(column, initial, initial, 1rem);
     }
 
     @include respond-to(tablet) {
-        // padding: 2rem;
       
         .footer-content {
             grid-template-columns: 1fr;
+            gap: 2rem;
+            grid-template-areas: 
+                "navigation" 
+                "card"
+                "info";
         }
-      
-        .footer-info {
-            grid-column: auto;
-        }
-    }
-
-    @include respond-to(mobile) {
-        // padding: 1.5rem;
-      
+    
         .personal-card {
-            padding: 1.5rem;
+            justify-self: center;
         }
+    
+        .footer-navigation {
+            justify-self: center;
+        }
+    
+        .footer-dev-info {
+            justify-self: center;
+        }
+
+        .navigation-footer-links {
+            @include display-flex(row, initial, initial, 3.5rem);
+        }
+      
     }
 }
 
