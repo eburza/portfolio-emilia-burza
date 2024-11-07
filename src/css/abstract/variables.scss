@@ -12,9 +12,9 @@ $linear: linear-gradient(180deg, #F8F3EB 0%, #FCFAF7 15.78%, #FCFAF7 100%);
 
 /* BREAKPOINTS */
 $breakpoints: (
-  mobile: 390px,
-  tablet: 768px,
-  desktop: 1440px,
+  mobile: 690px, //390px
+  tablet: 1350px,//768px
+  desktop: 1650px,
   large: 1920px
 );
 

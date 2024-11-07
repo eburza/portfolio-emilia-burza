@@ -27,56 +27,42 @@
 // Hero section
 .hero {
     @extend %section-padding;
-    height: 70vh;
+    min-height: 700px;
 
     .hero-text {
-        padding-left: 10rem;
-        margin-top: -4rem;
-    }
-
-    .hero-img {
-        padding-right: 10rem;
+        margin-top: 6rem;
     }
 
     @include respond-to(desktop) {
-        height: 68vh;
+        min-height: 550px;
 
-        .hero-container {
-            margin-top: 2rem;
-        }
-        
         .hero-text {
-            padding-left: 8rem;
-            margin-top: -8rem;
-        }
-    
-        .hero-img {
-            padding-right: 8rem;
+            margin-top: 3rem;
         }
     }
 
     @include respond-to(tablet) {
+        min-height: 600px;
+        
         .hero-container {
-            @include display-flex(column, center, center, 1.5rem);;
+            @include display-flex(column, center, center, 1.5rem);
         }
       
         .hero-text {
-            margin-top: -4rem;
-            position: relative;
-            padding-left: 0;
+            margin-top: 0;
+            width: 100%;
             text-align: center;
+            position: relative;
         }
       
         .hero-img {
+            width: 70%;
             position: relative;
-            width: 75%;
-            height: auto;
-            padding-right: 0;
         }
     }
 
     @include respond-to(mobile) {
-        height: 50vh;
+        min-height: 400px;
 
         .hero-img {
             width: 90%;
