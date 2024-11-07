@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import ProjectListTechElements from './ProjectListTechElements'
 import ArrowButton from '../assets/arrow-button.svg'
 
-export default function ProjectListElement({name, image, imageAlt, summary, tags}) {
+export default function ProjectListElement({id, name, image, imageAlt, summary, tags}) {
     return(
         <div className='project-preview'>
             <img src={image} alt={imageAlt} className='project-preview-img'/>
@@ -10,7 +11,9 @@ export default function ProjectListElement({name, image, imageAlt, summary, tags
             <ProjectListTechElements 
                 projectTgas={tags}
             />
-            <button className='project-preview-button'><img src={ArrowButton} className='project-preview-button-img'/></button>
+            <Link to={`/project/${id}`}>
+                <button className='project-preview-button'><img src={ArrowButton} className='project-preview-button-img'/></button>
+            </Link>
         </div>
     )
 }
