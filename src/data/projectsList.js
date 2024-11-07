@@ -7,7 +7,17 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['react', 'javascript', 'sass']
+        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
+        tags: ['react', 'javascript', 'sass'],
+        liveLink: 'https://project1.com',
+        githubLink: 'https://github.com/username/project1',
+        images: [
+            {
+                src: ImagePlaceholder,
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ]
     },
     {
         name: 'Project 2',
@@ -15,7 +25,17 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['react', 'javascript', 'sass']
+        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
+        tags: ['react', 'javascript', 'sass'],
+        liveLink: 'https://project1.com',
+        githubLink: 'https://github.com/username/project1',
+        images: [
+            {
+                src: ImagePlaceholder,
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ]
     },
     {
         name: 'Project 3',
@@ -23,7 +43,17 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['react', 'javascript', 'sass']
+        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
+        tags: ['react', 'javascript', 'sass'],
+        liveLink: 'https://project1.com',
+        githubLink: 'https://github.com/username/project1',
+        images: [
+            {
+                src: ImagePlaceholder,
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ]
     },
     {
         name: 'Project 4',
@@ -31,7 +61,17 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['react', 'javascript', 'sass']
+        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
+        tags: ['react', 'javascript', 'sass'],
+        liveLink: 'https://project1.com',
+        githubLink: 'https://github.com/username/project1',
+        images: [
+            {
+                src: ImagePlaceholder,
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ]
     },
     {
         name: 'Project 5',
@@ -39,7 +79,17 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['react', 'javascript', 'sass']
+        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
+        tags: ['react', 'javascript', 'sass'],
+        liveLink: 'https://project1.com',
+        githubLink: 'https://github.com/username/project1',
+        images: [
+            {
+                src: ImagePlaceholder,
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ]
     },
     {
         name: 'Project 6',
@@ -47,7 +97,17 @@ const projectList = [
         img: ImagePlaceholder,
         imgAlt: 'img alt text example',
         summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        tags: ['react', 'javascript', 'sass']
+        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
+        tags: ['react', 'javascript', 'sass'],
+        liveLink: 'https://project1.com',
+        githubLink: 'https://github.com/username/project1',
+        images: [
+            {
+                src: ImagePlaceholder,
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ]
     },
 ]
 
