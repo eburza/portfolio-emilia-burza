@@ -1,6 +1,5 @@
 .navigation-bar {
-    @include display-flex(initial, space-between, center, initial);
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 100rem;
     border-top: 1px solid #FFF;
     background: rgba(255, 255, 255, 0.70);

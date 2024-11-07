@@ -1,5 +1,7 @@
 // Navigation
 .navigation-bar {
+    @include display-flex(initial, space-between, center, initial);
+
     @include respond-to(tablet) {
         width: 95%;
         padding: 0.5rem 1rem;
@@ -10,17 +12,33 @@
       
         .navigation-bar-links {
             gap: 1rem;
-            @include text-navigation;
         }
     }
 
-    @include respond-to(mobile) {
+    @include respond-to(mobile) { 
         width: 100%;
-        padding: 0.5rem;
-      
-        .navigation-bar-links {
-            display: none;
+        display: grid;
+        gap: 0.75rem;
+        grid-template-areas: 
+        "logo logo"
+        "links button";
+
+        .logo {
+            grid-area: logo;
+            justify-self: center;
         }
+
+        .resume-button {
+            grid-area: button;
+            justify-self: start;
+        }
+
+        .navigation-bar-links {
+            grid-area: links;
+            justify-self: end;
+            @include display-flex(row, space-evenly, center, 2rem);
+        }
+        
     }
 }
 
