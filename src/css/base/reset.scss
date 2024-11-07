@@ -28,6 +28,10 @@ button {
     background: none;
 }
 
+.resume-button:hover {
+    background-color: $pastel-pink;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -35,4 +39,9 @@ a {
 
 ul, ol {
     list-style: none;
+}
+
+ul a:hover {
+    border-bottom: 2px solid $pastel-pink;
+    cursor: pointer;
 }

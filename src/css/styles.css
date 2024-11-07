@@ -427,6 +427,10 @@ button {
   background: none;
 }
 
+.resume-button:hover {
+  background-color: #FFC1DE;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -434,6 +438,11 @@ a {
 
 ul, ol {
   list-style: none;
+}
+
+ul a:hover {
+  border-bottom: 2px solid #FFC1DE;
+  cursor: pointer;
 }
 
 :root {
