@@ -6,29 +6,6 @@
 /* IMAGES */
 /* DISPLAY */
 /* PADDING */
-@media screen and (max-width: 1920px) {
-  .portfolio-website {
-    max-width: 1800px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .portfolio-website {
-    max-width: 1360px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .portfolio-website {
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-}
-@media screen and (max-width: 390px) {
-  .portfolio-website {
-    padding: 0 0.5rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .navigation-bar {
     width: 95%;
