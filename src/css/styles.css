@@ -178,6 +178,13 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: initial;
+  }
   .about-content .about-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas: "image" "text1" "text2";
@@ -201,9 +208,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .skills-and-tools .skills-head-title {
+    align-self: center;
+  }
+  .skills-and-tools .skill-section-container {
+    padding: 1rem;
+  }
   .skills-and-tools .skills-section {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 1.25rem;
   }
   .skills-and-tools .heading-s {
     text-align: center;
@@ -238,15 +252,26 @@
 }
 @media screen and (max-width: 768px) {
   .skills-and-tools .skills-grid {
+    gap: 1.5rem 2rem;
     justify-content: center;
+    padding: 0rem;
+  }
+  .skills-and-tools .skill-item {
+    width: 4.8rem;
   }
 }
 @media screen and (max-width: 390px) {
-  .skills-and-tools .skill-item {
-    width: 5.5rem;
+  .skills-and-tools .skill-section-container {
+    padding: 0.7rem;
   }
-  .skills-and-tools .skill-item img {
-    height: 3rem;
+  .skills-and-tools .skills-section {
+    padding: 1rem;
+  }
+  .skills-and-tools .skills-grid {
+    gap: 1.5rem 1.15rem;
+  }
+  .skills-and-tools .skill-item {
+    width: 3.5rem;
   }
 }
 
@@ -781,6 +806,15 @@ body {
   align-self: flex-start;
 }
 
+.skill-section-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  border: solid 4px #FEDED2;
+  width: 90%;
+  max-width: 75rem;
+}
+
 .skills-section {
   display: grid;
   grid-template-columns: 10rem auto;
@@ -808,9 +842,31 @@ body {
   align-self: flex-start;
   width: 7.25rem;
 }
-
 .skill-item img {
   height: 4rem;
+}
+@media screen and (max-width: 1920px) {
+  .skill-item img {
+    height: 4.4rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .skill-item img {
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skill-item img {
+    height: 3.2rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .skill-item img {
+    height: 2.6rem;
+  }
+}
+
+.skill-item-img {
   align-items: start;
 }
 
@@ -819,16 +875,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-self: flex-start;
-  gap: 2rem 1.25rem;
-}
-
-.skill-section-container {
-  margin-top: 2rem;
-  padding: 2rem;
-  border-radius: 2.5rem;
-  border: solid 4px #FEDED2;
-  width: 90%;
-  max-width: 75rem;
+  gap: 2rem;
 }
 
 .projects-content {

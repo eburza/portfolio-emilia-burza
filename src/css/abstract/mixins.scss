@@ -302,6 +302,26 @@
     }
 }
 
+@mixin skill-item-img {
+    height: 4rem;
+    
+    @include respond-to(large) {
+        height: calc-responsive-size(4rem, map-get($scale-factors, large));
+    }
+    
+    @include respond-to(desktop) {
+        height: calc-responsive-size(4rem, map-get($scale-factors, desktop));
+    }
+    
+    @include respond-to(tablet) {
+        height: calc-responsive-size(4rem, map-get($scale-factors, tablet));
+    }
+    
+    @include respond-to(mobile) {
+        height: calc-responsive-size(4rem, map-get($scale-factors, mobile));
+    }
+}
+
 /* DISPLAY */
 @mixin display-flex($direction, $justyfy, $align, $gap){
     display: flex;

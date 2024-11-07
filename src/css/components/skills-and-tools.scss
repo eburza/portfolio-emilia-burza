@@ -6,6 +6,15 @@
     align-self: flex-start;
 }
 
+.skill-section-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    border: solid 4px $elusive;
+    width: 90%;
+    max-width: 75rem;
+}
+
 .skills-section {
     display: grid;
     grid-template-columns: 10rem auto;
@@ -28,10 +37,12 @@
     @include display-flex(column, center, center, 1rem);
     align-self: flex-start;
     width: 7.25rem;
+    img {
+        @include skill-item-img;
+    }
 }
 
-.skill-item img {
-    height: 4rem;
+.skill-item-img {
     align-items: start;
 }
 
@@ -40,14 +51,5 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-self: flex-start;
-    gap:  2rem 1.25rem;
-}
-
-.skill-section-container {
-    margin-top: 2rem;
-    padding: 2rem;
-    border-radius: 2.5rem;
-    border: solid 4px $elusive;
-    width: 90%;
-    max-width: 75rem;
+    gap:  2rem;
 }
