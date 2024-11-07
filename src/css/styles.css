@@ -33,6 +33,7 @@
     grid-template-areas: "logo logo" "links button";
   }
   .navigation-bar .logo {
+    height: 2.25rem;
     grid-area: logo;
     justify-self: center;
   }
@@ -326,6 +327,40 @@ footer .navigation-footer-links {
 @media screen and (max-width: 690px) {
   .hero, .about-content, .skills-and-tools, .projects-content, footer {
     padding: 3rem 2.04rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .portfolio-website .underscore::after {
+    height: 1.5rem;
+  }
+  .portfolio-website .underscore::after {
+    height: 1.5rem;
+  }
+  .portfolio-website .underscore::after {
+    height: 1.5rem;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .portfolio-website .underscore::after {
+    height: 1rem;
+  }
+  .portfolio-website .underscore-water::after {
+    height: 1rem;
+  }
+  .portfolio-website .underscore-elusive::after {
+    height: 1rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .portfolio-website .underscore::after {
+    height: 0.5rem;
+  }
+  .portfolio-website .underscore-water::after {
+    height: 0.5rem;
+  }
+  .portfolio-website .underscore-elusive::after {
+    height: 0.5rem;
   }
 }
 

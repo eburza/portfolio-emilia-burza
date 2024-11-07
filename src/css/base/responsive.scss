@@ -24,6 +24,7 @@
         "links button";
 
         .logo {
+            height: 2.25rem;
             grid-area: logo;
             justify-self: center;
         }
@@ -346,5 +347,51 @@ footer {
     
     @include respond-to(mobile) {
         padding: 3rem 2.04rem;
+    }
+}
+
+//underscore
+.portfolio-website {
+    @include respond-to(large) {
+        .underscore::after {
+            height: 1.5rem;
+        }
+
+        .underscore::after {
+            height: 1.5rem;
+        }
+
+        .underscore::after {
+            height: 1.5rem;
+        }
+    }
+
+    @include respond-to(desktop) {
+        .underscore::after {
+            height: 1rem;
+        }
+
+        .underscore-water::after {
+            height: 1rem;
+        }
+
+        .underscore-elusive::after {
+            height: 1rem;
+        }
+
+    }
+    
+    @include respond-to(mobile) {
+        .underscore::after {
+            height: 0.5rem;
+        }
+
+        .underscore-water::after {
+            height: 0.5rem;
+        }
+
+        .underscore-elusive::after {
+            height: 0.5rem;
+        }
     }
 }
