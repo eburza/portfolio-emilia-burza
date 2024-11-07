@@ -210,53 +210,35 @@
 // Projects section
 .projects-content {
     @extend %section-padding;
-    
-    .projects-list {
-        width: 90%;
-        max-width: 75rem;
-        
-        @include respond-to(tablet) {
 
-            width: 95%;
-            overflow: visible;
+    @include respond-to(tablet) {
+        .project-text-container {
+            @include display-flex(column, center, center, initial);
 
-            .swiper {
-                padding: 0.5rem;
+            .projects-intro-text {
+                text-align: center;
             }
         }
-
-        @include respond-to(mobile) {
-            width: 100%;
-        }
-    }
-
-    .swiper {
-        width: 100%;
-        padding: 1rem;
         
-        @include respond-to(tablet) {
-            padding: 0.5rem;
+        .projects-list {
+            margin-top: 1.25rem;
+            width: 100%;
             overflow: visible;
         }
 
-        @include respond-to(mobile) {
-            padding: 0.25rem;
+        .swiper {
+            padding: 0rem;
+            overflow: visible;
         }
-    }
 
-    .swiper-slide {
-        height: auto;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        padding-bottom: 5rem;
-
-        @include respond-to(tablet) {
+        .swiper-slide {
             padding-bottom: 4rem;
         }
+    }    
 
-        @include respond-to(mobile) {
+    @include respond-to(mobile) {
+
+        .swiper-slide {
             padding-bottom: 3rem;
         }
     }

@@ -12,22 +12,25 @@
 }
 
 .projects-list {
-    width: 100%;
+    width: 90%;
+    max-width: 75rem;
     margin: 2rem auto;
-    padding: 2 4rem;
     position: relative;
 }
 
-.projects-swiper {
+.swiper {
     width: 100%;
-    overflow: visible;
     padding: 1rem;
-    margin: -1rem;
 }
 
 .swiper-slide {
-    padding: 1rem 2.5rem 5rem;
-    padding-bottom: 5rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem 2rem 5rem;
+
 }
 
 .swiper-wrapper {
