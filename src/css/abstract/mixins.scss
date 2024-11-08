@@ -201,22 +201,22 @@
 /* BUTTONS ARROW */
 
 @mixin project-preview-button-img {
-    width: 3.5rem;
+    width: 3rem;
     
     @include respond-to(large) {
-        width: calc-responsive-size(3.5rem, map-get($scale-factors, large));
+        width: calc-responsive-size(3rem, map-get($scale-factors, large));
     }
     
     @include respond-to(desktop) {
-        width: calc-responsive-size(3.5rem, map-get($scale-factors, desktop));
+        width: calc-responsive-size(3rem, map-get($scale-factors, desktop));
     }
     
     @include respond-to(tablet) {
-        width: calc-responsive-size(3.5rem, map-get($scale-factors, tablet));
+        width: calc-responsive-size(3rem, map-get($scale-factors, tablet));
     }
     
     @include respond-to(mobile) {
-        width: calc-responsive-size(3.5rem, map-get($scale-factors, mobile));
+        width: calc-responsive-size(3rem, map-get($scale-factors, mobile));
     }
 }
 
@@ -243,22 +243,22 @@
 
 /* IMAGES */
 @mixin project-preview-tag-img {
-    height: 2.5rem;
+    height: 2rem;
     
     @include respond-to(large) {
-        height: calc-responsive-size(2.5rem, map-get($scale-factors, large));
+        height: calc-responsive-size(2rem, map-get($scale-factors, large));
     }
     
     @include respond-to(desktop) {
-        height: calc-responsive-size(2.5rem, map-get($scale-factors, desktop));
+        height: calc-responsive-size(2rem, map-get($scale-factors, desktop));
     }
     
     @include respond-to(tablet) {
-        height: calc-responsive-size(2.5rem, map-get($scale-factors, tablet));
+        height: calc-responsive-size(2rem, map-get($scale-factors, tablet));
     }
     
     @include respond-to(mobile) {
-        height: calc-responsive-size(2.5rem, map-get($scale-factors, mobile));
+        height: calc-responsive-size(2rem, map-get($scale-factors, mobile));
     }
 }
 
