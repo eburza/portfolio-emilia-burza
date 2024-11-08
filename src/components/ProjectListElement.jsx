@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import ProjectListTechElements from './ProjectListTechElements'
 import ArrowButton from '../assets/arrow-button.svg'
 
