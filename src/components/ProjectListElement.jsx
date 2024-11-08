@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom'
 import ProjectListTechElements from './ProjectListTechElements'
 import ArrowButton from '../assets/arrow-button.svg'
 
-export default function ProjectListElement({id, name, image, imageAlt, summary, tags}) {
+export default function ProjectListElement({id, name, image, imageAlt, description, tags}) {
     return(
         <Link to={`/project/${id}`}>
             <div className='project-preview'>
                 <img src={image} alt={imageAlt} className='project-preview-img'/>
                 <h2 className='heading-s'>{name}</h2>
-                <p className='text-paragraph-s project-preview-summary'>{summary}</p>
+                <p className='text-paragraph-s project-preview-summary'>{description}</p>
                 <ProjectListTechElements 
                     projectTgas={tags}
                 />

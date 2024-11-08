@@ -60,7 +60,7 @@ export default function Projects() {
                                 name={project.name}
                                 image={project.img}
                                 imageAlt={project.imgAlt}
-                                summary={project.summary}
+                                description={project.description}
                                 tags={project.tags}
                             />
                         </SwiperSlide>
