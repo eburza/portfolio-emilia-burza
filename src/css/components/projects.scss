@@ -45,7 +45,7 @@
 }
 
 .project-preview {
-    @include display-flex(column, initial, initial, 0.5rem);
+    @include display-flex(column, initial, initial, 0.75rem);
     width: 100%;
     background-color: $white;
     border-radius: 1rem;
@@ -61,7 +61,9 @@
 }
 
 .project-preview-img {
+    border-radius: 1rem;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .project-preview-summary {

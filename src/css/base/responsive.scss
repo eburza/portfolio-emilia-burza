@@ -247,6 +247,7 @@
 
     @include respond-to(mobile) {
         .project-preview {
+            padding: 2rem;
             box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.10), 
                         0px 30px 30px 0px rgba(75, 68, 57, 0.10);
         }

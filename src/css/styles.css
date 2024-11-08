@@ -245,6 +245,7 @@
 }
 @media screen and (max-width: 690px) {
   .projects-content .project-preview {
+    padding: 2rem;
     box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.1), 0px 30px 30px 0px rgba(75, 68, 57, 0.1);
   }
   .projects-content .swiper-slide {
@@ -931,7 +932,7 @@ body {
   flex-direction: column;
   justify-content: initial;
   align-items: initial;
-  gap: 0.5rem;
+  gap: 0.75rem;
   width: 100%;
   background-color: #fff;
   border-radius: 1rem;
@@ -944,7 +945,9 @@ body {
 }
 
 .project-preview-img {
+  border-radius: 1rem;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .project-preview-summary {
@@ -961,26 +964,26 @@ body {
   margin: 0.75rem 0;
 }
 .project-tags-img img {
-  height: 2rem;
+  height: 2.5rem;
 }
 @media screen and (max-width: 1920px) {
   .project-tags-img img {
-    height: 2.2rem;
+    height: 2.75rem;
   }
 }
 @media screen and (max-width: 1650px) {
   .project-tags-img img {
-    height: 2rem;
+    height: 2.5rem;
   }
 }
 @media screen and (max-width: 1350px) {
   .project-tags-img img {
-    height: 1.6rem;
+    height: 2rem;
   }
 }
 @media screen and (max-width: 690px) {
   .project-tags-img img {
-    height: 1.3rem;
+    height: 1.625rem;
   }
 }
 
@@ -999,51 +1002,51 @@ body {
   align-self: flex-end;
 }
 .project-preview-button img {
-  width: 2.5rem;
-}
-@media screen and (max-width: 1920px) {
-  .project-preview-button img {
-    width: 2.75rem;
-  }
-}
-@media screen and (max-width: 1650px) {
-  .project-preview-button img {
-    width: 2.5rem;
-  }
-}
-@media screen and (max-width: 1350px) {
-  .project-preview-button img {
-    width: 2rem;
-  }
-}
-@media screen and (max-width: 690px) {
-  .project-preview-button img {
-    width: 1.625rem;
-  }
-}
-
-.project-list-button img {
   width: 3.5rem;
-  transition: all 0.3s ease;
 }
 @media screen and (max-width: 1920px) {
-  .project-list-button img {
+  .project-preview-button img {
     width: 3.85rem;
   }
 }
 @media screen and (max-width: 1650px) {
-  .project-list-button img {
+  .project-preview-button img {
     width: 3.5rem;
   }
 }
 @media screen and (max-width: 1350px) {
-  .project-list-button img {
+  .project-preview-button img {
     width: 2.8rem;
   }
 }
 @media screen and (max-width: 690px) {
-  .project-list-button img {
+  .project-preview-button img {
     width: 2.275rem;
+  }
+}
+
+.project-list-button img {
+  width: 34em;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1920px) {
+  .project-list-button img {
+    width: 4.4rem;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .project-list-button img {
+    width: 4rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .project-list-button img {
+    width: 3.2rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .project-list-button img {
+    width: 2.6rem;
   }
 }
 .project-list-button:hover img {

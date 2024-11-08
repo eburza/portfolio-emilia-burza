@@ -201,28 +201,7 @@
 /* BUTTONS ARROW */
 
 @mixin project-preview-button-img {
-    width: 2.5rem;
-    
-    @include respond-to(large) {
-        width: calc-responsive-size(2.5rem, map-get($scale-factors, large));
-    }
-    
-    @include respond-to(desktop) {
-        width: calc-responsive-size(2.5rem, map-get($scale-factors, desktop));
-    }
-    
-    @include respond-to(tablet) {
-        width: calc-responsive-size(2.5rem, map-get($scale-factors, tablet));
-    }
-    
-    @include respond-to(mobile) {
-        width: calc-responsive-size(2.5rem, map-get($scale-factors, mobile));
-    }
-}
-
-@mixin project-list-button-img {
     width: 3.5rem;
-    transition: all 0.3s ease;
     
     @include respond-to(large) {
         width: calc-responsive-size(3.5rem, map-get($scale-factors, large));
@@ -241,24 +220,45 @@
     }
 }
 
-/* IMAGES */
-@mixin project-preview-tag-img {
-    height: 2rem;
+@mixin project-list-button-img {
+    width: 34em;
+    transition: all 0.3s ease;
     
     @include respond-to(large) {
-        height: calc-responsive-size(2rem, map-get($scale-factors, large));
+        width: calc-responsive-size(4rem, map-get($scale-factors, large));
     }
     
     @include respond-to(desktop) {
-        height: calc-responsive-size(2rem, map-get($scale-factors, desktop));
+        width: calc-responsive-size(4rem, map-get($scale-factors, desktop));
     }
     
     @include respond-to(tablet) {
-        height: calc-responsive-size(2rem, map-get($scale-factors, tablet));
+        width: calc-responsive-size(4rem, map-get($scale-factors, tablet));
     }
     
     @include respond-to(mobile) {
-        height: calc-responsive-size(2rem, map-get($scale-factors, mobile));
+        width: calc-responsive-size(4rem, map-get($scale-factors, mobile));
+    }
+}
+
+/* IMAGES */
+@mixin project-preview-tag-img {
+    height: 2.5rem;
+    
+    @include respond-to(large) {
+        height: calc-responsive-size(2.5rem, map-get($scale-factors, large));
+    }
+    
+    @include respond-to(desktop) {
+        height: calc-responsive-size(2.5rem, map-get($scale-factors, desktop));
+    }
+    
+    @include respond-to(tablet) {
+        height: calc-responsive-size(2.5rem, map-get($scale-factors, tablet));
+    }
+    
+    @include respond-to(mobile) {
+        height: calc-responsive-size(2.5rem, map-get($scale-factors, mobile));
     }
 }
 
