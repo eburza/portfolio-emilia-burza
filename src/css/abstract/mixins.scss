@@ -43,8 +43,8 @@
     }
 
     @include respond-to(mobile) {
-        font-size: calc-responsive-size(4rem, map-get($scale-factors, mobile));
-        line-height: calc-responsive-size(4.5rem, map-get($scale-factors, mobile));
+        font-size: calc-responsive-size(3.75rem, map-get($scale-factors, mobile));
+        line-height: calc-responsive-size(4.25rem, map-get($scale-factors, mobile));
     }
 }
 

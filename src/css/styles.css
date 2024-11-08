@@ -333,13 +333,13 @@ footer .navigation-footer-links {
 
 @media screen and (max-width: 1920px) {
   .portfolio-website .underscore::after {
-    height: 1.5rem;
+    height: 1.25rem;
   }
   .portfolio-website .underscore::after {
-    height: 1.5rem;
+    height: 1.25rem;
   }
   .portfolio-website .underscore::after {
-    height: 1.5rem;
+    height: 1.25rem;
   }
 }
 @media screen and (max-width: 1650px) {
@@ -460,8 +460,8 @@ body {
 }
 @media screen and (max-width: 690px) {
   .heading-xl {
-    font-size: 2.6rem;
-    line-height: 2.925rem;
+    font-size: 2.4375rem;
+    line-height: 2.7625rem;
   }
 }
 
