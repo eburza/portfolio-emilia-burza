@@ -187,7 +187,7 @@
 }
 @media screen and (max-width: 1350px) and (max-width: 690px) {
   .skills-and-tools .heading-s {
-    font-size: 0.975rem;
+    font-size: 1.1375rem;
     line-height: 1.3rem;
   }
 }
@@ -450,14 +450,14 @@ body {
 }
 @media screen and (max-width: 1350px) {
   .heading-xl {
-    font-size: 3rem;
+    font-size: 3.2rem;
     line-height: 3.6rem;
   }
 }
 @media screen and (max-width: 690px) {
   .heading-xl {
-    font-size: 1.625rem;
-    line-height: 2.1125rem;
+    font-size: 2.6rem;
+    line-height: 2.925rem;
   }
 }
 
@@ -486,8 +486,8 @@ body {
 }
 @media screen and (max-width: 690px) {
   .heading-l {
-    font-size: 2.1125rem;
-    line-height: 2.275rem;
+    font-size: 2.4375rem;
+    line-height: 2.6rem;
   }
 }
 
@@ -546,7 +546,7 @@ body {
 }
 @media screen and (max-width: 690px) {
   .heading-s {
-    font-size: 0.975rem;
+    font-size: 1.1375rem;
     line-height: 1.3rem;
   }
 }

@@ -38,13 +38,13 @@
     }
 
     @include respond-to(tablet) {
-        font-size: calc-responsive-size(3.75rem, map-get($scale-factors, tablet));
+        font-size: calc-responsive-size(4rem, map-get($scale-factors, tablet));
         line-height: calc-responsive-size(4.5rem, map-get($scale-factors, tablet));
     }
 
     @include respond-to(mobile) {
-        font-size: calc-responsive-size(2.5rem, map-get($scale-factors, mobile));
-        line-height: calc-responsive-size(3.25rem, map-get($scale-factors, mobile));
+        font-size: calc-responsive-size(4rem, map-get($scale-factors, mobile));
+        line-height: calc-responsive-size(4.5rem, map-get($scale-factors, mobile));
     }
 }
 
@@ -69,8 +69,8 @@
     }
 
     @include respond-to(mobile) {
-        font-size: calc-responsive-size(3.25rem, map-get($scale-factors, mobile));
-        line-height: calc-responsive-size(3.5rem, map-get($scale-factors, mobile));
+        font-size: calc-responsive-size(3.75rem, map-get($scale-factors, mobile));
+        line-height: calc-responsive-size(4rem, map-get($scale-factors, mobile));
     }
 }
 
@@ -121,7 +121,7 @@
     }
 
     @include respond-to(mobile) {
-        font-size: calc-responsive-size(1.5rem, map-get($scale-factors, mobile));
+        font-size: calc-responsive-size(1.75rem, map-get($scale-factors, mobile));
         line-height: calc-responsive-size(2rem, map-get($scale-factors, mobile));
     }
 }
