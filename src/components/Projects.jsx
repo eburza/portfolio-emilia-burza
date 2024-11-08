@@ -56,6 +56,7 @@ export default function Projects() {
                     {projectList.map(project => (
                         <SwiperSlide key={project.id}>
                             <ProjectListElement 
+                                id={project.id}
                                 name={project.name}
                                 image={project.img}
                                 imageAlt={project.imgAlt}
