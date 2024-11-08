@@ -14,6 +14,7 @@ import Terminal from '../assets/skills-and-tools/terminal.svg'
 import Vscode from '../assets/skills-and-tools/vscode.svg'
 import Accessibility from '../assets/skills-and-tools/accessibility.svg'
 import Responsiveness from '../assets/skills-and-tools/responsiveness.svg'
+import Vite from '../assets/skills-and-tools/vite.svg'
 
 
 const skillsList = [
@@ -27,10 +28,15 @@ const skillsList = [
         tag: 'javascript',
         img: Javascript
     },
+    // {
+    //     name: 'jQuery',
+    //     tag: 'jquery',
+    //     img: Jquery
+    // },
     {
-        name: 'jQuery',
-        tag: 'jquery',
-        img: Jquery
+        name: 'Vite',
+        tag: 'vite',
+        img: Vite
     },
     {
         name: 'Firebase',
