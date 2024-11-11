@@ -20,12 +20,21 @@ body {
     @include heading-m;
 }
 
+.heading-m-projects {
+    @include heading-m-projects;
+}
+
 .heading-s {
     @include heading-s;
 }
 
 .text-paragraph {
     @include text-paragraph;
+}
+
+.text-paragraph-bold {
+    @include text-paragraph;
+    font-weight: 600;
 }
 
 .text-paragraph-s {

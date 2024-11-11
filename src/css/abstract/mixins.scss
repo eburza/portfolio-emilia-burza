@@ -100,6 +100,32 @@
     }
 }
 
+@mixin heading-m-projects {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 3rem;
+
+    @include respond-to(large) {
+        font-size: calc-responsive-size(2.25rem, map-get($scale-factors, large));
+        line-height: calc-responsive-size(3rem, map-get($scale-factors, large));
+    }
+
+    @include respond-to(desktop) {
+        font-size: calc-responsive-size(2.25rem, map-get($scale-factors, desktop));
+        line-height: calc-responsive-size(3rem, map-get($scale-factors, desktop));
+    }
+
+    @include respond-to(tablet) {
+        font-size: calc-responsive-size(2.25rem, map-get($scale-factors, tablet));
+        line-height: calc-responsive-size(3rem, map-get($scale-factors, tablet));
+    }
+
+    @include respond-to(mobile) {
+        font-size: calc-responsive-size(2.25rem, map-get($scale-factors, mobile));
+        line-height: calc-responsive-size(3rem, map-get($scale-factors, mobile));
+    }
+}
+
 @mixin heading-s {
     font-size: 1.75rem;
     font-weight: 600;
