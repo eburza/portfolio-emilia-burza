@@ -1,5 +1,5 @@
 import ImagePlaceholder from '../assets/image-placeholder.png'
-import { projectTicTacToeImages } from './projectImagesList'
+import { projectTicTacToeImages, projectTipCalculatorImages } from './projectImagesList'
 
 const projectList = [
     {
@@ -100,22 +100,90 @@ const projectList = [
         ],
     },
     {
-        name: 'Project 2',
+        name: 'Tip Calculator App',
         id: 'project-2',
-        img: ImagePlaceholder,
-        imgAlt: 'img alt text example',
-        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
-        tags: ['react', 'javascript', 'sass'],
-        liveLink: 'https://project1.com',
-        githubLink: 'https://github.com/username/project1',
+        img: projectTipCalculatorImages.main,
+        imgAlt: 'Tip Calculator app preview',
+        description: 'This project is a modern tip calculator web application designed to simplify bill splitting and tip calculations. It provides users with an intuitive interface to quickly calculate tips and split bills among multiple people, making it an invaluable tool for dining out or sharing expenses.',
+        tags: ['react', 'javascript', 'sass', 'vite'],
+        conclusion: `This Tip Calculator project demonstrates proficiency in building practical, user-friendly web applications. It showcases skills in React development, state management, responsive design, and attention to detail in user interface design. The project emphasizes clean code practices, comprehensive testing, and modern development workflows, resulting in a polished and professional application that solves a common real-world problem`,
+        liveLink: 'https://emilia-burza-tip-calculator-app.netlify.app/',
+        githubLink: 'https://github.com/eburza/tip-calculator-app',
         images: [
             {
-                src: ImagePlaceholder,
+                src: projectTipCalculatorImages.previews[0],
                 alt: 'Project screenshot 1',
                 caption: 'Homepage design showcasing the main features'
             },
-        ]
+        ],
+        features: [
+            {
+                bold: 'Real-time Calculations',
+                text: 'Instantly calculates tips and per-person amounts as users input values'
+            },
+            {
+                bold: 'Flexible Tip Options',
+                text: 'Offers preset tip percentages and custom tip input functionality'
+            },
+            {
+                bold: 'Bill Splitting',
+                text: 'Easily split bills among any number of people with automatic per-person calculations'
+            },
+            {
+                bold: 'Input Validation',
+                text: 'Provides immediate feedback for invalid inputs and edge cases'
+            },
+            {
+                bold: 'Currency Formatting',
+                text: 'Automatically formats monetary values in USD with proper decimal places'
+            }
+        ],
+        technologies: [
+            {
+                bold: 'React',
+                text: `Built using React for efficient state management and component-based architecture`
+            },
+            {
+                bold: 'Vite',
+                text: 'Utilizes Vite as the build tool for fast development and optimized production builds'
+            },
+            {
+                bold: 'Sass',
+                text: 'Implements custom styling using Sass for maintainable and modular CSS'
+            },
+            {
+                bold: 'Jest and React Testing Library',
+                text: 'Includes basic testing suite for reliability'
+            }
+        ],
+        highlights: [
+            {
+                bold: 'State Management',
+                text: `Utilizes React's useState hooks for managing various input states and calculations`
+            },
+            {
+                bold: 'Real-time Updates',
+                text: 'Implements useEffect for automatic recalculation when inputs change'
+            },
+            {
+                bold: 'Responsive Design',
+                text: 'Features a mobile-first approach with breakpoints for larger screens'
+            }
+        ],
+        challenges: [
+            {
+                bold: 'Input Validation',
+                text: 'Implemented robust validation to handle edge cases such as zero values, negative numbers, and invalid inputs. Solved using combination of controlled inputs and validation functions'
+            },
+            {
+                bold: 'Currency Formatting',
+                text: 'Ensured consistent currency display across different numerical inputs using Intl.NumberFormat'
+            },
+            {
+                bold: 'Responsive Layout',
+                text: 'Created a flexible design that maintains functionality and aesthetics across all device sizes using CSS Grid and Flexbox'
+            }
+        ],
     },
     {
         name: 'Project 3',
