@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { projectList } from '../data/projectsList'
+import { filterProjectList } from '../utilis/filterProjectList'
 import ArrowBack from '../assets/arrow-back.svg'
 import ArrowLink from '../assets/link-arrow.svg'
 
@@ -22,9 +23,12 @@ export default function ProjectPage() {
                     </Link>
                 </div>
                 <div className='project-hero'>
+                    <h1 className='heading-xl project-title underscore-water'>{project.name}</h1>
                     <div className='hero-summary'>
-                        <h1 className='heading-xl project-title underscore-water'>{project.name}</h1>
-                        <p className='text-paragraph project-summary'>{project.summary}</p>
+                        <section className='project-description'>
+                            <h2 className='heading-m'>About this project</h2>
+                            <p className='text-paragraph'>{project.description}</p>
+                        </section>
                     </div>
                     <div className='hero-data'>
                         <div className='data-links'>
@@ -61,18 +65,43 @@ export default function ProjectPage() {
             </header>
             
             <div className='project-content'>
-                <img 
+                {/* <img 
                     src={project.img} 
                     alt={project.imgAlt} 
                     className='project-main-image'
-                />
+                /> */}
                 
-                <div className='project-details'>
-                    <section className='project-description'>
-                        <h2 className='heading-l'>About this project</h2>
-                        <p className='text-paragraph'>{project.description}</p>
-                    </section>
-                </div>
+                <section className='project-details'>
+                    <h2 className='heading-m'>Project Details</h2>
+                    <div className='project-details-element'>
+                        <div className='details-text'>
+                            <h2 className='heading-m-projects'>Features</h2>
+                            <p className='text-paragraph'>{filterProjectList(project.features)}</p>      
+                        </div>
+                    </div>
+                    <div className='project-details-element'>
+                        <div className='details-text'>
+                            <h2 className='heading-m-projects'>Technologies Used</h2>
+                            <p className='text-paragraph'>{filterProjectList(project.technologies)}</p>      
+                        </div>
+                    </div>
+                    <div className='project-details-element'>
+                        <div className='details-text'>
+                            <h2 className='heading-m-projects'>Code Highlights</h2>
+                            <div>{filterProjectList(project.highlights)}</div>      
+                        </div>
+                    </div>
+                    <div className='project-details-element'>
+                        <div className='details-text'>
+                            <h2 className='heading-m-projects'>Challenges and Solutions</h2>
+                            <div className='project-list'>{filterProjectList(project.challenges)}</div>      
+                        </div>
+                    </div>
+                    <div className='project-details-element'>
+                        <h2 className='heading-m-projects'>Conclusion</h2>
+                        <p className='text-paragraph'>{project.conclusion}</p>      
+                    </div>
+                </section>
             </div>
         </article>
     )
