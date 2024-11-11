@@ -258,6 +258,112 @@
     }
 }
 
+// Project page 
+.project-page {
+    .project-hero {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2rem;
+        grid-template-areas: 
+            "title title"
+            "summary data";
+    
+        .project-title {
+            grid-area: title;
+            justify-self: start;
+        }
+    
+        .hero-summary {
+            grid-area: summary;
+        }
+    
+        .hero-data {
+            grid-area: data;
+            justify-self: end;
+            min-width: 30rem;
+        }
+    }
+
+    .project-content {
+        .content-heading {
+            align-self: flex-start;
+        }
+
+        .project-details-element {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            grid-template-areas: 
+                "frame1 frame2";
+    
+            .frame-1 {
+                grid-area: frame1;
+            }
+    
+            .frame-2 {
+                grid-area: frame2;
+            }
+    
+            .project-details-img {
+                width: 100%;
+                border-radius: 1rem;
+                padding: 3.3rem 2rem 0;
+            }
+        }
+    }
+
+    @include respond-to(tablet) {
+        .project-hero {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "title"
+                "summary" 
+                "data";
+        
+            .project-title {
+                justify-self: center;
+            }
+        
+            .hero-data {
+                justify-self: center;
+            }
+        }
+
+        .project-details-element {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "text"
+                "image";
+        
+            .details-text {
+                grid-area: text;
+            }
+        
+            .project-details-img {
+                grid-area: image;
+                justify-self: center;
+                width: 80%;
+            }
+
+            .content-heading {
+                align-self: center;
+            }
+        }
+
+    }
+
+    @include respond-to(mobile) {
+        .project-content {
+
+            .project-details-img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 // Footer
 footer {
     @extend %section-padding;

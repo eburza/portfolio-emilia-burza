@@ -6,7 +6,6 @@
 .header-project {
     padding: 12rem 5rem 5rem;;
     background-color: $old-lace;
-    @include display-flex(column, initial, flex-start, 2rem);
 }
 
 .back-to-home-link {
@@ -70,6 +69,13 @@
         }
     }
 
+    
+    
+}
+
+.project-content {
+    padding: 5rem;
+
+    @include display-flex(column, center, center, 2rem);
 
 }
-        
