@@ -65,41 +65,41 @@ export default function ProjectPage() {
             </header>
             
             <section className='project-content'>
-                <h2 className='heading-m content-heading'>Project Details</h2>
+                <h2 className='heading-m content-heading underscore-water'>Project Details</h2>
                 <div className='project-details-element'>
-                    <div className='details-text'>
+                    <div className='details-text frame-1'>
                         <h2 className='heading-m-projects'>Features</h2>
                         <p className='text-paragraph'>{filterProjectList(project.features)}</p>      
                     </div>
-                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                    <img src={project.img} alt={project.imgAlt} className='project-details-img frame-2'></img>
                 </div>
                 <div className='project-details-element'>
-                    <div className='details-text'>
+                    <div className='details-text frame-2'>
                         <h2 className='heading-m-projects'>Technologies Used</h2>
                         <p className='text-paragraph'>{filterProjectList(project.technologies)}</p>      
                     </div>
-                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                    <img src={project.images[0].src} alt={project.imgAlt} className='project-details-img frame-1'></img>
                 </div>
                 <div className='project-details-element'>
-                    <div className='details-text'>
+                    <div className='details-text frame-1'>
                         <h2 className='heading-m-projects'>Code Highlights</h2>
                         <div>{filterProjectList(project.highlights)}</div>      
                     </div>
-                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                    <img src={project.images[1].src} alt={project.imgAlt} className='project-details-img frame-2'></img>
                 </div>
                 <div className='project-details-element'>
-                    <div className='details-text'>
+                    <div className='details-text frame-2'>
                         <h2 className='heading-m-projects'>Challenges and Solutions</h2>
                         <div className='project-list'>{filterProjectList(project.challenges)}</div>      
                     </div>
-                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                    <img src={project.images[2].src} alt={project.imgAlt} className='project-details-img frame-1'></img>
                 </div>
                 <div className='project-details-element'>
-                    <div>
+                    <div className='details-text frame-1'>
                         <h2 className='heading-m-projects'>Conclusion</h2>
                         <p className='text-paragraph'>{project.conclusion}</p>      
                     </div>
-                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                    <img src={project.images[3].src} alt={project.imgAlt} className='project-details-img frame-2'></img>
                 </div>
             </section>
         </article>
