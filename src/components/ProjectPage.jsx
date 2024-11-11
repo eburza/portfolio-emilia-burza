@@ -64,45 +64,44 @@ export default function ProjectPage() {
                 </div>
             </header>
             
-            <div className='project-content'>
-                {/* <img 
-                    src={project.img} 
-                    alt={project.imgAlt} 
-                    className='project-main-image'
-                /> */}
-                
-                <section className='project-details'>
-                    <h2 className='heading-m'>Project Details</h2>
-                    <div className='project-details-element'>
-                        <div className='details-text'>
-                            <h2 className='heading-m-projects'>Features</h2>
-                            <p className='text-paragraph'>{filterProjectList(project.features)}</p>      
-                        </div>
+            <section className='project-content'>
+                <h2 className='heading-m content-heading'>Project Details</h2>
+                <div className='project-details-element'>
+                    <div className='details-text'>
+                        <h2 className='heading-m-projects'>Features</h2>
+                        <p className='text-paragraph'>{filterProjectList(project.features)}</p>      
                     </div>
-                    <div className='project-details-element'>
-                        <div className='details-text'>
-                            <h2 className='heading-m-projects'>Technologies Used</h2>
-                            <p className='text-paragraph'>{filterProjectList(project.technologies)}</p>      
-                        </div>
+                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                </div>
+                <div className='project-details-element'>
+                    <div className='details-text'>
+                        <h2 className='heading-m-projects'>Technologies Used</h2>
+                        <p className='text-paragraph'>{filterProjectList(project.technologies)}</p>      
                     </div>
-                    <div className='project-details-element'>
-                        <div className='details-text'>
-                            <h2 className='heading-m-projects'>Code Highlights</h2>
-                            <div>{filterProjectList(project.highlights)}</div>      
-                        </div>
+                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                </div>
+                <div className='project-details-element'>
+                    <div className='details-text'>
+                        <h2 className='heading-m-projects'>Code Highlights</h2>
+                        <div>{filterProjectList(project.highlights)}</div>      
                     </div>
-                    <div className='project-details-element'>
-                        <div className='details-text'>
-                            <h2 className='heading-m-projects'>Challenges and Solutions</h2>
-                            <div className='project-list'>{filterProjectList(project.challenges)}</div>      
-                        </div>
+                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                </div>
+                <div className='project-details-element'>
+                    <div className='details-text'>
+                        <h2 className='heading-m-projects'>Challenges and Solutions</h2>
+                        <div className='project-list'>{filterProjectList(project.challenges)}</div>      
                     </div>
-                    <div className='project-details-element'>
+                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                </div>
+                <div className='project-details-element'>
+                    <div>
                         <h2 className='heading-m-projects'>Conclusion</h2>
                         <p className='text-paragraph'>{project.conclusion}</p>      
                     </div>
-                </section>
-            </div>
+                    <img src={project.img} alt={project.imgAlt} className='project-details-img'></img>
+                </div>
+            </section>
         </article>
     )
 }
