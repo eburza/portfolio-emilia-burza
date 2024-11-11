@@ -6,6 +6,8 @@ import TicTacToeP4 from '../assets/projects-images/tic-tac-toe/tic-tac-toe-previ
 
 import TipCalculatorMain from '../assets/projects-images/tip-calculator/tip-calculator-main.png'
 
+import VanLifeMain from '../assets/projects-images/vanLife-app/vanlife-main.png'
+
 const projectTicTacToeImages = {
     main: TicTacToeMain,
     previews: [TicTacToeP1, TicTacToeP2, TicTacToeP3, TicTacToeP4]
@@ -19,3 +21,10 @@ const projectTipCalculatorImages = {
 }
 
 export { projectTipCalculatorImages }
+
+const VanLifeMain = {
+    main: TipCalculatorMain,
+    previews: ['img1', 'img2' ]
+}
+
+export { VanLifeMain }

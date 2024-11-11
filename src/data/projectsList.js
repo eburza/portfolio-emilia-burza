@@ -1,5 +1,9 @@
 import ImagePlaceholder from '../assets/image-placeholder.png'
-import { projectTicTacToeImages, projectTipCalculatorImages } from './projectImagesList'
+import { 
+    projectTicTacToeImages, 
+    projectTipCalculatorImages,
+    VanLifeMain
+} from './projectImagesList'
 
 const projectList = [
     {
@@ -186,76 +190,113 @@ const projectList = [
         ],
     },
     {
-        name: 'Project 3',
+        name: 'VanLife App',
         id: 'project-3',
-        img: ImagePlaceholder,
-        imgAlt: 'img alt text example',
-        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
-        tags: ['react', 'javascript', 'sass'],
-        liveLink: 'https://project1.com',
-        githubLink: 'https://github.com/username/project1',
+        img: VanLifeMain.main,
+        imgAlt: 'VanLife app preview',
+        description: 'VanLife is a comprehensive web application for van rentals, allowing users to browse, filter, and manage van listings. The platform includes both user-facing features for van rentals and a host dashboard for van owners to manage their listings, track income, and review customer feedback.',
+        tags: ['react', 'javascript', 'firebase', 'css', 'vite'],
+        conclusion: `The VanLife project demonstrates my ability to create a full-featured web application with complex state management, authentication, and responsive design. It showcases my proficiency in React and modern web development practices, including the implementation of protected routes, context-based state management, and data visualization. The project highlights my skills in creating both user-facing features and administrative dashboards while maintaining a clean, intuitive user interface.`,
+        liveLink: 'https://emilia-burza-vanlife-project.netlify.app/',
+        githubLink: 'https://github.com/eburza/VanLife-project',
         images: [
             {
-                src: ImagePlaceholder,
+                src: VanLifeMain.previews[0],
                 alt: 'Project screenshot 1',
                 caption: 'Homepage design showcasing the main features'
             },
-        ]
-    },
-    {
-        name: 'Project 4',
-        id: 'project-4',
-        img: ImagePlaceholder,
-        imgAlt: 'img alt text example',
-        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
-        tags: ['react', 'javascript', 'sass'],
-        liveLink: 'https://project1.com',
-        githubLink: 'https://github.com/username/project1',
-        images: [
+        ],
+        features: [
             {
-                src: ImagePlaceholder,
-                alt: 'Project screenshot 1',
-                caption: 'Homepage design showcasing the main features'
+                bold: 'User Authentication',
+                text: 'Secure login system with protected routes for host features'
             },
-        ]
-    },
-    {
-        name: 'Project 5',
-        id: 'project-5',
-        img: ImagePlaceholder,
-        imgAlt: 'img alt text example',
-        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
-        tags: ['react', 'javascript', 'sass'],
-        liveLink: 'https://project1.com',
-        githubLink: 'https://github.com/username/project1',
-        images: [
             {
-                src: ImagePlaceholder,
-                alt: 'Project screenshot 1',
-                caption: 'Homepage design showcasing the main features'
+                bold: 'Dynamic Van Listings',
+                text: 'Interactive catalog of vans with filtering capabilities by type (simple, rugged, luxury)'
             },
-        ]
-    },
-    {
-        name: 'Project 6',
-        id: 'project-6',
-        img: ImagePlaceholder,
-        imgAlt: 'img alt text example',
-        summary: 'Short summary: A responsive product page built with React.js and Context API for state management.',
-        description: 'Detailed description of the project, including the problem it solves, your approach, challenges faced, and solutions implemented. This can be multiple paragraphs long.',
-        tags: ['react', 'javascript', 'sass'],
-        liveLink: 'https://project1.com',
-        githubLink: 'https://github.com/username/project1',
-        images: [
             {
-                src: ImagePlaceholder,
-                alt: 'Project screenshot 1',
-                caption: 'Homepage design showcasing the main features'
+                bold: 'Host Dashboard',
+                text: `Comprehensive dashboard for van owners including: 
+                    - Income tracking with visual charts
+                    - Review management system
+                    - Detailed van listing management`
             },
-        ]
+            {
+                bold: 'Responsive Design',
+                text: 'Fully responsive layout with burger menu for mobile device'
+            },
+            {
+                bold: 'Data Visualization',
+                text: 'Implementation of both horizontal and vertical charts for data representation'
+            }, 
+            {
+                bold: 'State Management',
+                text: 'Context-based state management for host data'
+            }
+        ],
+        technologies: [
+            {
+                bold: 'React',
+                text: `Built with React for component-based architecture and efficient UI rendering`
+            },
+            {
+                bold: 'React Router',
+                text: 'Implements complex routing with nested routes and protected paths'
+            },
+            {
+                bold: 'Firebase',
+                text: 'Backend integration for data storage and authentication'
+            },
+            {
+                bold: 'Chart.js',
+                text: 'Data visualization for income and reviews'
+            },
+            {
+                bold: 'Material-UI',
+                text: 'Component library for enhanced UI elements'
+            },
+            {
+                bold: 'CSS',
+                text: 'Custom styling with responsive design principles'
+            },
+            {
+                bold: 'Vite',
+                text: 'Modern build tool for optimal development experience'
+            }
+        ],
+        highlights: [
+            {
+                bold: 'Protected Routes',
+                text: `Implementation of authorization requirements`
+            },
+            {
+                bold: 'Context-based State Management',
+                text: 'Efficient data handling across components'
+            },
+            {
+                bold: 'Responsive Navigation',
+                text: 'Dynamic navigation with mobile support'
+            }
+        ],
+        challenges: [
+            {
+                bold: 'State Management',
+                text: 'Handled complex state management across multiple components using Context API, providing a centralized data store for host information'
+            },
+            {
+                bold: 'Authentication Flow',
+                text: 'Implemented a secure authentication system with protected routes and persistent login state'
+            },
+            {
+                bold: 'Data Visualization',
+                text: 'Created custom chart components for displaying income and review data in an intuitive way'
+            },
+            {
+                bold: 'Responsive Design',
+                text: 'Developed a fully responsive layout that adapts to different screen sizes while maintaining functionality'
+            }
+        ],
     },
 ]
 
