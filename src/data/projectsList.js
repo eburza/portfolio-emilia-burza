@@ -1,8 +1,8 @@
-import ImagePlaceholder from '../assets/image-placeholder.png'
 import { 
     projectTicTacToeImages, 
     projectTipCalculatorImages,
-    VanLifeMain
+    VanLifeImages,
+    QuizzicalTriviaImages
 } from './projectImagesList'
 
 const projectList = [
@@ -192,7 +192,7 @@ const projectList = [
     {
         name: 'VanLife App',
         id: 'project-3',
-        img: VanLifeMain.main,
+        img: VanLifeImages.main,
         imgAlt: 'VanLife app preview',
         description: 'VanLife is a comprehensive web application for van rentals, allowing users to browse, filter, and manage van listings. The platform includes both user-facing features for van rentals and a host dashboard for van owners to manage their listings, track income, and review customer feedback.',
         tags: ['react', 'javascript', 'firebase', 'css', 'vite'],
@@ -201,7 +201,7 @@ const projectList = [
         githubLink: 'https://github.com/eburza/VanLife-project',
         images: [
             {
-                src: VanLifeMain.previews[0],
+                src: VanLifeImages.previews[0],
                 alt: 'Project screenshot 1',
                 caption: 'Homepage design showcasing the main features'
             },
@@ -295,6 +295,106 @@ const projectList = [
             {
                 bold: 'Responsive Design',
                 text: 'Developed a fully responsive layout that adapts to different screen sizes while maintaining functionality'
+            }
+        ],
+    },
+    {
+        name: 'Quizzical Trivia App',
+        id: 'project-4',
+        img: QuizzicalTriviaImages.main,
+        imgAlt: 'Quizzical Trivia app preview',
+        description: `Quizzical is an interactive trivia application that challenges users with diverse questions across various topics. The app is designed to provide an engaging learning experience while testing users' knowledge in an entertaining format.`,
+        tags: ['react', 'javascript', 'firebase', 'css', 'vite'],
+        conclusion: `The Quizzical Trivia App demonstrates my ability to create engaging, interactive web applications using modern JavaScript frameworks and tools. It showcases my skills in front-end development, API integration, and user experience design. The project highlights my attention to detail in creating a polished, production-ready application that provides both entertainment and educational value to users.
+
+The implementation emphasizes clean code architecture, modern development practices, and thoughtful user interface design, making it a strong addition to my portfolio of web development work.`,
+        liveLink: 'https://emilia-burza-quizzical-trivia-app.netlify.app/',
+        githubLink: 'https://github.com/eburza/Quizzical-Trivia-App-Final',
+        images: [
+            {
+                src: QuizzicalTriviaImages.previews[0],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ],
+        features: [
+            {
+                bold: 'Dynamic Question Loading',
+                text: 'Fetches trivia questions from an external API, providing fresh content for each sessions'
+            },
+            {
+                bold: 'Multiple Choice Format',
+                text: 'Questions are presented in a multiple-choice format with clear answer option'
+            },
+            {
+                bold: 'Score Tracking',
+                text: `Keeps track of correct answers and displays the final score after completion`
+            },
+            {
+                bold: 'Answer Validation',
+                text: 'Provides immediate feedback on answer correctness with visual indicators'
+            },
+            {
+                bold: 'Clean UI/UX',
+                text: 'Features a modern, intuitive interface with custom fonts and styling'
+            }, 
+            {
+                bold: 'Mobile Responsive',
+                text: 'Fully responsive design that works seamlessly across all device sizes'
+            }
+        ],
+        technologies: [
+            {
+                bold: 'React',
+                text: `Built using React 17.0.2 for efficient component-based architecture and state management`
+            },
+            {
+                bold: 'Webpack',
+                text: 'Utilizes Webpack for bundling and optimization of assets'
+            },
+            {
+                bold: 'Babel',
+                text: 'Implements Babel for JavaScript compatibility and JSX transformation'
+            },
+            {
+                bold: 'HTML5/CSS3',
+                text: 'Structured with semantic HTML and styled with modern CSS features'
+            },
+            {
+                bold: 'he Library',
+                text: `Incorporates the 'he' library for handling HTML entity encoding/decoding`
+            },
+            {
+                bold: 'nanoid',
+                text: 'Uses nanoid for generating unique identifiers'
+            }
+        ],
+        highlights: [
+            {
+                bold: 'Build Configuration',
+                text: ` Implements a sophisticated build pipeline using Webpack and Babel for optimal production deployment`
+            },
+            {
+                bold: 'Modern Development Setup',
+                text: 'Utilizes contemporary development tools and dependencies'
+            },
+            {
+                bold: 'Responsive Design',
+                text: 'Implements a responsive layout with carefully selected fonts and styling'
+            }
+        ],
+        challenges: [
+            {
+                bold: 'Cross-browser Compatibility',
+                text: 'Addressed through careful Babel configuration and polyfills to ensure consistent behavior across different browsers'
+            },
+            {
+                bold: 'State Management',
+                text: 'Implemented efficient state management for handling quiz progress and scoring'
+            },
+            {
+                bold: 'API Integration',
+                text: 'Successfully integrated with external trivia API while handling various response formats and edge cases'
             }
         ],
     },

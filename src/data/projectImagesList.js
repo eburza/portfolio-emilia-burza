@@ -8,6 +8,8 @@ import TipCalculatorMain from '../assets/projects-images/tip-calculator/tip-calc
 
 import VanLifeMain from '../assets/projects-images/vanLife-app/vanlife-main.png'
 
+import QuizzicalTriviaMain from '../assets/projects-images/quizzical-trivia-app/quizzical-main.png'
+
 const projectTicTacToeImages = {
     main: TicTacToeMain,
     previews: [TicTacToeP1, TicTacToeP2, TicTacToeP3, TicTacToeP4]
@@ -22,9 +24,16 @@ const projectTipCalculatorImages = {
 
 export { projectTipCalculatorImages }
 
-const VanLifeMain = {
-    main: TipCalculatorMain,
+const VanLifeImages = {
+    main: VanLifeMain,
     previews: ['img1', 'img2' ]
 }
 
-export { VanLifeMain }
+export { VanLifeImages }
+
+const QuizzicalTriviaImages = {
+    main: QuizzicalTriviaMain,
+    previews: ['img1', 'img2' ]
+}
+
+export { QuizzicalTriviaImages }
