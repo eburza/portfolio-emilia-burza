@@ -1,0 +1,103 @@
+.project-image-viewer {
+    position: relative;
+    width: 100%;
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        max-height: 600px;
+        overflow: hidden;
+        border-radius: 1rem;
+        cursor: pointer;
+        box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.10), 
+                    0px 38px 36px 0px rgba(75, 68, 57, 0.10);
+
+        &:hover {
+            .hover-overlay {
+                background-color: rgba(0, 0, 0, 0.2);
+
+                .expand-text {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .preview-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-position: top;
+    }
+
+    .hover-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .expand-text {
+            color: $white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90rem;
+    width: 100%;
+    background-color: $white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    .close-button {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    .modal-image-container {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        max-height: 80vh;
+        overflow: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .modal-caption {
+        text-align: center;
+        color: $grey-dark;
+    }
+}

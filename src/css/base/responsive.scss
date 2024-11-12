@@ -318,15 +318,6 @@
 
         .project-details-img-container {
             padding: 1rem;
-
-            .project-details-img {
-                width: 100%;
-                border-radius: 1rem;
-                padding: 0;
-                overflow: hidden;
-                box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.10), 
-                            0px 38px 36px 0px rgba(75, 68, 57, 0.10);
-            }
         }
 
     }
@@ -418,6 +409,34 @@
 
         .project-content {
             padding: 2rem;
+        }
+    }
+}
+
+// Image viewer
+.project-image-viewer {
+    
+    @include respond-to(tablet) {
+        .modal-content {
+            width: 95%;
+            margin: 0 1rem;
+        }
+    }
+    
+    @include respond-to(mobile) {
+        .project-image-viewer {
+            .image-container {
+                height: 400px;
+            }
+        }
+    
+        .modal-content {
+            padding: 0.5rem;
+    
+            .close-button {
+                right: 0.5rem;
+                top: 0.5rem;
+            }
         }
     }
 }

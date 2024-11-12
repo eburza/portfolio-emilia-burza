@@ -296,13 +296,6 @@
 .project-page .project-details-element .project-details-img-container {
   padding: 1rem;
 }
-.project-page .project-details-element .project-details-img-container .project-details-img {
-  width: 100%;
-  border-radius: 1rem;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.1), 0px 38px 36px 0px rgba(75, 68, 57, 0.1);
-}
 @media screen and (max-width: 1350px) {
   .project-page .header-project {
     padding: 10rem 3rem 3rem;
@@ -365,6 +358,25 @@
   }
   .project-page .project-content {
     padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .project-image-viewer .modal-content {
+    width: 95%;
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .project-image-viewer .project-image-viewer .image-container {
+    height: 400px;
+  }
+  .project-image-viewer .modal-content {
+    padding: 0.5rem;
+  }
+  .project-image-viewer .modal-content .close-button {
+    right: 0.5rem;
+    top: 0.5rem;
   }
 }
 
@@ -1467,6 +1479,95 @@ footer {
   background-color: #DAF6FF;
   border-radius: 2rem;
   font-weight: 600;
+}
+
+.project-image-viewer {
+  position: relative;
+  width: 100%;
+}
+.project-image-viewer .image-container {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.1), 0px 38px 36px 0px rgba(75, 68, 57, 0.1);
+}
+.project-image-viewer .image-container:hover .hover-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.project-image-viewer .image-container:hover .hover-overlay .expand-text {
+  opacity: 1;
+}
+.project-image-viewer .preview-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-position: top;
+}
+.project-image-viewer .hover-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-image-viewer .hover-overlay .expand-text {
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.modal-content .close-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.modal-content .close-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.modal-content .close-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.modal-content .modal-image-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  max-height: 80vh;
+  overflow: auto;
+}
+.modal-content .modal-image-container img {
+  width: 100%;
+  height: auto;
+}
+.modal-content .modal-caption {
+  text-align: center;
+  color: #444444;
 }
 
 /*# sourceMappingURL=styles.css.map */
