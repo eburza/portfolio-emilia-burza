@@ -6,7 +6,9 @@ export default function ProjectListElement({id, name, image, imageAlt, descripti
     return(
         <Link to={`/project/${id}`}>
             <div className='project-preview'>
-                <img src={image} alt={imageAlt} className='project-preview-img'/>
+                <div className='project-preview-img-container'>
+                    <img src={image} alt={imageAlt} className='project-preview-img'/>
+                </div>
                 <h2 className='heading-s'>{name}</h2>
                 <p className='text-paragraph-s project-preview-summary'>{description}</p>
                 <ProjectListTechElements 
