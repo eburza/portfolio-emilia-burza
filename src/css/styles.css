@@ -1071,11 +1071,19 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1rem;
+  min-height: 100%;
   box-shadow: 0px 12px 24px 0px rgba(75, 68, 57, 0.1), 0px 48px 48px 0px rgba(75, 68, 57, 0.1);
   transition: transform 0.3s ease;
 }
 .project-preview:hover {
   transform: translateY(-5px);
+}
+.project-preview .swiper-slide {
+  height: auto;
+}
+.project-preview .swiper-slide > a {
+  height: 100%;
+  display: block;
 }
 
 .project-preview-img-container {
@@ -1098,8 +1106,28 @@ body {
 }
 
 .project-preview-summary {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.project-preview-summary p {
+  margin: 0;
+}
+.project-preview-summary:not(.expanded) p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.project-preview-summary.expanded p {
+  display: block;
+}
+.project-preview-summary:hover {
+  color: #444444;
+}
+
+.tech-tags-container {
+  border-top: 1px solid #000;
 }
 
 .project-tags-img {
