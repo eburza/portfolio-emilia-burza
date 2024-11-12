@@ -8,11 +8,20 @@
     background-color: $old-lace;
 }
 
-.back-to-home-link {
-    @include display-flex(initial, initial, center, 0.5rem);
+.project-content {
+    padding: 5rem;
+    @include display-flex(column, center, center, 2rem);
+}
 
-    .arrow-icon {
-        height: 1.25rem;
+.back-to-home {
+    margin-bottom: 2rem;
+    
+    .back-to-home-link {
+        @include display-flex(initial, initial, center, 0.5rem);
+    
+        .arrow-icon {
+            height: 1.25rem;
+        }
     }
 }
 
@@ -71,11 +80,4 @@
 
     
     
-}
-
-.project-content {
-    padding: 5rem;
-
-    @include display-flex(column, center, center, 2rem);
-
 }

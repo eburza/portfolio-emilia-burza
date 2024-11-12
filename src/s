@@ -275,94 +275,54 @@
 .project-page .project-content .content-heading {
   align-self: flex-start;
 }
-.project-page .project-details-element {
+.project-page .project-content .project-details-element {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   grid-template-areas: "frame1 frame2";
 }
-.project-page .project-details-element:nth-child(odd) .frame-1 {
+.project-page .project-content .project-details-element .frame-1 {
   grid-area: frame1;
 }
-.project-page .project-details-element:nth-child(odd) .frame-2 {
+.project-page .project-content .project-details-element .frame-2 {
   grid-area: frame2;
 }
-.project-page .project-details-element:nth-child(even) {
-  grid-template-areas: "frame2 frame1";
-}
-.project-page .project-details-element .project-details-img-container {
-  padding: 1rem;
-}
-.project-page .project-details-element .project-details-img-container .project-details-img {
+.project-page .project-content .project-details-element .project-details-img {
   width: 100%;
   border-radius: 1rem;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.1), 0px 38px 36px 0px rgba(75, 68, 57, 0.1);
+  padding: 3.3rem 2rem 0;
 }
 @media screen and (max-width: 1350px) {
-  .project-page .header-project {
-    padding: 10rem 3rem 3rem;
-  }
   .project-page .project-hero {
     grid-template-columns: 1fr;
     grid-template-areas: "title" "summary" "data";
-    text-align: center;
   }
   .project-page .project-hero .project-title {
     justify-self: center;
   }
   .project-page .project-hero .hero-data {
-    min-width: unset;
     justify-self: center;
-  }
-  .project-page .project-hero .hero-summary {
-    text-align: center;
-  }
-  .project-page .project-content {
-    padding: 3rem;
-  }
-  .project-page .project-content .content-heading {
-    align-self: center;
-    text-align: center;
   }
   .project-page .project-details-element {
     grid-template-columns: 1fr;
-    grid-template-areas: "frame1" "frame2";
+    grid-template-areas: "text" "image";
   }
-  .project-page .project-details-element:nth-child(even) {
-    grid-template-areas: "frame1" "frame2";
+  .project-page .project-details-element .details-text {
+    grid-area: text;
   }
-  .project-page .project-details-element .frame-1,
-  .project-page .project-details-element .frame-2 {
-    text-align: center;
+  .project-page .project-details-element .project-details-img {
+    grid-area: image;
+    justify-self: center;
+    width: 80%;
   }
-  .project-page .project-details-element .frame-1 .heading-m-projects,
-  .project-page .project-details-element .frame-2 .heading-m-projects {
-    text-align: center;
-  }
-  .project-page .project-details-element .project-details-img-container {
-    padding: 0.5rem;
-  }
-  .project-page .project-details-element .project-details-img-container .project-details-img {
-    padding: 0;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  .project-page .back-to-home {
-    justify-content: center;
+  .project-page .project-details-element .content-heading {
+    align-self: center;
   }
 }
 @media screen and (max-width: 690px) {
-  .project-page .header-project {
-    padding: 10rem 2rem 2rem;
-  }
-  .project-page .project-hero .hero-data {
-    padding: 1rem;
-  }
-  .project-page .project-content {
-    padding: 2rem;
+  .project-page .project-content .project-details-img {
+    width: 100%;
   }
 }
 
@@ -1380,26 +1340,14 @@ footer {
   background-color: #F8F3EB;
 }
 
-.project-content {
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.back-to-home {
-  margin-bottom: 2rem;
-}
-.back-to-home .back-to-home-link {
+.back-to-home-link {
   display: flex;
   flex-direction: initial;
   justify-content: initial;
   align-items: center;
   gap: 0.5rem;
 }
-.back-to-home .back-to-home-link .arrow-icon {
+.back-to-home-link .arrow-icon {
   height: 1.25rem;
 }
 
@@ -1467,4 +1415,13 @@ footer {
   font-weight: 600;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.project-content {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=s.map */
