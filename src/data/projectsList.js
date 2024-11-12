@@ -120,6 +120,21 @@ const projectList = [
                 alt: 'Project screenshot 1',
                 caption: 'Homepage design showcasing the main features'
             },
+            {
+                src: projectTipCalculatorImages.previews[1],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: projectTipCalculatorImages.previews[2],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: projectTipCalculatorImages.main,
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
         ],
         features: [
             {

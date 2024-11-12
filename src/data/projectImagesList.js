@@ -5,6 +5,9 @@ import TicTacToeP3 from '../assets/projects-images/tic-tac-toe/tic-tac-toe-previ
 import TicTacToeP4 from '../assets/projects-images/tic-tac-toe/tic-tac-toe-preview-4.png'
 
 import TipCalculatorMain from '../assets/projects-images/tip-calculator/tip-calculator-main.png'
+import TipCalculatorP1 from '../assets/projects-images/tip-calculator/tip-calculator-preview-1.png'
+import TipCalculatorP2 from '../assets/projects-images/tip-calculator/tip-calculator-preview-2.png'
+import TipCalculatorP3 from '../assets/projects-images/tip-calculator/tip-calculator-preview-3.png'
 
 import VanLifeMain from '../assets/projects-images/vanLife-app/vanlife-main.png'
 
@@ -14,14 +17,14 @@ import GraphicPortfolioMain from '../assets/projects-images/graphic-portfolio/gr
 
 const projectTicTacToeImages = {
     main: TicTacToeMain,
-    previews: [TicTacToeP1, TicTacToeP2, TicTacToeP3, TicTacToeP4]
+    previews: [ TicTacToeP1, TicTacToeP2, TicTacToeP3, TicTacToeP4 ]
 }
 
 export { projectTicTacToeImages }
 
 const projectTipCalculatorImages = {
     main: TipCalculatorMain,
-    previews: ['img1', 'img2' ]
+    previews: [ TipCalculatorP1, TipCalculatorP2, TipCalculatorP3 ]
 }
 
 export { projectTipCalculatorImages }
