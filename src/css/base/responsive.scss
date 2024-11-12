@@ -296,23 +296,25 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        grid-template-areas: 
-            "frame1 frame2";
-
-        &:nth-child(odd) {
-            .frame-1 {
-                grid-area: frame1;
-            }
-                
-            .frame-2 {
-                grid-area: frame2;
-            }
+        
+        .frame-1 {
+            grid-area: frame1;
         }
             
+        .frame-2 {
+            grid-area: frame2;
+        }
+
         &:nth-child(even) {
+            grid-template-areas: 
+                "frame1 frame2";
+        }
+            
+        &:nth-child(odd) {
             grid-template-areas: 
                 "frame2 frame1";
         }
+
 
         .project-details-img-container {
             padding: 1rem;

@@ -280,15 +280,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  grid-template-areas: "frame1 frame2";
 }
-.project-page .project-details-element:nth-child(odd) .frame-1 {
+.project-page .project-details-element .frame-1 {
   grid-area: frame1;
 }
-.project-page .project-details-element:nth-child(odd) .frame-2 {
+.project-page .project-details-element .frame-2 {
   grid-area: frame2;
 }
 .project-page .project-details-element:nth-child(even) {
+  grid-template-areas: "frame1 frame2";
+}
+.project-page .project-details-element:nth-child(odd) {
   grid-template-areas: "frame2 frame1";
 }
 .project-page .project-details-element .project-details-img-container {
