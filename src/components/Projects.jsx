@@ -13,13 +13,13 @@ export default function Projects() {
 
     const handlePrevClick = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slidePrev();
+            swiperRef.current.swiper.slidePrev()
         }
     }
 
     const handleNextClick = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slideNext();
+            swiperRef.current.swiper.slideNext()
         }
     }
 

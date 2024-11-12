@@ -4,9 +4,10 @@ import { projectList } from '../data/projectsList'
 import { filterProjectList } from '../utilis/filterProjectList'
 import ArrowBack from '../assets/arrow-back.svg'
 import ArrowLink from '../assets/link-arrow.svg'
+import ProjectImageViewer from './ProjectImageViewer'
 
 export default function ProjectPage() {
-    const { id } = useParams();
+    const { id } = useParams()
     const project = projectList.find(p => p.id === id)
     
     if (!project) {
@@ -72,7 +73,10 @@ export default function ProjectPage() {
                         <p className='text-paragraph'>{filterProjectList(project.features)}</p>      
                     </div>
                     <div className='project-details-img-container frame-2'>
-                        <img src={project.img} alt={project.imgAlt} className='project-details-img' />
+                        <ProjectImageViewer 
+                            src={project.img} 
+                            alt={project.imgAlt} 
+                        />
                     </div>
                 </div>
                 <div className='project-details-element'>
@@ -81,7 +85,10 @@ export default function ProjectPage() {
                         <p className='text-paragraph'>{filterProjectList(project.technologies)}</p>      
                     </div>
                     <div className='project-details-img-container frame-2'>
-                        <img src={project.images[0].src} alt={project.imgAlt} className='project-details-img' />
+                        <ProjectImageViewer 
+                            src={project.images[0].src}
+                            alt={project.images[0].alt} 
+                        />
                     </div>
                 </div>
                 <div className='project-details-element'>
@@ -90,7 +97,10 @@ export default function ProjectPage() {
                         <div>{filterProjectList(project.highlights)}</div>      
                     </div>
                     <div className='project-details-img-container frame-2'>
-                        <img src={project.images[1].src} alt={project.imgAlt} className='project-details-img' />
+                        <ProjectImageViewer 
+                            src={project.images[1].src}
+                            alt={project.images[1].alt} 
+                        />
                     </div>
                 </div>
                 <div className='project-details-element'>
@@ -99,7 +109,10 @@ export default function ProjectPage() {
                         <div className='project-list'>{filterProjectList(project.challenges)}</div>      
                     </div>
                     <div className='project-details-img-container frame-2'>
-                        <img src={project.images[2].src} alt={project.imgAlt} className='project-details-img' />
+                        <ProjectImageViewer 
+                            src={project.images[2].src}
+                            alt={project.images[2].alt} 
+                        />
                     </div>
                 </div>
                 <div className='project-details-element'>
@@ -108,7 +121,10 @@ export default function ProjectPage() {
                         <p className='text-paragraph'>{project.conclusion}</p>      
                     </div>
                     <div className='project-details-img-container frame-2'>
-                        <img src={project.images[3].src} alt={project.imgAlt} className='project-details-img' />
+                        <ProjectImageViewer 
+                            src={project.images[3].src}
+                            alt={project.images[3].alt} 
+                        />
                     </div>
                 </div>
             </section>
