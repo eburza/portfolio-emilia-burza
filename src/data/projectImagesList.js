@@ -10,6 +10,8 @@ import VanLifeMain from '../assets/projects-images/vanLife-app/vanlife-main.png'
 
 import QuizzicalTriviaMain from '../assets/projects-images/quizzical-trivia-app/quizzical-main.png'
 
+import GraphicPortfolioMain from '../assets/projects-images/graphic-portfolio/graphic-portfolio-main-3.png'
+
 const projectTicTacToeImages = {
     main: TicTacToeMain,
     previews: [TicTacToeP1, TicTacToeP2, TicTacToeP3, TicTacToeP4]
@@ -37,3 +39,10 @@ const QuizzicalTriviaImages = {
 }
 
 export { QuizzicalTriviaImages }
+
+const GraphicPortfolioImages = {
+    main: GraphicPortfolioMain,
+    previews: ['img1', 'img2' ]
+}
+
+export { GraphicPortfolioImages }

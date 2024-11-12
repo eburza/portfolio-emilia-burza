@@ -2,7 +2,8 @@ import {
     projectTicTacToeImages, 
     projectTipCalculatorImages,
     VanLifeImages,
-    QuizzicalTriviaImages
+    QuizzicalTriviaImages,
+    GraphicPortfolioImages
 } from './projectImagesList'
 
 const projectList = [
@@ -305,9 +306,7 @@ const projectList = [
         imgAlt: 'Quizzical Trivia app preview',
         description: `Quizzical is an interactive trivia application that challenges users with diverse questions across various topics. The app is designed to provide an engaging learning experience while testing users' knowledge in an entertaining format.`,
         tags: ['react', 'javascript', 'firebase', 'css', 'vite'],
-        conclusion: `The Quizzical Trivia App demonstrates my ability to create engaging, interactive web applications using modern JavaScript frameworks and tools. It showcases my skills in front-end development, API integration, and user experience design. The project highlights my attention to detail in creating a polished, production-ready application that provides both entertainment and educational value to users.
-
-The implementation emphasizes clean code architecture, modern development practices, and thoughtful user interface design, making it a strong addition to my portfolio of web development work.`,
+        conclusion: `The Quizzical Trivia App demonstrates my ability to create engaging, interactive web applications using modern JavaScript frameworks and tools. It showcases my skills in front-end development, API integration, and user experience design. The project highlights my attention to detail in creating a polished, production-ready application that provides both entertainment and educational value to users. The implementation emphasizes clean code architecture, modern development practices, and thoughtful user interface design, making it a strong addition to my portfolio of web development work.`,
         liveLink: 'https://emilia-burza-quizzical-trivia-app.netlify.app/',
         githubLink: 'https://github.com/eburza/Quizzical-Trivia-App-Final',
         images: [
@@ -395,6 +394,178 @@ The implementation emphasizes clean code architecture, modern development practi
             {
                 bold: 'API Integration',
                 text: 'Successfully integrated with external trivia API while handling various response formats and edge cases'
+            }
+        ],
+    },
+    {
+        name: 'My Old Graphic Design Portfolio Website',
+        id: 'project-5',
+        img: GraphicPortfolioImages.main,
+        imgAlt: 'Quizzical Trivia app preview',
+        description: `This project is my old personal portfolio website as a graphic designer, showcasing my creative work and professional experience. The website features a clean, minimalist design that puts the focus on my design projects while maintaining excellent usability and responsiveness across different devices. Through this platform, I demonstrate my expertise in various design disciplines and my ability to create visually compelling solutions that meet client needs.`,
+        tags: ['html', 'css'],
+        conclusion: `This portfolio website demonstrates my ability to create professional, responsive web experiences with clean code and attention to detail. The project showcases my skills in HTML5, CSS3, while also highlighting my understanding of user experience and responsive design principles. The implementation of analytics tools also shows consideration for tracking and improving user engagement.`,
+        liveLink: 'https://emilia-burza-quizzical-trivia-app.netlify.app/',
+        githubLink: 'https://github.com/eburza/Quizzical-Trivia-App-Final',
+        images: [
+            {
+                src: GraphicPortfolioImages.previews[0],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ],
+        features: [
+            {
+                bold: 'Responsive Design',
+                text: 'The website is fully responsive, adapting seamlessly to different screen sizes and devices through carefully implemented media queries'
+            },
+            {
+                bold: 'Portfolio Gallery',
+                text: 'A well-organized gallery of design projects, each with detailed case studies and visual presentations'
+            },
+            {
+                bold: 'Navigation System',
+                text: `Clean and intuitive navigation with a fixed header for easy access to different sections`
+            },
+            {
+                bold: 'Contact Section',
+                text: 'Direct contact information and social media links for professional networking'
+            },
+            {
+                bold: 'Project Case Studies',
+                text: 'Detailed project descriptions including requirements and visual presentations'
+            }
+        ],
+        technologies: [
+            {
+                bold: 'HTML5',
+                text: `Semantic markup for better accessibility and SEO`
+            },
+            {
+                bold: 'CSS3',
+                text: 'Advanced styling with features like flexbox and media queries'
+            },
+            {
+                bold: 'Font Awesome',
+                text: 'Integration of professional icons for social media links'
+            },
+            {
+                bold: 'Analytics Integration',
+                text: 'Implementation of various analytics tools (Google Analytics, Hotjar, Heap) for tracking user behavior'
+            }
+        ],
+        highlights: [
+            {
+                bold: 'Mobile-First Approach',
+                text: `The CSS is structured using a mobile-first methodology, with breakpoints at 481px, 768px, and 992px for different device sizes`
+            },
+            {
+                bold: 'Responsive Images',
+                text: 'Implementation of responsive image handling with proper shadow effects and border radius'
+            },
+            {
+                bold: 'Grid Layout',
+                text: 'Efficient use of CSS grid for layout management'
+            }
+        ],
+        challenges: [
+            {
+                bold: 'Responsive Navigation',
+                text: 'Created a flexible navigation system that transforms based on screen size, ensuring good usability across all devices'
+            },
+            {
+                bold: 'Image Optimization',
+                text: 'Implemented proper image handling with shadows and responsive sizing while maintaining performance'
+            },
+            {
+                bold: 'Cross-browser Compatibility',
+                text: 'Ensured consistent rendering across different browsers through careful CSS implementation'
+            }
+        ],
+    },
+    {
+        name: 'My Old Graphic Design Portfolio Website',
+        id: 'project-5',
+        img: GraphicPortfolioImages.main,
+        imgAlt: 'Quizzical Trivia app preview',
+        description: `This project is my old personal portfolio website as a graphic designer, showcasing my creative work and professional experience. The website features a clean, minimalist design that puts the focus on my design projects while maintaining excellent usability and responsiveness across different devices. Through this platform, I demonstrate my expertise in various design disciplines and my ability to create visually compelling solutions that meet client needs.`,
+        tags: ['html', 'css'],
+        conclusion: `This portfolio website demonstrates my ability to create professional, responsive web experiences with clean code and attention to detail. The project showcases my skills in HTML5, CSS3, while also highlighting my understanding of user experience and responsive design principles. The implementation of analytics tools also shows consideration for tracking and improving user engagement.`,
+        liveLink: 'https://emilia-burza-quizzical-trivia-app.netlify.app/',
+        githubLink: 'https://github.com/eburza/Quizzical-Trivia-App-Final',
+        images: [
+            {
+                src: GraphicPortfolioImages.previews[0],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ],
+        features: [
+            {
+                bold: 'Responsive Design',
+                text: 'The website is fully responsive, adapting seamlessly to different screen sizes and devices through carefully implemented media queries'
+            },
+            {
+                bold: 'Portfolio Gallery',
+                text: 'A well-organized gallery of design projects, each with detailed case studies and visual presentations'
+            },
+            {
+                bold: 'Navigation System',
+                text: `Clean and intuitive navigation with a fixed header for easy access to different sections`
+            },
+            {
+                bold: 'Contact Section',
+                text: 'Direct contact information and social media links for professional networking'
+            },
+            {
+                bold: 'Project Case Studies',
+                text: 'Detailed project descriptions including requirements and visual presentations'
+            }
+        ],
+        technologies: [
+            {
+                bold: 'HTML5',
+                text: `Semantic markup for better accessibility and SEO`
+            },
+            {
+                bold: 'CSS3',
+                text: 'Advanced styling with features like flexbox and media queries'
+            },
+            {
+                bold: 'Font Awesome',
+                text: 'Integration of professional icons for social media links'
+            },
+            {
+                bold: 'Analytics Integration',
+                text: 'Implementation of various analytics tools (Google Analytics, Hotjar, Heap) for tracking user behavior'
+            }
+        ],
+        highlights: [
+            {
+                bold: 'Mobile-First Approach',
+                text: `The CSS is structured using a mobile-first methodology, with breakpoints at 481px, 768px, and 992px for different device sizes`
+            },
+            {
+                bold: 'Responsive Images',
+                text: 'Implementation of responsive image handling with proper shadow effects and border radius'
+            },
+            {
+                bold: 'Grid Layout',
+                text: 'Efficient use of CSS grid for layout management'
+            }
+        ],
+        challenges: [
+            {
+                bold: 'Responsive Navigation',
+                text: 'Created a flexible navigation system that transforms based on screen size, ensuring good usability across all devices'
+            },
+            {
+                bold: 'Image Optimization',
+                text: 'Implemented proper image handling with shadows and responsive sizing while maintaining performance'
+            },
+            {
+                bold: 'Cross-browser Compatibility',
+                text: 'Ensured consistent rendering across different browsers through careful CSS implementation'
             }
         ],
     },
