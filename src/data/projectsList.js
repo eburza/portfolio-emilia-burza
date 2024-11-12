@@ -330,6 +330,21 @@ const projectList = [
                 alt: 'Project screenshot 1',
                 caption: 'Homepage design showcasing the main features'
             },
+            {
+                src: QuizzicalTriviaImages.previews[1],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: QuizzicalTriviaImages.previews[2],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: QuizzicalTriviaImages.previews[3],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
         ],
         features: [
             {
@@ -428,6 +443,21 @@ const projectList = [
                 alt: 'Project screenshot 1',
                 caption: 'Homepage design showcasing the main features'
             },
+            {
+                src: GraphicPortfolioImages.previews[1],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: GraphicPortfolioImages.previews[2],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: GraphicPortfolioImages.previews[3],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            }
         ],
         features: [
             {
