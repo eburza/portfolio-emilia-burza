@@ -10,6 +10,10 @@ import TipCalculatorP2 from '../assets/projects-images/tip-calculator/tip-calcul
 import TipCalculatorP3 from '../assets/projects-images/tip-calculator/tip-calculator-preview-3.png'
 
 import VanLifeMain from '../assets/projects-images/vanLife-app/vanlife-main.png'
+import VanLifeP1 from '../assets/projects-images/vanLife-app/vanlife-preview-1.png'
+import VanLifeP2 from '../assets/projects-images/vanLife-app/vanlife-preview-2.png'
+import VanLifeP3 from '../assets/projects-images/vanLife-app/vanlife-preview-3.png'
+import VanLifeP4 from '../assets/projects-images/vanLife-app/vanlife-preview-4.png'
 
 import QuizzicalTriviaMain from '../assets/projects-images/quizzical-trivia-app/quizzical-main.png'
 import QuizzicalTriviaP1 from '../assets/projects-images/quizzical-trivia-app/quizzical-preview-1.png'
@@ -40,7 +44,7 @@ export { projectTipCalculatorImages }
 
 const VanLifeImages = {
     main: VanLifeMain,
-    previews: ['img1', 'img2' ]
+    previews: [ VanLifeP1, VanLifeP2, VanLifeP3, VanLifeP4 ]
 }
 
 export { VanLifeImages }
