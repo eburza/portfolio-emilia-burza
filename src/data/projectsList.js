@@ -221,6 +221,21 @@ const projectList = [
                 alt: 'Project screenshot 1',
                 caption: 'Homepage design showcasing the main features'
             },
+            {
+                src: VanLifeImages.previews[1],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: VanLifeImages.previews[2],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: VanLifeImages.previews[3],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            }
         ],
         features: [
             {
