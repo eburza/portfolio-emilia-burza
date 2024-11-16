@@ -27,7 +27,6 @@ export default function ProjectPage() {
                     <h1 className='heading-xl project-title underscore-water'>{project.name}</h1>
                     <div className='hero-summary'>
                         <section className='project-description'>
-                            <h2 className='heading-m'>About this project</h2>
                             <p className='text-paragraph'>{project.description}</p>
                         </section>
                     </div>
