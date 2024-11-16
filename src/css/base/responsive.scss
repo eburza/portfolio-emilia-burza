@@ -452,6 +452,12 @@
 .project-image-viewer {
     
     @include respond-to(tablet) {
+        .image-container {
+            max-height: 400px;
+            max-width: 90%;
+            justify-self: center;
+        }
+
         .modal-content {
             width: 95%;
             margin: 0 1rem;
@@ -459,19 +465,8 @@
     }
     
     @include respond-to(mobile) {
-        .project-image-viewer {
-            .image-container {
-                height: 400px;
-            }
-        }
-    
-        .modal-content {
-            padding: 0.5rem;
-    
-            .close-button {
-                right: 0.5rem;
-                top: 0.5rem;
-            }
+        .image-container {
+            max-height: 300px;
         }
     }
 }
