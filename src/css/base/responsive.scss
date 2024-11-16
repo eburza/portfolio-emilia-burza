@@ -452,6 +452,10 @@
 .project-image-viewer {
     
     @include respond-to(tablet) {
+        .details-text {
+            max-width: 90%;
+        }
+        
         .image-container {
             max-height: 400px;
             max-width: 90%;

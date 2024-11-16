@@ -6,13 +6,13 @@ function filterProjectList(dataList) {
     }
 
     return (
-        <>
+        <ul className='details-list'>
             {dataList.map((listItem, index) => (
-                <p key={index} className='project-list-item text-paragraph'>
+                <li key={index} className='project-list-item text-paragraph'>
                     <span className='text-paragraph-bold'>{listItem.bold}:</span> {listItem.text}.
-                </p>
+                </li>
             ))}
-        </>
+        </ul>
     )
 }
 

@@ -69,7 +69,10 @@ export default function ProjectPage() {
                 <div className='project-details-element'>
                     <div className='details-text frame-1'>
                         <h2 className='heading-m-projects'>Features</h2>
-                        <p className='text-paragraph'>{filterProjectList(project.features)}</p>      
+                        <div>
+                            {filterProjectList(project.features)}
+                        </div>
+                        {/* <p className='text-paragraph'>{filterProjectList(project.features)}</p>       */}
                     </div>
                     <div className='project-details-img-container frame-2'>
                         <ProjectImageViewer 

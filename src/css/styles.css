@@ -386,6 +386,9 @@
 }
 
 @media screen and (max-width: 1350px) {
+  .project-image-viewer .details-text {
+    max-width: 90%;
+  }
   .project-image-viewer .image-container {
     max-height: 400px;
     max-width: 90%;
@@ -1430,6 +1433,21 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.project-content .details-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.project-content .details-text .details-list {
+  list-style: disc;
+  text-align: left;
+}
+.project-content .details-text .details-list .project-list-item::marker {
+  font-size: 1.5rem;
+  color: #FFC1DE;
 }
 
 .back-to-home {

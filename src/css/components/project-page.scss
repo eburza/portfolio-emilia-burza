@@ -4,13 +4,25 @@
 }
 
 .header-project {
-    // padding: 12rem 5rem 5rem;
     background-color: $old-lace;
 }
 
 .project-content {
-    // padding: 5rem;
     @include display-flex(column, center, center, 2rem);
+
+    .details-text {
+        @include display-flex(column, center, flex-start, 1rem);
+
+        .details-list {
+            list-style: disc ;
+            text-align: left;
+
+            .project-list-item::marker {
+                font-size: 1.5rem;
+                color: $pastel-pink;
+            }
+        }
+    }
 }
 
 .back-to-home {
