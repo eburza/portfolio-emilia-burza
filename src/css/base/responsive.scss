@@ -271,6 +271,10 @@
 
 // Project page 
 .project-page {
+    .header-project {
+        padding: 12rem 12rem 6rem;
+    }
+
     .project-hero {
         margin-top: 1rem;
         display: grid;
@@ -297,6 +301,8 @@
     }
 
     .project-content {
+        padding: 6rem 12rem;
+
         .content-heading {
             align-self: flex-start;
         }
@@ -333,9 +339,28 @@
 
     }
 
+    @include respond-to(desktop) {
+        .header-project {
+            padding: 10rem 10.08rem;
+        }
+    
+        .project-content {
+            padding: 5.04rem 10.08rem;
+        }
+    }
+
     @include respond-to(tablet) {
         .header-project {
-            padding: 10rem 3rem 3rem;
+            padding: 10rem 3.6rem 4.02rem;
+        }
+    
+        .project-content {
+            padding: 4.02rem 3.6rem;
+
+            .content-heading {
+                align-self:  center;
+                text-align: center;
+            }
         }
 
         .project-hero {
@@ -351,20 +376,11 @@
             }
         
             .hero-data {
-                min-width: unset;
+                min-width: 30rem;
                 justify-self: center;
             }
 
             .hero-summary {
-                text-align: center;
-            }
-        }
-
-        .project-content {
-            padding: 3rem;
-
-            .content-heading {
-                align-self:  center;
                 text-align: center;
             }
         }
@@ -376,6 +392,12 @@
                 "frame2";
                 
             &:nth-child(even) {
+                grid-template-areas: 
+                    "frame1"
+                    "frame2";
+            }
+
+            &:nth-child(odd) {
                 grid-template-areas: 
                     "frame1"
                     "frame2";
@@ -409,18 +431,20 @@
 
     @include respond-to(mobile) {
         .header-project {
-            padding: 10rem 2rem 2rem;
-        }
+            padding: 10rem 2.04rem 3rem;
 
-        .project-hero {
-            .hero-data {
-                padding: 1rem;
+            .project-hero {
+                .hero-data {
+                    width: 80%;
+                    padding: 1.5rem;
+                }
             }
         }
-
+    
         .project-content {
-            padding: 2rem;
+            padding: 3rem 2.04rem;
         }
+
     }
 }
 

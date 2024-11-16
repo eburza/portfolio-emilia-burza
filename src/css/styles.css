@@ -259,6 +259,9 @@
   }
 }
 
+.project-page .header-project {
+  padding: 12rem 12rem 6rem;
+}
 .project-page .project-hero {
   margin-top: 1rem;
   display: grid;
@@ -277,6 +280,9 @@
   grid-area: data;
   justify-self: end;
   min-width: 30rem;
+}
+.project-page .project-content {
+  padding: 6rem 12rem;
 }
 .project-page .project-content .content-heading {
   align-self: flex-start;
@@ -302,9 +308,24 @@
 .project-page .project-details-element .project-details-img-container {
   padding: 1rem;
 }
+@media screen and (max-width: 1650px) {
+  .project-page .header-project {
+    padding: 10rem 10.08rem;
+  }
+  .project-page .project-content {
+    padding: 5.04rem 10.08rem;
+  }
+}
 @media screen and (max-width: 1350px) {
   .project-page .header-project {
-    padding: 10rem 3rem 3rem;
+    padding: 10rem 3.6rem 4.02rem;
+  }
+  .project-page .project-content {
+    padding: 4.02rem 3.6rem;
+  }
+  .project-page .project-content .content-heading {
+    align-self: center;
+    text-align: center;
   }
   .project-page .project-hero {
     grid-template-columns: 1fr;
@@ -315,17 +336,10 @@
     justify-self: center;
   }
   .project-page .project-hero .hero-data {
-    min-width: unset;
+    min-width: 30rem;
     justify-self: center;
   }
   .project-page .project-hero .hero-summary {
-    text-align: center;
-  }
-  .project-page .project-content {
-    padding: 3rem;
-  }
-  .project-page .project-content .content-heading {
-    align-self: center;
     text-align: center;
   }
   .project-page .project-details-element {
@@ -333,6 +347,9 @@
     grid-template-areas: "frame1" "frame2";
   }
   .project-page .project-details-element:nth-child(even) {
+    grid-template-areas: "frame1" "frame2";
+  }
+  .project-page .project-details-element:nth-child(odd) {
     grid-template-areas: "frame1" "frame2";
   }
   .project-page .project-details-element .frame-1,
@@ -357,13 +374,14 @@
 }
 @media screen and (max-width: 690px) {
   .project-page .header-project {
-    padding: 10rem 2rem 2rem;
+    padding: 10rem 2.04rem 3rem;
   }
-  .project-page .project-hero .hero-data {
-    padding: 1rem;
+  .project-page .header-project .project-hero .hero-data {
+    width: 80%;
+    padding: 1.5rem;
   }
   .project-page .project-content {
-    padding: 2rem;
+    padding: 3rem 2.04rem;
   }
 }
 
@@ -1405,12 +1423,10 @@ footer {
 }
 
 .header-project {
-  padding: 12rem 5rem 5rem;
   background-color: #F8F3EB;
 }
 
 .project-content {
-  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1452,9 +1468,10 @@ footer {
   justify-content: initial;
   align-items: flex-start;
   gap: 1.5rem;
+  min-width: 10rem;
   background-color: #fff;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 .project-hero .hero-data .heading-s,
 .project-hero .hero-data .text-paragraph {
