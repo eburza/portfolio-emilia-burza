@@ -21,7 +21,7 @@ import QuizzicalTriviaP2 from '../assets/projects-images/quizzical-trivia-app/qu
 import QuizzicalTriviaP3 from '../assets/projects-images/quizzical-trivia-app/quizzical-preview-3.png'
 import QuizzicalTriviaP4 from '../assets/projects-images/quizzical-trivia-app/quizzical-preview-4.png'
 
-import GraphicPortfolioMain from '../assets/projects-images/graphic-portfolio/graphic-portfolio-main-3.png'
+import GraphicPortfolioMain from '../assets/projects-images/graphic-portfolio/graphic-portfolio-main.png'
 import GraphicPortfolioP1 from '../assets/projects-images/graphic-portfolio/graphic-portfolio-preview-1.png'
 import GraphicPortfolioP2 from '../assets/projects-images/graphic-portfolio/graphic-portfolio-preview-2.png'
 import GraphicPortfolioP3 from '../assets/projects-images/graphic-portfolio/graphic-portfolio-preview-3.png'
