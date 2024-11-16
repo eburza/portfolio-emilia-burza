@@ -1520,7 +1520,7 @@ footer {
 .project-image-viewer .image-container {
   position: relative;
   width: 100%;
-  max-height: 600px;
+  max-height: 400px;
   overflow: hidden;
   border-radius: 1rem;
   cursor: pointer;
@@ -1574,9 +1574,9 @@ footer {
 }
 .modal-content .close-button {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
-  padding: 0.5rem;
+  right: 0.5rem;
+  top: 0.5rem;
+  padding: 0.25rem;
   border-radius: 50%;
   transition: background-color 0.3s ease;
 }
@@ -1588,10 +1588,11 @@ footer {
   height: 1.5rem;
 }
 .modal-content .modal-image-container {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
   max-height: 80vh;
   overflow: auto;
+  border-radius: 0.5rem;
 }
 .modal-content .modal-image-container img {
   width: 100%;
