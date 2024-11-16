@@ -46,17 +46,33 @@
 // Hero section
 .hero {
     @extend %section-padding;
-    min-height: 700px;
 
     .hero-text {
-        margin-top: 6rem;
+        max-width: 70%;
+        
+        .heading-xl {
+            word-break: keep-all;
+        }
+
+        .hero-react-dev {
+            white-space: nowrap;
+            display: inline-block;
+        }
+    }
+
+    .hero-img {
+        width: 40%;
     }
 
     @include respond-to(desktop) {
         min-height: 550px;
-
+    
         .hero-text {
-            margin-top: 3rem;
+            max-width: 58%;
+        }
+    
+        .hero-img {
+            width: 45%;
         }
     }
 
@@ -66,23 +82,21 @@
         .hero-container {
             @include display-flex(column, center, center, 1.5rem);
         }
-      
+        
         .hero-text {
-            margin-top: 0;
-            width: 100%;
+            max-width: 100%;
             text-align: center;
-            position: relative;
+            align-items: center;
         }
-      
+        
         .hero-img {
             width: 70%;
-            position: relative;
         }
     }
 
     @include respond-to(mobile) {
         min-height: 400px;
-
+    
         .hero-img {
             width: 90%;
         }
@@ -125,6 +139,7 @@
         @include display-flex(column, center, center, initial);
       
         .about-wrapper {
+            margin-top: 1.5rem;;
             grid-template-columns: 1fr;
             grid-template-areas: 
             "image"
@@ -146,11 +161,7 @@
     @include respond-to(mobile) {
 
         .about-img {
-            display: none;
-        }
-
-        .about-wrapper {
-            margin-top: 0;
+            width: 8rem;
         }
     }
 }

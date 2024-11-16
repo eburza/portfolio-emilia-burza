@@ -1,21 +1,26 @@
+.hero {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+
 .hero-container {
-    @include display-flex(row, center, center, initial);
+    @include display-flex(row, space-between, center, initial);
+    width: 100%;
     position: relative;
 }
   
 .hero-text {
-    position: absolute;
+    flex: 1;
     z-index: 2;
-    left: 0;
-    top: 0;
+    @include display-flex(column, center, flex-start, 0.25rem);
+    max-width: 60%;
 }
 
 .hero-img {
-    position: absolute;
     z-index: 1;
-    width: 50%;
-    right: 0;
-    top: 0;
+    width: 42%;
+    
     img {
         width: 100%;
         object-fit: contain;
