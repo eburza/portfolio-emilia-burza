@@ -330,7 +330,7 @@ const projectList = [
         ],
     },
     {
-        name: 'Quizzical Trivia App',
+        name: 'Quizzical game',
         id: 'quizzical-trivia-app',
         img: QuizzicalTriviaImages.main,
         imgAlt: 'Quizzical Trivia app preview',
@@ -443,7 +443,7 @@ const projectList = [
         ],
     },
     {
-        name: 'My Old Graphic Design Portfolio Website',
+        name: 'My Old Website',
         id: 'graphic-design-portfolio',
         img: GraphicPortfolioImages.main,
         imgAlt: 'Quizzical Trivia app preview',
