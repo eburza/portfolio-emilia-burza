@@ -3,6 +3,7 @@ footer {
 }
 
 .footer-content {
+    justify-self: center;
     width: 90%;
     max-width: 75rem;
 }
@@ -41,7 +42,7 @@ footer {
 }
 
 .footer-dev-info {
-    @include display-flex(initial, center, center, 0.2rem);
+    @include display-flex(initial, center, center, 0.5rem);
     padding-top: 0.5rem;
     img {
         @include footer-heart-img;

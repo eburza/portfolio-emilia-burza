@@ -16,7 +16,7 @@ export default function Footer() {
                     <p className='text-paragraph-s'> by Emilia</p>
                 </div>
                 <div className='personal-card'>
-                    <h2 className='heading-s card-title'>Say hey!</h2>
+                    <h2 className='heading-s card-title'>Say hi!</h2>
                     <p className='text-paragraph-s card-phone'>+48 782 640 208</p>
                     <p className='text-paragraph-s card-email'>emila.burza@gmail.com</p>
                     <SocialLinks />
