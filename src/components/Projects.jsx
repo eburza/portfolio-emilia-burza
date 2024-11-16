@@ -40,7 +40,10 @@ export default function Projects() {
                     modules={[Mousewheel]}
                     slidesPerView={3}       
                     spaceBetween={0}
-                    mousewheel={true}
+                    mousewheel={{
+                        enabled: true,
+                        forceToAxis: true
+                    }}
                     breakpoints={{
                         0: {                  
                             slidesPerView: 1,
