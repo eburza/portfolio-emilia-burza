@@ -9,7 +9,7 @@ import {
 const projectList = [
     {
         name: 'Tic-Tac-Toe game',
-        id: 'project-1',
+        id: 'tic-tac-toe-game',
         img: projectTicTacToeImages.main,
         imgAlt: 'Tic-Tac-Toe game preview',
         description: 'This project is a web-based implementation of the classic Tic Tac Toe game. It is designed to provide an engaging and interactive experience for users, allowing them to play against another player or a CPU. The game is built using modern web technologies, ensuring a responsive and visually appealing interface.',
@@ -106,7 +106,7 @@ const projectList = [
     },
     {
         name: 'Tip Calculator App',
-        id: 'project-2',
+        id: 'tip-calculator-app',
         img: projectTipCalculatorImages.main,
         imgAlt: 'Tip Calculator app preview',
         description: 'This project is a modern tip calculator web application designed to simplify bill splitting and tip calculations. It provides users with an intuitive interface to quickly calculate tips and split bills among multiple people, making it an invaluable tool for dining out or sharing expenses.',
@@ -207,7 +207,7 @@ const projectList = [
     },
     {
         name: 'VanLife App',
-        id: 'project-3',
+        id: 'vanlife-app',
         img: VanLifeImages.main,
         imgAlt: 'VanLife app preview',
         description: 'VanLife is a comprehensive web application for van rentals, allowing users to browse, filter, and manage van listings. The platform includes both user-facing features for van rentals and a host dashboard for van owners to manage their listings, track income, and review customer feedback.',
@@ -331,7 +331,7 @@ const projectList = [
     },
     {
         name: 'Quizzical Trivia App',
-        id: 'project-4',
+        id: 'quizzical-trivia-app',
         img: QuizzicalTriviaImages.main,
         imgAlt: 'Quizzical Trivia app preview',
         description: `Quizzical is an interactive trivia application that challenges users with diverse questions across various topics. The app is designed to provide an engaging learning experience while testing users' knowledge in an entertaining format.`,
@@ -444,7 +444,7 @@ const projectList = [
     },
     {
         name: 'My Old Graphic Design Portfolio Website',
-        id: 'project-5',
+        id: 'graphic-design-portfolio',
         img: GraphicPortfolioImages.main,
         imgAlt: 'Quizzical Trivia app preview',
         description: `This project is my old personal portfolio website as a graphic designer, showcasing my creative work and professional experience. The website features a clean, minimalist design that puts the focus on my design projects while maintaining excellent usability and responsiveness across different devices. Through this platform, I demonstrate my expertise in various design disciplines and my ability to create visually compelling solutions that meet client needs.`,
