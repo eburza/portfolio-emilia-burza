@@ -157,6 +157,7 @@
 .skills-and-tools .react-doodle {
   margin-top: -9rem;
   margin-right: -14rem;
+  scale: 0.9;
 }
 .skills-and-tools .html-doodle {
   margin-bottom: -6rem;
@@ -166,6 +167,7 @@
   .skills-and-tools .react-doodle {
     margin-top: -9.5rem;
     margin-right: -14rem;
+    scale: 0.7;
   }
 }
 @media screen and (max-width: 1350px) {
