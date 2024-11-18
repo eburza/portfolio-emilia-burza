@@ -405,11 +405,7 @@
         
             .frame-1,
             .frame-2 {
-                text-align: center;
-        
-                .heading-m-projects {
-                    text-align: center;
-                }
+                text-align: left;
             }
 
             .project-details-img-container {
@@ -425,7 +421,7 @@
         }
 
         .back-to-home {
-            justify-content: center;
+            justify-self: center;
         }
     }
 

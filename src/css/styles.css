@@ -354,11 +354,7 @@
   }
   .project-page .project-details-element .frame-1,
   .project-page .project-details-element .frame-2 {
-    text-align: center;
-  }
-  .project-page .project-details-element .frame-1 .heading-m-projects,
-  .project-page .project-details-element .frame-2 .heading-m-projects {
-    text-align: center;
+    text-align: left;
   }
   .project-page .project-details-element .project-details-img-container {
     padding: 0.5rem;
@@ -369,7 +365,7 @@
     margin: 0 auto;
   }
   .project-page .back-to-home {
-    justify-content: center;
+    justify-self: center;
   }
 }
 @media screen and (max-width: 690px) {
