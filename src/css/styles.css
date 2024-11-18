@@ -1334,6 +1334,7 @@ footer {
   background-color: #FFC1DE;
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0px 12px 24px 0px rgba(75, 68, 57, 0.1), 0px 48px 48px 0px rgba(75, 68, 57, 0.1);
 }
 
 .card-title {
