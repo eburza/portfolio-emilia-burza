@@ -1,4 +1,5 @@
 import { skillsList, toolsList } from '../data/skillsAndTools.js'
+import BorderBottom from '../assets/bottom-frame.svg'
 
 export default function SkillsAndTools() {
 
@@ -36,6 +37,9 @@ export default function SkillsAndTools() {
                         {toolsItem}
                     </div>
                 </section>
+            </div>
+            <div className='skills-border-bottom'>
+                <img src={BorderBottom} />
             </div>
         </div>
     )
