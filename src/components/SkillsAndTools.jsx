@@ -1,5 +1,7 @@
 import { skillsList, toolsList } from '../data/skillsAndTools.js'
 import BorderBottom from '../assets/bottom-frame.svg'
+import ReactImg from '../assets/doodles/react.png'
+import HtmlImg from '../assets/doodles/html.png'
 
 export default function SkillsAndTools() {
 
@@ -37,6 +39,12 @@ export default function SkillsAndTools() {
                         {toolsItem}
                     </div>
                 </section>
+                <div className='doodle react-doodle'>
+                    <img src={ReactImg} />
+                </div>
+                <div className='doodle html-doodle'>
+                    <img src={HtmlImg} />
+                </div>
             </div>
             <div className='skills-border-bottom'>
                 <img src={BorderBottom} />

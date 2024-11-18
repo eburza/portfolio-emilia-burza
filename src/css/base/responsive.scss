@@ -170,7 +170,34 @@
 .skills-and-tools {
     @extend %section-padding;
 
+        .react-doodle {
+            margin-top: -9rem;
+            margin-right: -14rem;
+        }
+
+        .html-doodle {
+            margin-bottom: -6rem;
+            margin-left: -14rem;
+        }
+    @include respond-to(desktop) {
+        .react-doodle {
+            margin-top: -9.5rem;
+            margin-right: -14rem;
+        }
+    }
+
     @include respond-to(tablet) {
+        .react-doodle {
+            margin-top: -9rem;
+            margin-right: -13rem;
+            scale: 0.4;
+        }
+
+        .html-doodle {
+            margin-bottom: -8rem;
+            margin-left: -9.5rem;
+        }
+    
         .skills-head-title {
             align-self: center;
         }
@@ -202,6 +229,17 @@
     } 
 
     @include respond-to(mobile) {
+        .react-doodle {
+            margin-top: -8.45rem;
+            margin-right: -12.25rem;
+            scale: 0.3;
+        }
+        
+        .html-doodle {
+            margin-bottom: -7.5rem;
+            margin-left: -7rem;
+        }
+
         .skill-section-container {
             padding: 0.7rem;
         }
@@ -225,7 +263,19 @@
 .projects-content {
     @extend %section-padding;
 
+    .gear-doodle {
+        margin-top: -14rem;
+    }
+
+    @include respond-to(desktop) {
+    }
+
     @include respond-to(tablet) {
+        .gear-doodle {
+            margin-top: -12rem;
+            margin-right: -6rem;
+        }
+
         .project-preview {
             padding: 0.75rem;
             box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.10), 
@@ -257,6 +307,11 @@
     }    
 
     @include respond-to(mobile) {
+        .gear-doodle {
+            margin-top: -12rem;
+            margin-right: -8rem;
+        }
+        
         .project-preview {
             padding: 2rem;
             box-shadow: 0px 8px 16px 0px rgba(75, 68, 57, 0.10), 
@@ -266,6 +321,22 @@
         .swiper-slide {
             padding-bottom: 3rem;
         }
+    }
+}
+// Doodle  
+.doodle {
+    scale: 1;
+
+    @include respond-to(desktop) {
+        scale: 0.8;
+    }
+
+    @include respond-to(tablet) {
+        scale: 0.5;
+    }
+
+    @include respond-to(mobile) {
+        scale: 0.4;
     }
 }
 

@@ -1,6 +1,7 @@
 import ProjectListElement from './ProjectListElement'
 import { projectList } from '../data/projectsList'
 import ArrowButton from '../assets/arrow-button.svg'
+import GearImg from '../assets/doodles/gear.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel } from 'swiper/modules'
 import 'swiper/css/navigation'
@@ -26,6 +27,9 @@ export default function Projects() {
     return(
         <div className='projects-content' id='projects'>
             <div className='project-text-container'>
+                <div className='doodle gear-doodle'>
+                    <img src={GearImg} />
+                </div>
                 <h1 className='heading-l underscore-water'>Projects</h1>
                 <p className='text-paragraph projects-intro-text'>
                     Explore my frontend development projects built with React.js 

@@ -1,4 +1,4 @@
-import MainBannerImg from '../assets/img-banner-top.png'
+import MainBannerImg from '../assets/doodles/img-banner-top.png'
 
 export default function BannerMain() {
     return(

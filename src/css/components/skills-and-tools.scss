@@ -1,6 +1,7 @@
 .skills-and-tools {
     @include display-flex(column, center, center, initial);
     padding-bottom: 0;
+    overflow: hidden;
 }
 
 .skills-head-title {
@@ -8,6 +9,7 @@
 }
 
 .skill-section-container {
+    position: relative;
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 2.5rem;
