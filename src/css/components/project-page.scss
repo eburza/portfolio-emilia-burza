@@ -25,6 +25,21 @@
     }
 }
 
+.nested-details-list {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    list-style-type: disc;
+
+    .nested-list-item {
+        margin-top: 0.25rem;
+    }
+
+    .nested-list-item::marker {
+        color: $water;
+    }
+}
+
+
 .back-to-home {
     margin-bottom: 2rem;
     

@@ -5,6 +5,7 @@ import {
     QuizzicalTriviaImages,
     GraphicPortfolioImages
 } from './projectImagesList'
+import { filterProjectList } from '../utilis/filterProjectList'
 
 const projectList = [
     {
@@ -248,10 +249,12 @@ const projectList = [
             },
             {
                 bold: 'Host Dashboard',
-                text: `Comprehensive dashboard for van owners including: 
-                    - Income tracking with visual charts
-                    - Review management system
-                    - Detailed van listing management`
+                text: `Comprehensive dashboard for van owners including:`,
+                details: [
+                    { text: 'Income tracking with visual charts' },
+                    { text: 'Review management system' },
+                    { text: 'Detailed van listing management' }
+                ]
             },
             {
                 bold: 'Responsive Design',
