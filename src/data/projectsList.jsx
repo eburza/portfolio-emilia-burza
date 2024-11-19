@@ -334,7 +334,7 @@ const projectList = [
     },
     {
         name: 'Quizzical game',
-        id: 'quizzical-trivia-app',
+        id: 'quizzical-game',
         img: QuizzicalTriviaImages.main,
         imgAlt: 'Quizzical Trivia app preview',
         description: `Quizzical is an interactive trivia application that challenges users with diverse questions across various topics. The app is designed to provide an engaging learning experience while testing users' knowledge in an entertaining format.`,
@@ -447,14 +447,14 @@ const projectList = [
     },
     {
         name: 'My Old Website',
-        id: 'graphic-design-portfolio',
+        id: 'my-old-website',
         img: GraphicPortfolioImages.main,
         imgAlt: 'Quizzical Trivia app preview',
         description: `This project is my old personal portfolio website as a graphic designer, showcasing my creative work and professional experience. The website features a clean, minimalist design that puts the focus on my design projects while maintaining excellent usability and responsiveness across different devices. Through this platform, I demonstrate my expertise in various design disciplines and my ability to create visually compelling solutions that meet client needs.`,
         tags: ['html', 'css'],
         conclusion: `This portfolio website demonstrates my ability to create professional, responsive web experiences with clean code and attention to detail. The project showcases my skills in HTML5, CSS3, while also highlighting my understanding of user experience and responsive design principles. The implementation of analytics tools also shows consideration for tracking and improving user engagement.`,
-        liveLink: 'https://emilia-burza-quizzical-trivia-app.netlify.app/',
-        githubLink: 'https://github.com/eburza/Quizzical-Trivia-App-Final',
+        liveLink: 'https://emiliaburza.pl/',
+        githubLink: 'https://github.com/eburza/portfolio',
         images: [
             {
                 src: GraphicPortfolioImages.previews[0],
