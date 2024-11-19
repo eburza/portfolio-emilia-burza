@@ -266,6 +266,9 @@
   padding: 1rem 1.5rem 5rem;
 }
 @media screen and (max-width: 1350px) {
+  .projects-content .project-preview-summary:not(.expanded) p {
+    -webkit-line-clamp: 3;
+  }
   .projects-content .swiper-slide {
     padding: 1rem 1.5rem 5rem;
   }
@@ -289,11 +292,9 @@
   .projects-content .projects-list {
     margin-top: 1.25rem;
     width: 100%;
-    overflow: visible;
   }
   .projects-content .swiper {
     padding: 0.5rem;
-    overflow: visible;
   }
   .projects-content .swiper-slide {
     padding-bottom: 4rem;
