@@ -1658,7 +1658,7 @@ footer {
 .project-image-viewer .image-container {
   position: relative;
   width: 100%;
-  max-height: 600px;
+  max-height: 482px;
   overflow: hidden;
   border-radius: 1rem;
   cursor: pointer;
