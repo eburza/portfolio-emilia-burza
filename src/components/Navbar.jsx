@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Logo from '../assets/eb-logo.png'
 import NavigationLinks from './NavigationLinks'
+import Resume from '../assets/resume/emilia-burza-resume.pdf'
 
 export default function Navbar() {
     return (
@@ -11,7 +12,7 @@ export default function Navbar() {
             <NavigationLinks 
                 NavClassName="navigation-bar-links"
             />
-            <button className='resume-button'><a href='resume.pdf' className='text-navigation'>Resume</a></button>
+            <button className='resume-button'><a href={Resume} className='text-navigation' target="_blank">Resume</a></button>
         </nav>
     )
 }
