@@ -7,7 +7,7 @@ import Git from '../assets/skills-and-tools/git.svg'
 import Github from '../assets/skills-and-tools/github.svg'
 import Html from '../assets/skills-and-tools/html.svg'
 import Javascript from '../assets/skills-and-tools/javascript.svg'
-import Jquery from '../assets/skills-and-tools/jquery.svg'
+// import Jquery from '../assets/skills-and-tools/jquery.svg'
 import React from '../assets/skills-and-tools/react.svg'
 import Sass from '../assets/skills-and-tools/sass.svg'
 import Terminal from '../assets/skills-and-tools/terminal.svg'
@@ -15,6 +15,12 @@ import Vscode from '../assets/skills-and-tools/vscode.svg'
 import Accessibility from '../assets/skills-and-tools/accessibility.svg'
 import Responsiveness from '../assets/skills-and-tools/responsiveness.svg'
 import Vite from '../assets/skills-and-tools/vite.svg'
+import Jira from '../assets/skills-and-tools/jira.svg'
+// import Affinity from '../assets/skills-and-tools/affinity.svg'
+import NextJs from '../assets/skills-and-tools/nextjs.svg'
+import Typescript from '../assets/skills-and-tools/typescript.svg'
+import Postgresql from '../assets/skills-and-tools/postgresql.svg'
+import Tailwind from '../assets/skills-and-tools/tailwind.svg'
 
 
 const skillsList = [
@@ -22,6 +28,16 @@ const skillsList = [
         name: 'React',
         tag: 'react',
         img: React
+    },
+    {
+        name: 'Next.js',
+        tag: 'next.js',
+        img: NextJs
+    },
+    {
+        name: 'TypeScript',
+        tag: 'typescript',
+        img: Typescript
     },
     {
         name: 'JavaScript',
@@ -33,6 +49,11 @@ const skillsList = [
     //     tag: 'jquery',
     //     img: Jquery
     // },
+    {
+        name: 'PostgreSQL',
+        tag: 'postgresql',
+        img: Postgresql
+    },
     {
         name: 'Vite',
         tag: 'vite',
@@ -54,7 +75,12 @@ const skillsList = [
         img: Git
     },
     {
-        name: 'SASS',
+        name: 'Tailwind',
+        tag: 'tailwind',
+        img: Tailwind
+    },
+    {
+        name: 'Sass',
         tag: 'sass',
         img: Sass
     },
@@ -97,7 +123,7 @@ const toolsList = [
         img: Terminal
     },
     {
-        name: 'Adobe Suite',
+        name: 'Adobe CC',
         tag: 'adobe',
         img: Adobe
     },
@@ -105,7 +131,17 @@ const toolsList = [
         name: 'Figma',
         tag: 'figma',
         img: Figma
-    }
+    },
+    {
+        name: 'Jira',
+        tag: 'jira',
+        img: Jira
+    },
+    // {
+    //     name: 'Affinity',
+    //     tag: 'affinity',
+    //     img: Affinity
+    // },
 ]
 
 export {skillsList, toolsList}
