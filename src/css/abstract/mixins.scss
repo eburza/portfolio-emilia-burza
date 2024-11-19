@@ -247,7 +247,7 @@
 }
 
 @mixin project-list-button-img {
-    width: 34em;
+    width: 4em;
     transition: all 0.3s ease;
     
     @include respond-to(large) {

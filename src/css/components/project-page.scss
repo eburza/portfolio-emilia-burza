@@ -65,6 +65,8 @@
         background-color: $white;
         border-radius: 1rem;
         padding: 2rem;
+        box-shadow: 0 28px 20px 0 rgba(141, 125, 99, 0.1),
+                    0px 8px 12px 0px rgba(141, 125, 99, 0.10);
 
         .heading-s,
         .text-paragraph {

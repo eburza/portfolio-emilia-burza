@@ -15,12 +15,14 @@ body {
 
 .portfolio-website {
     @include display-flex(column, center, initial, initial);
+    overflow: hidden;
 }
 
 img {
     max-width: 100%;
     display: block;
 }
+
 button {
     font: inherit;
     border: none;
