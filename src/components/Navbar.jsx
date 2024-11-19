@@ -11,7 +11,7 @@ export default function Navbar() {
             <NavigationLinks 
                 NavClassName="navigation-bar-links"
             />
-            <button className='resume-button'><a href='/public/emilia-burza-resume.pdf' className='text-navigation' target="_blank" rel="noopener noreferrer">Resume</a></button>
+            <button className='resume-button'><a href='/emilia-burza-resume.pdf' className='text-navigation' target="_blank" rel="noopener noreferrer">Resume</a></button>
         </nav>
     )
 }
