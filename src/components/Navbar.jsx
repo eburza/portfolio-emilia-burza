@@ -12,7 +12,7 @@ export default function Navbar() {
             <NavigationLinks 
                 NavClassName="navigation-bar-links"
             />
-            <button className='resume-button'><a href={Resume} className='text-navigation' target="_blank">Resume</a></button>
+            <button className='resume-button'><a href={Resume} className='text-navigation' target="_blank" rel="noopener noreferrer">Resume</a></button>
         </nav>
     )
 }
