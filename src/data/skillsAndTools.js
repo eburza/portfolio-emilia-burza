@@ -21,6 +21,7 @@ import NextJs from '../assets/skills-and-tools/nextjs.svg'
 import Typescript from '../assets/skills-and-tools/typescript.svg'
 import Postgresql from '../assets/skills-and-tools/postgresql.svg'
 import Tailwind from '../assets/skills-and-tools/tailwind.svg'
+import Design from '../assets/skills-and-tools/design.svg'
 
 
 const skillsList = [
@@ -103,6 +104,11 @@ const skillsList = [
         name: 'Web Accessibility',
         tag: 'accessibility',
         img: Accessibility
+    },
+    {
+        name: 'UI/UX Design',
+        tag: 'ui/ux',
+        img: Design
     }
 ]
 
