@@ -21,7 +21,6 @@
 .skills-section {
     display: grid;
     grid-template-columns: 10rem auto;
-    gap: 2.5rem;
     position: relative;
     padding: 2rem;
 }
@@ -39,7 +38,6 @@
 .skill-item {
     @include display-flex(column, center, center, 1rem);
     align-self: flex-start;
-    width: 7.25rem;
     img {
         @include skill-item-img;
     }
@@ -54,7 +52,6 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-self: flex-start;
-    gap:  2rem;
 }
 
 .skills-border-bottom {

@@ -8,7 +8,7 @@ export default function SkillsAndTools() {
     const techAndSkillsItem = skillsList.map(skill => {
         return(
             <div key={skill.tag} className="skill-item">
-                <img src={skill.img} alt={skill.name} />
+                <img src={skill.img} alt={skill.name} className='skill-item-img'/>
                 <p className='text-skills'>{skill.name}</p>
             </div>
         )

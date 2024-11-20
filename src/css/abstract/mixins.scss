@@ -199,28 +199,28 @@
 @mixin text-skills {
     color: #444;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.936rem;
+    line-height: 1.3rem;
 
     @include respond-to(large) {
-        font-size: calc-responsive-size(1.25rem, map-get($scale-factors, large));
-        line-height: calc-responsive-size(1.936rem, map-get($scale-factors, large));
+        font-size: calc-responsive-size(1rem, map-get($scale-factors, large));
+        line-height: calc-responsive-size(1.3rem, map-get($scale-factors, large));
     }
 
     @include respond-to(desktop) {
-        font-size: calc-responsive-size(1.25rem, map-get($scale-factors, desktop));
-        line-height: calc-responsive-size(1.936rem, map-get($scale-factors, desktop));
+        font-size: calc-responsive-size(1rem, map-get($scale-factors, desktop));
+        line-height: calc-responsive-size(1.3rem, map-get($scale-factors, desktop));
     }
 
     @include respond-to(tablet) {
-        font-size: calc-responsive-size(1.25rem, map-get($scale-factors, tablet));
-        line-height: calc-responsive-size(1.936rem, map-get($scale-factors, tablet));
+        font-size: calc-responsive-size(1rem, map-get($scale-factors, tablet));
+        line-height: calc-responsive-size(1.3rem, map-get($scale-factors, tablet));
     }
 
     @include respond-to(mobile) {
-        font-size: calc-responsive-size(1.25rem, map-get($scale-factors, mobile));
-        line-height: calc-responsive-size(1.936rem, map-get($scale-factors, mobile));
+        font-size: calc-responsive-size(1rem, map-get($scale-factors, mobile));
+        line-height: calc-responsive-size(1.3rem, map-get($scale-factors, mobile));
     }
 }
 
