@@ -9,7 +9,7 @@ import { filterProjectList } from '../utilis/filterProjectList'
 
 const projectList = [
     {
-        name: 'Tic-Tac-Toe game',
+        name: 'Tic-Tac-Toe Game',
         id: 'tic-tac-toe-game',
         img: projectTicTacToeImages.main,
         imgAlt: 'Tic-Tac-Toe game preview',
@@ -333,7 +333,7 @@ const projectList = [
         ],
     },
     {
-        name: 'Quizzical game',
+        name: 'Quizzical Game',
         id: 'quizzical-game',
         img: QuizzicalTriviaImages.main,
         imgAlt: 'Quizzical Trivia app preview',
