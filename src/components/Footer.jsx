@@ -11,7 +11,7 @@ export default function Footer() {
                         NavClassName="navigation-footer-links"/>
                 </div>
                 <div className='footer-dev-info'>
-                    <p className='text-paragraph-s'>Designed and Developed with </p>
+                    <p className='text-paragraph-s'>Designed and developed with </p>
                     <img src={Heart} className='footer-heart-img'/>
                     <p className='text-paragraph-s'> by Emilia Burza</p>
                 </div>
