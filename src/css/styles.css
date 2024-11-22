@@ -413,37 +413,37 @@
 }
 @media screen and (max-width: 1650px) {
   .project-page .header-project {
-    padding: 10rem 10.08rem;
+    padding: 10rem 10rem 5rem;
   }
   .project-page .project-content {
-    padding: 5.04rem 10.08rem;
+    padding: 5.04rem 10rem 5rem;
   }
 }
 @media screen and (max-width: 1350px) {
   .project-page .header-project {
-    padding: 10rem 3.6rem 4.02rem;
+    padding: 10rem 3.6rem 4rem;
   }
   .project-page .project-content {
-    padding: 4.02rem 3.6rem;
+    padding: 4rem 3.6rem;
   }
   .project-page .project-content .content-heading {
     align-self: center;
     text-align: center;
   }
   .project-page .project-hero {
-    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas: "title" "summary" "data";
     text-align: center;
   }
+  .project-page .project-hero .hero-data,
+  .project-page .project-hero .hero-summary,
   .project-page .project-hero .project-title {
     justify-self: center;
+    word-wrap: break-word;
   }
   .project-page .project-hero .hero-data {
     min-width: 30rem;
-    justify-self: center;
-  }
-  .project-page .project-hero .hero-summary {
-    text-align: center;
   }
   .project-page .project-details-element {
     grid-template-columns: 1fr;
@@ -476,6 +476,7 @@
     padding: 10rem 2.04rem 3rem;
   }
   .project-page .header-project .project-hero .hero-data {
+    min-width: 0;
     width: 80%;
     padding: 1.5rem;
   }

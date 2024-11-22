@@ -468,21 +468,21 @@
 
     @include respond-to(desktop) {
         .header-project {
-            padding: 10rem 10.08rem;
+            padding: 10rem 10rem 5rem;
         }
     
         .project-content {
-            padding: 5.04rem 10.08rem;
+            padding: 5.04rem 10rem 5rem;
         }
     }
 
     @include respond-to(tablet) {
         .header-project {
-            padding: 10rem 3.6rem 4.02rem;
+            padding: 10rem 3.6rem 4rem;
         }
     
         .project-content {
-            padding: 4.02rem 3.6rem;
+            padding: 4rem 3.6rem;
 
             .content-heading {
                 align-self:  center;
@@ -491,24 +491,23 @@
         }
 
         .project-hero {
-            grid-template-columns: 1fr;
+            padding: 0 1rem;
+            grid-template-columns: minmax(0, 1fr);
             grid-template-areas: 
                 "title"
                 "summary" 
                 "data";
             text-align: center;
         
+            .hero-data,
+            .hero-summary,
             .project-title {
                 justify-self: center;
-            }
-        
-            .hero-data {
-                min-width: 30rem;
-                justify-self: center;
+                word-wrap: break-word;
             }
 
-            .hero-summary {
-                text-align: center;
+            .hero-data {
+                min-width: 30rem;
             }
         }
 
@@ -558,6 +557,7 @@
 
             .project-hero {
                 .hero-data {
+                    min-width: 0;
                     width: 80%;
                     padding: 1.5rem;
                 }
