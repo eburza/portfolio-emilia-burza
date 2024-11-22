@@ -18,7 +18,7 @@ export default function ProjectPage() {
         <article className='project-page'>
             <header className='header-project'>
                 <div className='back-to-home'>
-                    <Link to={`/#projects`} className='back-to-home-link'>
+                    <Link to={`/`} className='back-to-home-link'>
                         <img src={ArrowBack} className='arrow-icon'/>
                         <p className='text-paragraph-s'>Back to home</p>
                     </Link>
