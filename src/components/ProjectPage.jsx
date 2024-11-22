@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { projectList } from '../data/projectsList'
@@ -9,6 +10,10 @@ import ProjectImageViewer from './ProjectImageViewer'
 export default function ProjectPage() {
     const { id } = useParams()
     const project = projectList.find(p => p.id === id)
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     
     if (!project) {
         return <div className='project-not-found'>Project not found</div>
