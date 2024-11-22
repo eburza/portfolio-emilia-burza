@@ -624,6 +624,8 @@ footer .navigation-footer-links {
   font-family: Inter, sans-serif;
   font-style: normal;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -641,6 +643,17 @@ body {
   align-items: initial;
   gap: initial;
   overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.project-content,
+.footer-content,
+.about-content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
 img {
@@ -1264,10 +1277,14 @@ body {
   width: 90%;
   margin: 2rem auto;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .swiper {
   width: 100%;
+  position: relative;
+  overflow: visible;
 }
 
 .swiper-slide {
@@ -1385,11 +1402,22 @@ body {
 
 .projects-buttons {
   display: flex;
-  justify-self: center;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin-top: -3rem;
+  width: 100%;
+  position: relative;
 }
 
+@-moz-document url-prefix() {
+  .projects-buttons {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .previous-project {
   transform: scaleX(-1);
 }
@@ -1457,6 +1485,8 @@ footer {
   justify-self: center;
   width: 90%;
   max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
 }
 
 .personal-card {

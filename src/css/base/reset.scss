@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     @include font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -16,6 +18,17 @@ body {
 .portfolio-website {
     @include display-flex(column, center, initial, initial);
     overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.project-content,
+.footer-content,
+.about-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 
 img {
