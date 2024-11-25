@@ -725,6 +725,26 @@ footer {
             flex-wrap: wrap;
         }
     }
+
+    @media (max-width: 453px) {
+        .footer-navigation {
+            width: 100%;
+        }
+
+        .navigation-footer-links {
+            @include display-flex(row, space-around, center, initial);
+        }
+
+        .personal-card {
+            min-width: unset;
+            padding: 1rem 1.5rem;
+
+            .card-phone,
+            .card-email {
+                padding-right: 1rem;
+            }
+        }
+    }
 }
 
 // Padding

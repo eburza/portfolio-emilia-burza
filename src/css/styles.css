@@ -608,6 +608,26 @@ footer .navigation-footer-links {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 453px) {
+  footer .footer-navigation {
+    width: 100%;
+  }
+  footer .navigation-footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: initial;
+  }
+  footer .personal-card {
+    min-width: unset;
+    padding: 1rem 1.5rem;
+  }
+  footer .personal-card .card-phone,
+  footer .personal-card .card-email {
+    padding-right: 1rem;
+  }
+}
 
 .hero, .about-content, .skills-and-tools, .projects-content, footer {
   padding: 6rem 12rem;
