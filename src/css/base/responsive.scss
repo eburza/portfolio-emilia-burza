@@ -96,6 +96,20 @@
 
     @include respond-to(mobile) {
         min-height: 400px;
+
+
+        .hero-text {
+            .heading-xl {
+                word-break: break;
+                white-space: wrap;
+                float: left;
+            }
+    
+            .hero-react-dev {
+                white-space: wrap;
+                float: initial;
+            }
+        }
     
         .hero-img {
             width: 90%;
@@ -239,6 +253,7 @@
     
         .skills-head-title {
             align-self: center;
+            text-align: center;
         }
 
         .skill-section-container {
