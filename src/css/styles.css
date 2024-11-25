@@ -563,6 +563,11 @@ footer .navigation-footer-links {
     gap: 3.5rem;
   }
 }
+@media screen and (max-width: 690px) {
+  footer .footer-dev-info {
+    flex-wrap: wrap;
+  }
+}
 
 .hero, .about-content, .skills-and-tools, .projects-content, footer {
   padding: 6rem 12rem;
@@ -1557,11 +1562,18 @@ footer {
   flex-direction: initial;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: initial;
   padding-top: 0.5rem;
+}
+.footer-dev-info .dev-info-p1 {
+  text-wrap: nowrap;
+}
+.footer-dev-info .dev-info-p2 {
+  text-wrap: nowrap;
 }
 .footer-dev-info img {
   height: 1.75rem;
+  margin: 0.25rem 0.5rem;
 }
 @media screen and (max-width: 1920px) {
   .footer-dev-info img {

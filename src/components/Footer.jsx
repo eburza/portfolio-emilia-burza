@@ -11,9 +11,9 @@ export default function Footer() {
                         NavClassName="navigation-footer-links"/>
                 </div>
                 <div className='footer-dev-info'>
-                    <p className='text-paragraph-s'>Designed and developed with </p>
+                    <p className='text-paragraph-s dev-info-p1'>Designed and developed with</p>
                     <img src={Heart} className='footer-heart-img'/>
-                    <p className='text-paragraph-s'> by Emilia Burza</p>
+                    <p className='text-paragraph-s dev-info-p2'> by Emilia Burza</p>
                 </div>
                 <div className='personal-card'>
                     <h2 className='heading-s card-title'>Say hi!</h2>

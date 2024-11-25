@@ -670,7 +670,12 @@ footer {
         .navigation-footer-links {
             @include display-flex(row, initial, initial, 3.5rem);
         }
-      
+    }
+
+    @include respond-to(mobile) {
+        .footer-dev-info {
+            flex-wrap: wrap;
+        }
     }
 }
 

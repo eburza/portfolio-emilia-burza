@@ -46,9 +46,21 @@ footer {
 }
 
 .footer-dev-info {
-    @include display-flex(initial, center, center, 0.5rem);
+    @include display-flex(initial, center, center, initial);
     padding-top: 0.5rem;
+    // flex-wrap: wrap;
+
+    .dev-info-p1 {
+        text-wrap: nowrap;
+    }
+
+    .dev-info-p2 {
+        text-wrap: nowrap;
+    }
+
     img {
         @include footer-heart-img;
+        margin: 0.25rem 0.5rem;
     }
+
 }
