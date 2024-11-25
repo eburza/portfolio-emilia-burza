@@ -16,6 +16,7 @@
     }
 
     @include respond-to(mobile) { 
+        padding: 0.75rem;
         width: 100%;
         display: grid;
         gap: 0.75rem;
@@ -40,6 +41,33 @@
             @include display-flex(row, space-evenly, center, 2rem);
         }
         
+    }
+
+    @media (max-width: 453px) {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "links"
+            "button";
+        padding: 0.5rem;
+
+        .logo {
+            height: 2rem;
+            justify-self: center;
+        }
+
+        .resume-button {
+            justify-self: center;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .navigation-bar-links {
+            justify-self: center;
+            width: 100%;
+            @include display-flex(row, center, center, 2rem);
+        }
     }
 }
 
