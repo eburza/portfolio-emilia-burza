@@ -453,7 +453,7 @@ const projectList = [
         description: `This project is my old personal portfolio website as a graphic designer, showcasing my creative work and professional experience. The website features a clean, minimalist design that puts the focus on my design projects while maintaining excellent usability and responsiveness across different devices. Through this platform, I demonstrate my expertise in various design disciplines and my ability to create visually compelling solutions that meet client needs.`,
         tags: ['html', 'css'],
         conclusion: `This portfolio website demonstrates my ability to create professional, responsive web experiences with clean code and attention to detail. The project showcases my skills in HTML5, CSS3, while also highlighting my understanding of user experience and responsive design principles. The implementation of analytics tools also shows consideration for tracking and improving user engagement.`,
-        liveLink: 'https://emiliaburza.pl/',
+        liveLink: 'https://emilia-burza-graphic-designer-portfol.netlify.app/',
         githubLink: 'https://github.com/eburza/portfolio',
         images: [
             {
