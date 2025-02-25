@@ -6,15 +6,10 @@ export default function About() {
             <div className='about-wrapper'>
                 <img src={ImgAbout} className='about-img' alt='Emilia Burza smiling'/>
                 <p className='text-paragraph text-1'>
-                    As a frontend developer with a focus on React.js, I bring a powerful combination of technical expertise 
-                    and design sensibility to web development. My transition from graphic design to code has equipped me with the skills 
-                    to create web applications that are not only highly functional but also intuitively user-friendly and visually compelling.
+                As a full-stack developer proficient in both frontend and backend technologies, I create end-to-end web solutions using modern JavaScript frameworks, TypeScript, and related tools. My background in graphic design, combined with my technical skills, allows me to build applications that are not only architecturally sound but also deliver engaging user experiences through intuitive interfaces and compelling visual design.
                 </p>
                 <p className='text-paragraph text-2'>
-                    Currently, I'm dedicated to expanding my full-stack development skills, focusing on building scalable React 
-                    applications on the front-end and robust backend systems. I'm deepening my knowledge of server-side technologies 
-                    like Node.js and databases, while improving web accessibility and performance. I'm eager to join a team where 
-                    I can contribute across the entire technology stack, create impactful web solutions, and continue growing as a versatile full-stack developer.
+                    Currently, I'm advancing my stack expertise through development of web applications, working with React.js for dynamic front-end interfaces and building backend APIs with Node.js and Express.js. With experience in database technologies, I create complete, production-ready solutions. I focus on writing clean, maintainable code and building accessible applications that solve real-world problems. I'm passionate about contributing across the entire technology stack and am eager to join a team where I can apply my full-stack skills, collaborate with other developers, and continue growing as a versatile developer.
                 </p>
             </div>
         </article>
