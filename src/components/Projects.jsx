@@ -32,10 +32,7 @@ export default function Projects() {
                 </div>
                 <h1 className='heading-l underscore-water'>Projects</h1>
                 <p className='text-paragraph projects-intro-text'>
-                    Explore my frontend development projects built with React.js 
-                    and modern web technologies. These works demonstrate my focus 
-                    on creating responsive user interfaces and interactive web applications, 
-                    while documenting my ongoing journey into full-stack development.
+                Explore my full-stack development projects showcasing both frontend and backend expertise. These works demonstrate my ability to create complete web applications with responsive user interfaces, robust server-side logic, and database integration, documenting my growth as a versatile full-stack developer.
                 </p>
             </div>
             <section className='projects-list'>
