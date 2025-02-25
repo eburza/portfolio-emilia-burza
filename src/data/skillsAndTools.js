@@ -22,6 +22,8 @@ import Typescript from '../assets/skills-and-tools/typescript.svg'
 import Postgresql from '../assets/skills-and-tools/postgresql.svg'
 import Tailwind from '../assets/skills-and-tools/tailwind.svg'
 import Design from '../assets/skills-and-tools/design.svg'
+import Nodejs from '../assets/skills-and-tools/nodejs.svg'
+import Express from '../assets/skills-and-tools/expressjs.svg'
 
 
 const skillsList = [
@@ -29,6 +31,16 @@ const skillsList = [
         name: 'React',
         tag: 'react',
         img: React
+    },
+    {
+        name: 'Node.js',
+        tag: 'nodejs',
+        img: Nodejs
+    },
+    {
+        name: 'Express.js',
+        tag: 'expressjs',
+        img: Express
     },
     {
         name: 'Next.js',
