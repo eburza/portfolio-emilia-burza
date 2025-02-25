@@ -43,11 +43,6 @@ const skillsList = [
         img: Express
     },
     {
-        name: 'Next.js',
-        tag: 'next.js',
-        img: NextJs
-    },
-    {
         name: 'TypeScript',
         tag: 'typescript',
         img: Typescript
@@ -57,20 +52,25 @@ const skillsList = [
         tag: 'javascript',
         img: Javascript
     },
+    {
+        name: 'Next.js',
+        tag: 'next.js',
+        img: NextJs
+    },
     // {
     //     name: 'jQuery',
     //     tag: 'jquery',
     //     img: Jquery
     // },
     {
+        name: 'MongoDB',
+        tag: 'mongodb',
+        img: Mongodb
+    },
+    {
         name: 'PostgreSQL',
         tag: 'postgresql',
         img: Postgresql
-    },
-    {
-        name: 'Vite',
-        tag: 'vite',
-        img: Vite
     },
     {
         name: 'Firebase',
@@ -78,9 +78,9 @@ const skillsList = [
         img: Firebase
     },
     {
-        name: 'MongoDB',
-        tag: 'mongodb',
-        img: Mongodb
+        name: 'Vite',
+        tag: 'vite',
+        img: Vite
     },
     {
         name: 'Git',
