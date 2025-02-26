@@ -83,14 +83,13 @@
   max-width: 70%;
 }
 .hero .hero-text .heading-xl {
-  word-break: keep-all;
+  text-wrap: balance;
 }
 .hero .hero-text .hero-react-dev {
   white-space: nowrap;
-  display: inline-block;
 }
 .hero .hero-img {
-  width: 40%;
+  width: 45%;
 }
 @media screen and (max-width: 1650px) {
   .hero {
@@ -98,9 +97,6 @@
   }
   .hero .hero-text {
     max-width: 58%;
-  }
-  .hero .hero-img {
-    width: 45%;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -120,7 +116,7 @@
     align-items: center;
   }
   .hero .hero-img {
-    width: 70%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 690px) {

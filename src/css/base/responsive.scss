@@ -79,17 +79,16 @@
         max-width: 70%;
         
         .heading-xl {
-            word-break: keep-all;
+            text-wrap: balance;
         }
 
         .hero-react-dev {
             white-space: nowrap;
-            display: inline-block;
         }
     }
 
     .hero-img {
-        width: 40%;
+        width: 45%;
     }
 
     @include respond-to(desktop) {
@@ -97,10 +96,6 @@
     
         .hero-text {
             max-width: 58%;
-        }
-    
-        .hero-img {
-            width: 45%;
         }
     }
 
@@ -118,7 +113,7 @@
         }
         
         .hero-img {
-            width: 70%;
+            width: 50%;
         }
     }
 
