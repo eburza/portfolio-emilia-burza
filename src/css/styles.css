@@ -422,7 +422,7 @@
 .project-page .project-hero .hero-data {
   grid-area: data;
   justify-self: end;
-  min-width: 30rem;
+  max-width: 30rem;
 }
 .project-page .project-content {
   padding: 6rem 12rem;
@@ -483,7 +483,7 @@
     word-wrap: break-word;
   }
   .project-page .project-hero .hero-data {
-    min-width: 30rem;
+    min-width: 34rem;
   }
   .project-page .project-details-element {
     grid-template-columns: 1fr;

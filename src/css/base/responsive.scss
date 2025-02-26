@@ -471,7 +471,7 @@
         .hero-data {
             grid-area: data;
             justify-self: end;
-            min-width: 30rem;
+            max-width: 30rem;
         }
     }
 
@@ -555,7 +555,7 @@
             }
 
             .hero-data {
-                min-width: 30rem;
+                min-width: 34rem;
             }
         }
 
