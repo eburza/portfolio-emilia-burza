@@ -180,7 +180,7 @@ const projectList = [
                 text: 'The game state updates in real-time, providing a smooth and interactive user experience'
             },
             {
-                bold: 'Score TrackingPlayer vs Player and Player vs CPU Modes',
+                bold: 'Score Tracking',
                 text: 'The application keeps track of the scores for both players and displays the results at the end of each round'
             },
             {
