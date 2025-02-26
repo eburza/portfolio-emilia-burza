@@ -10,12 +10,12 @@ import {
 
 const projectList = [
     {
-        name: 'Solar Panels Evaluation Platform',
+        name: 'Solar Panel Evaluation',
         id: 'solar-panels-evaluation-platform',
         img: SolarPanelImages.main,
         imgAlt: 'Solar Panels Evaluation Platform preview',
         description: 'This project is a web application for monitoring and managing solar panel systems, designed to facilitate the evaluation and adoption of solar energy solutions. It provides a comprehensive platform for users to request solar panel evaluations, track their requests, and for administrators to manage these evaluations. The application is built with modern web technologies, ensuring a responsive and user-friendly experience across different devices.',
-        tags: ['next.js', 'react', 'typescript', 'supabase', 'tailwind'],
+        tags: ['next.js', 'react', 'typescript','postgreSQL', 'supabase', 'tailwind'],
         conclusion: `The Solar Panel Project demonstrates my ability to build complex, user-focused web applications using modern technologies. It showcases my skills in Next.js, TypeScript, state management, form handling, responsive design, and database management. The project implements a robust backend using Supabase for data persistence, user authentication, and secure API interactions. My database skills are evident in the structured schema design, efficient queries, and the implementation of relational data for tracking evaluation requests and user information. The project reflects my commitment to creating applications that not only meet technical requirements but also provide an excellent user experience while addressing real-world needs in renewable energy adoption.`,
         liveLink: 'https://solar-panel-ivory.vercel.app/',
         githubLink: 'https://github.com/eburza/solar-panel',
