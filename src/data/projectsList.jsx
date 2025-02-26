@@ -3,11 +3,137 @@ import {
     projectTipCalculatorImages,
     VanLifeImages,
     QuizzicalTriviaImages,
-    GraphicPortfolioImages
+    GraphicPortfolioImages,
+    SolarPanelImages
 } from './projectImagesList'
-import { filterProjectList } from '../utilis/filterProjectList'
+// import { filterProjectList } from '../utilis/filterProjectList'
 
 const projectList = [
+    {
+        name: 'Solar Panels Evaluation Platform',
+        id: 'solar-panels-evaluation-platform',
+        img: SolarPanelImages.main,
+        imgAlt: 'Solar Panels Evaluation Platform preview',
+        description: 'This project is a web application for monitoring and managing solar panel systems, designed to facilitate the evaluation and adoption of solar energy solutions. It provides a comprehensive platform for users to request solar panel evaluations, track their requests, and for administrators to manage these evaluations. The application is built with modern web technologies, ensuring a responsive and user-friendly experience across different devices.',
+        tags: ['next.js', 'react', 'typescript', 'supabase', 'tailwind'],
+        conclusion: `The Solar Panel Project demonstrates my ability to build complex, user-focused web applications using modern technologies. It showcases my skills in Next.js, TypeScript, state management, form handling, responsive design, and database management. The project implements a robust backend using Supabase for data persistence, user authentication, and secure API interactions. My database skills are evident in the structured schema design, efficient queries, and the implementation of relational data for tracking evaluation requests and user information. The project reflects my commitment to creating applications that not only meet technical requirements but also provide an excellent user experience while addressing real-world needs in renewable energy adoption.`,
+        liveLink: 'https://solar-panel-ivory.vercel.app/',
+        githubLink: 'https://github.com/eburza/solar-panel',
+        images: [
+            {
+                src: SolarPanelImages.previews[0],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: SolarPanelImages.previews[1],
+                alt: 'Project screenshot 2',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: SolarPanelImages.previews[2],
+                alt: 'Project screenshot 3',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: SolarPanelImages.previews[3],
+                alt: 'Project screenshot 4',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ],
+        features: [
+            {
+                bold: 'Solar Panel Evaluation Requests',
+                text: 'Users can submit requests for professional solar panel evaluations of their properties'
+            },
+            {
+                bold: 'Multi-step Form Process',
+                text: 'A guided, step-by-step form collects all necessary information from users'
+            },
+            {
+                bold: 'Request Tracking',
+                text: 'Users can track the status of their evaluation requests using a unique request ID'
+            },
+            {
+                bold: 'Admin Dashboard',
+                text: 'Administrators can view, manage, and update the status of evaluation requests'
+            },
+            {
+                bold: 'Informational Content',
+                text: 'Educational sections about solar energy benefits, requirements, and the evaluation process'
+            },
+            {
+                bold: 'Responsive Design',
+                text: 'The application is fully responsive, providing an optimal experience on all devices'
+            }
+        ],
+        technologies: [
+            {
+                bold: 'Next.js',
+                text: `The application is built using Next.js with TypeScript, providing server-side rendering capabilities and improved performance`
+            },
+            {
+                bold: 'Tailwind CSS',
+                text: `Styling is implemented using Tailwind CSS for rapid UI development and consistent design`
+            },
+            {
+                bold: 'Supabase',
+                text: `Backend functionality is powered by Supabase for authentication and database management`
+            },
+            {
+                bold: 'React Hook Form',
+                text: `Form handling and validation is managed using React Hook Form with Zod for schema validation`
+            },
+            {
+                bold: 'Geist UI Components',
+                text: `Custom UI components based on the Geist design system for a modern and clean interface`
+            },
+            {
+                bold: 'Tanstack React Query',
+                text: `Data fetching and state management is handled with React Query for efficient API interactions`
+            },
+        ],
+        highlights: [
+            {
+                bold: 'Component Architecture',
+                text: 'The application follows a modular component architecture, making the codebase maintainable and scalable'
+            },
+            {
+                bold: 'Form Validation',
+                text: 'Comprehensive form validation using Zod schemas ensures data integrity'
+            },
+            {
+                bold: 'Multi-step Form Implementation',
+                text: 'A well-structured multi-step form process with state persistence between steps'
+            },
+            {
+                bold: 'Responsive UI Components',
+                text: 'Custom UI components designed to be fully responsive across all screen sizes'
+            },
+            {
+                bold: 'Admin Interface',
+                text: 'A secure admin interface with authentication for managing evaluation requests'
+            },
+        ],
+        challenges: [
+            {
+                bold: 'Complex Form State Management',
+                text: 'Managing state across a multi-step form process was addressed by creating a custom form context provider'
+            },
+            {
+                bold: 'User Experience Flow',
+                text: 'Creating an intuitive user journey required careful planning of the information architecture and form progression'
+            },
+            {
+                bold: 'Admin Dashboard Functionality',
+                text: 'Implementing a comprehensive admin dashboard with real-time updates was achieved using React Query for efficient data fetching'
+            },
+            {
+                bold: 'Responsive Design',
+                text: 'Ensuring consistent appearance across devices was accomplished through Tailwind\'s responsive utility classes and custom component design'
+            },
+        ],
+    },
     {
         name: 'Tic-Tac-Toe Game',
         id: 'tic-tac-toe-game',

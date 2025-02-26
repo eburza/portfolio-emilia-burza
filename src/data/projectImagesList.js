@@ -27,6 +27,11 @@ import GraphicPortfolioP2 from '../assets/projects-images/graphic-portfolio/grap
 import GraphicPortfolioP3 from '../assets/projects-images/graphic-portfolio/graphic-portfolio-preview-3.png'
 import GraphicPortfolioP4 from '../assets/projects-images/graphic-portfolio/graphic-portfolio-preview-4.png'
 
+import SolarPanelMain from '../assets/projects-images/solar-panel/solar-main.png'
+import SolarPanelP1 from '../assets/projects-images/solar-panel/solar-preview-1.png'
+import SolarPanelP2 from '../assets/projects-images/solar-panel/solar-preview-2.png'
+import SolarPanelP3 from '../assets/projects-images/solar-panel/solar-preview-3.png'
+import SolarPanelP4 from '../assets/projects-images/solar-panel/solar-preview-4.png'
 
 const projectTicTacToeImages = {
     main: TicTacToeMain,
@@ -62,3 +67,10 @@ const GraphicPortfolioImages = {
 }
 
 export { GraphicPortfolioImages }
+
+const SolarPanelImages = {
+    main: SolarPanelMain,
+    previews: [ SolarPanelP1, SolarPanelP2, SolarPanelP3, SolarPanelP4 ]
+}
+
+export { SolarPanelImages }
