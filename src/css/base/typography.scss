@@ -34,7 +34,9 @@ body {
 
 .text-paragraph-bold {
     @include text-paragraph;
-    font-weight: 600;
+    & {
+        font-weight: 600;
+    }
 }
 
 .text-paragraph-s {

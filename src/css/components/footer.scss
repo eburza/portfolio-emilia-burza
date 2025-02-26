@@ -58,14 +58,11 @@ footer {
         text-wrap: nowrap;
     }
 
-    // img {
-    //     @include footer-heart-img;
-    //     margin: 0.25rem 0.5rem;
-    // }
+    img {
+        @include footer-heart-img;
+        & {
+            margin: 0.25rem 0.5rem;
+        }
+    }
 
-}
-
-.footer-dev-info > img {
-    @include footer-heart-img;
-    margin: 0.25rem 0.5rem;
 }

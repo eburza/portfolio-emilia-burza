@@ -10,7 +10,7 @@ import {
 
 const projectList = [
     {
-        name: 'Solar Evaluations App',
+        name: 'Solar Evaluation Platform',
         id: 'solar-panels-evaluation-platform',
         img: SolarPanelImages.main,
         imgAlt: 'Solar Panels Evaluation Platform preview',
