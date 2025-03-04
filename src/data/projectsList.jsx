@@ -18,7 +18,7 @@ const projectList = [
         tags: ['next.js', 'react', 'typescript','postgresql', 'supabase', 'tailwind'],
         conclusion: `The Solar Panel Project demonstrates my ability to build complex, user-focused web applications using modern technologies. It showcases my skills in Next.js, TypeScript, state management, form handling, responsive design, and database management. The project implements a robust backend using Supabase for data persistence, user authentication, and secure API interactions. My database skills are evident in the structured schema design, efficient queries, and the implementation of relational data for tracking evaluation requests and user information. The project reflects my commitment to creating applications that not only meet technical requirements but also provide an excellent user experience while addressing real-world needs in renewable energy adoption.`,
         liveLink: 'https://solar-panel-ivory.vercel.app/',
-        githubLink: 'https://github.com/chingu-voyages/v52-tier3-team-33/tree/main/solar-panel',
+        githubLink: 'https://github.com/chingu-voyages/v52-tier3-team-33',
         images: [
             {
                 src: SolarPanelImages.previews[0],
