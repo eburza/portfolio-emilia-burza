@@ -4,11 +4,177 @@ import {
     VanLifeImages,
     QuizzicalTriviaImages,
     GraphicPortfolioImages,
-    SolarPanelImages
+    SolarPanelImages,
+    EntertainmentAppImages
 } from './projectImagesList'
 // import { filterProjectList } from '../utilis/filterProjectList'
 
 const projectList = [
+    {
+        name: 'Entertainment App',
+        id: 'entertainment-app',
+        img: EntertainmentAppImages.main,
+        imgAlt: 'Entertainment App preview',
+        description: 'This project is a full-stack entertainment application with a strong focus on backend architecture. It allows users to browse movies and TV shows through a sleek React frontend powered by a robust Node.js/Express.js backend. The application demonstrates the integration of modern frontend technologies with a well-structured backend system, showcasing how they work together to deliver a seamless user experience while maintaining security, performance, and data integrity.',
+        tags: ['react', 'nodejs', 'expressja', 'typescript','mongodb', 'tailwind'],
+        conclusion: 'The Entertainment App demonstrates my ability to build comprehensive full-stack applications with a strong backend foundation. It showcases my expertise in Node.js, Express.js, MongoDB, and TypeScript on the server side, while also highlighting my skills in React and modern frontend development. The project emphasizes how a well-designed backend architecture can support and enhance the frontend experience, resulting in a cohesive application that delivers both performance and usability. This application represents my capability to develop professional-grade entertainment platforms where backend and frontend work in harmony to create a seamless user experience.',
+        liveLink: 'https://emilia-burza-entertainment-app.netlify.app/',
+        githubLink: 'https://github.com/eburza/entertainment-web-app',
+        images: [
+            {
+                src: EntertainmentAppImages.previews[0],
+                alt: 'Project screenshot 1',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: EntertainmentAppImages.previews[1],
+                alt: 'Project screenshot 2',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: EntertainmentAppImages.previews[2],
+                alt: 'Project screenshot 3',
+                caption: 'Homepage design showcasing the main features'
+            },
+            {
+                src: EntertainmentAppImages.previews[3],
+                alt: 'Project screenshot 4',
+                caption: 'Homepage design showcasing the main features'
+            },
+        ],
+        features: [
+            {
+                bold: 'RESTful API',
+                text: 'Backend provides comprehensive endpoints for content retrieval and user operations'
+            },
+            {
+                bold: 'Authentication System',
+                text: 'Secure JWT-based authentication for personalized user experiences'
+            },
+            {
+                bold: 'Data Persistence',
+                text: 'MongoDB integration for storing user preferences and application data'
+            },
+            {
+                bold: 'Content Browsing',
+                text: 'Frontend interface for exploring movies and TV series'
+            },
+            {
+                bold: 'Trending Section',
+                text: 'Highlights popular content with data served from the backend'
+            },
+            {
+                bold: 'Category Filtering',
+                text: 'Backend-powered filtering system for content discovery'
+            },
+            {
+                bold: 'Responsive Design',
+                text: 'Full-stack responsive implementation working across all devices'
+            },
+        ],
+        technologies: [
+            {
+                bold: 'Node.js',
+                text: 'Powers the server-side application with its efficient architecture'
+            },
+            {
+                bold: 'Express.js',
+                text: 'Handles API routing, middleware integration, and request processing'
+            },
+            {
+                bold: 'TypeScript',
+                text: 'Ensures type safety throughout the codebase'
+            },
+            {
+                bold: 'MongoDB/Mongoose',
+                text: 'Manages data persistence with schema validation'
+            },
+            {
+                bold: 'JWT Authentication',
+                text: 'Secures API endpoints and manages user sessions'
+            },
+            {
+                bold: 'Winston',
+                text: 'Implements comprehensive logging for application monitoring'
+            },
+            {
+                bold: 'Helmet',
+                text: 'Enhances API security with HTTP headers'
+            },
+            {
+                bold: 'Serverless-http',
+                text: 'Adapts the Express.js application for serverless environments'
+            },
+            {
+                bold: 'Vitest',
+                text: 'Provides thorough testing of backend functionality'
+            },
+            {
+                bold: 'React',
+                text: 'Builds the user interface with efficient component architecture'
+            },
+            {
+                bold: 'Tailwind',
+                text: 'Implements responsive styling with utility-first approach'
+            },
+            {
+                bold: 'React Router',
+                text: 'Handles client-side navigation between application sections'
+            },
+        ],
+        highlights: [
+            {
+                bold: 'Axios',
+                text: 'Manages API requests to the backend server'
+            },
+            {
+                bold: 'Full-Stack Type Safety',
+                text: 'Shared TypeScript interfaces between frontend and backend'
+            },
+            {
+                bold: 'MVC Architecture',
+                text: 'Organized backend following Model-View-Controller pattern'
+            },
+            {
+                bold: 'API Integration',
+                text: 'Frontend components consuming backend endpoints with proper error handling'
+            },
+            {
+                bold: 'Middleware Pipeline',
+                text: 'Custom backend middleware for authentication and request validation'
+            },
+            {
+                bold: 'Component Architecture',
+                text: 'Well-structured React components working with backend data'
+            },
+            {
+                bold: 'Environment Configuration',
+                text: 'Structured environment variables for different deployment contexts'
+            },
+        ],
+        challenges: [
+            {
+                bold: 'Data Flow Management',
+                text: 'Created efficient data pipelines between frontend and backend'
+            },
+            {
+                bold: 'API Design',
+                text: 'Designed intuitive API endpoints that serve frontend requirements effectively'
+            },
+            {
+                bold: 'State Synchronization',
+                text: 'Implemented strategies to keep frontend state in sync with backend data'
+            },
+            {
+                bold: 'Cross-Origin Resource Sharing',
+                text: 'Configured CORS policies to secure API while allowing frontend access'
+            },
+            {
+                bold: 'Deployment Strategy',
+                text: 'Set up separate deployment pipelines for frontend and backend with proper integration'
+            },
+        ],
+    },
     {
         name: 'Solar Evaluation Platform',
         id: 'solar-panels-evaluation-platform',

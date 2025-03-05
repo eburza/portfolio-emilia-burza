@@ -33,6 +33,12 @@ import SolarPanelP2 from '../assets/projects-images/solar-panel/solar-preview-2.
 import SolarPanelP3 from '../assets/projects-images/solar-panel/solar-preview-3.png'
 import SolarPanelP4 from '../assets/projects-images/solar-panel/solar-preview-4.png'
 
+import EntertainmentAppMain from '../assets/projects-images/entertainment-app/entertainment-app-main.png'
+import EntertainmentAppP1 from '../assets/projects-images/entertainment-app/entertainment-app-preview-1.png'
+import EntertainmentAppP2 from '../assets/projects-images/entertainment-app/entertainment-app-preview-2.png'
+import EntertainmentAppP3 from '../assets/projects-images/entertainment-app/entertainment-app-preview-3.png'
+import EntertainmentAppP4 from '../assets/projects-images/entertainment-app/entertainment-app-preview-4.png'
+
 const projectTicTacToeImages = {
     main: TicTacToeMain,
     previews: [ TicTacToeP1, TicTacToeP2, TicTacToeP3, TicTacToeP4 ]
@@ -74,3 +80,10 @@ const SolarPanelImages = {
 }
 
 export { SolarPanelImages }
+
+const EntertainmentAppImages = {
+    main: EntertainmentAppMain,
+    previews: [ EntertainmentAppP1, EntertainmentAppP2, EntertainmentAppP3, EntertainmentAppP4 ]
+}
+
+export { EntertainmentAppImages }
